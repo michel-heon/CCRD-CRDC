@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9"  lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" class="no-js"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<!--<![endif]-->
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport" >
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta property="dcterms:service" content="StatCan" />
+<meta property="dcterms:accessRights" content="2" />
+<meta name="keywords" content="nul" />
+<meta name="robots" content="noarchive, nofollow, noindex" />
+<meta name="dcterms.title" content="Format de rechange - format de document portable (PDF)" />
+<meta name="dcterms.creator" content="Gouvernement du Canada, Statistique Canada" />
+<meta name="dcterms.subject" title="gcstc" content="nul" />
+<meta name="dcterms.issued" title="W3CDTF" content="2021-07-23" />
+<meta name="dcterms.modified" title="W3CDTF" content="2021-07-23" />
+<meta name="dcterms.language" title="ISO639-2" content="fra" />
+<link rel="shortcut icon" href="https://www150.statcan.gc.ca/n1/wet-boew4b/assets/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon" href="https://www150.statcan.gc.ca/n1/wet-boew4b/assets/favicon-mobile.png" sizes="144x144" />
+<link rel="apple-touch-icon-precomposed" href="https://www150.statcan.gc.ca/n1/wet-boew4b/assets/favicon-mobile.png" sizes="144x144" />
+<noscript><link rel="stylesheet" href="https://www150.statcan.gc.ca/n1/n1/profiles/wetkit/libraries/wet-boew/css/noscript.min.css" /></noscript>
+  <title>Format de rechange - format de document portable (PDF)</title>
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <![endif]-->
+  <link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_2IKGBv_a_cf89rR9C2AFw4yy4t4NTxT12-cXpUIL8rE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_noEa8rT2OHp9cLOSlQBIiwvk5TtByM5bQVFc5N4gINs.css" media="all" />
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_XwceKCBVJqm5u7YLZdiwaJ_KxxvRznEOaGdW7ruvJrg.css" media="all" />
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/profiles/wetkit/libraries/theme-gcweb/css/ie8-theme.min.css?quutwy" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_L2YMiMpcg2MtOXDiJ8qnnJB6EeZwS8Umu3xcqusDEmk.css" media="all" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/profiles/wetkit/libraries/theme-gcweb/css/messages-ie.min.css?quutwy" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_BrTGDd_-Fa80Z-ch0AdtmS1o7Jz7_pPZM-VXSZ2w5FQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_2L1jHSMPK7Ki4bqYJ6eYTtSi41PfiD_Td52urxtVAVQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www150.statcan.gc.ca/n1/sites/default/files/css/css_iMW7SElNswQG5jAdGu4PihWRfc_ZbnnOXcT8ZoZAylQ.css" media="all" />
+  <script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_ypadrG4kz9-JBpNOXmgjyVozLCJG_1RP3Ig-iqWR8n0.js"></script>
+
+<!--[if lt IE 9]>
+<script src="https://www150.statcan.gc.ca/n1/profiles/wetkit/libraries/wet-boew/js/ie8-wet-boew.min.js?v=4.0.41"></script>
+<![endif]-->
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_CwA9uD2kYGc1ubylea-Ul8iN5PWYS40GWBA4ue9Bo4w.js"></script>
+<script>document.createElement( "picture" );</script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_Op36rpEuouwo993MnOtTWhC6MniqllYPlvSEs7v3eoY.js"></script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_39i4AGV_O4vtEGAnApu9mpRhg55_T0V_XAvQCt1AKrg.js"></script>
+<script src="//assets.adobedtm.com/launch-EN0cf6c2810a2b48f8a4c36502a1b09541.min.js"></script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_FJbwjzirjribkdAR0qD2qId2uacwfoC9DcZVTg-t6kQ.js"></script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_7GF9I-qqQ8xsI9lGqOnm1CtTsA1E0TVlutI8Imo1KnQ.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/n1\/","pathPrefix":"fr\/","ajaxPageState":{"theme":"bootstrap_ndm","theme_token":"RLyumQ6ZlrCBnpjM_f23mtvIvY7B7QM8PUgS1VS6hgc","js":{"profiles\/wetkit\/libraries\/wet-boew\/js\/wet-boew.min.js":1,"profiles\/wetkit\/libraries\/wet-boew\/js\/ie8-wet-boew2.min.js":1,"profiles\/wetkit\/libraries\/theme-gcweb\/js\/theme.min.js":1,"profiles\/wetkit\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"profiles\/wetkit\/modules\/contrib\/picture\/picture.min.js":1,"0":1,"profiles\/wetkit\/themes\/bootstrap\/js\/bootstrap.js":1,"profiles\/wetkit\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/wetkit\/libraries\/wet-boew\/js\/ie8-wet-boew.min.js":1,"profiles\/wetkit\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/wetkit\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/wetkit\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"profiles\/wetkit\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"1":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/js\/wetkit-accordion.js":1,"sites\/all\/modules\/custom\/ndm_layouts\/assets\/js\/polyfills\/pointer_events.js":1,"sites\/all\/modules\/custom\/ndm_layouts\/assets\/js\/polyfills\/placeholders.jquery.min.js":1,"sites\/all\/modules\/custom\/ndm_layouts\/assets\/js\/polyfills\/url-search-params-polyfill.js":1,"sites\/all\/modules\/custom\/ndm_layouts\/assets\/js\/polyfills.js":1,"profiles\/wetkit\/modules\/contrib\/panopoly_magic\/panopoly-magic.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_admin\/wetkit-admin.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/js\/alert.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/js\/collapse.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/js\/tooltip.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/js\/vertical_tabs.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/js\/wetkit-emberx.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_widgets\/js\/wetkit_widgets.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/datatables.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/jquery.shorten.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/jquery.highlight.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/facets.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/map.js":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/js\/results.js":1,"public:\/\/languages\/fr_88D21OjDVASWg-uMy45murPm9nQgYwTeSn4sFUiIxPQ.js":1,"profiles\/wetkit\/libraries\/jstorage\/jstorage.min.js":1,"profiles\/wetkit\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/js\/horizontal_tabs.js":1,"\/\/assets.adobedtm.com\/launch-EN0cf6c2810a2b48f8a4c36502a1b09541.min.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_bean\/js\/wetkit_bean.js":1,"profiles\/wetkit\/modules\/custom\/wetkit_admin\/modules\/wetkit_navbar\/js\/wetkit-navbar.js":1,"profiles\/wetkit\/themes\/wetkit_bootstrap\/js\/wetkit-bootstrap.modules.js":1,"sites\/all\/themes\/bootstrap_ndm\/assets\/js\/ndm_bootstrap.keyup.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"profiles\/wetkit\/libraries\/theme-gcweb\/css\/theme.min.css":1,"profiles\/wetkit\/libraries\/theme-gcweb\/css\/ie8-theme.min.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/css\/wetkit-featured.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/css\/wetkit-accordian.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/ndm_layouts\/assets\/css\/ndm-extras.css":1,"modules\/node\/node.css":1,"profiles\/wetkit\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_admin\/wetkit-admin.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/css\/ember-contextual.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/css\/ember-ctools.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/css\/ember-media.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/css\/ember-modal.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_emberx\/css\/ember-panels-ipe.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_layouts\/css\/layouts.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_admin\/modules\/wetkit_navbar\/css\/wetkit-navbar.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_widgets\/css\/wetkit_widgets.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_wysiwyg\/css\/wetkit-wysiwyg.css":1,"profiles\/wetkit\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/beans.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/facets.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/results.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/spinner.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/catalogue.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/sort.css":1,"sites\/all\/modules\/custom\/ndm_beans\/assets\/css\/landing.css":1,"profiles\/wetkit\/css\/wetkit.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_menu\/css\/wetkit_menu.css":1,"profiles\/wetkit\/libraries\/theme-gcweb\/css\/messages.min.css":1,"profiles\/wetkit\/libraries\/theme-gcweb\/css\/messages-ie.min.css":1,"profiles\/wetkit\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/wetkit\/modules\/contrib\/panels\/css\/panels.css":1,"profiles\/wetkit\/modules\/contrib\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_theme\/modules\/wetkit_bootstrapx\/css\/horizontal_tabs.css":1,"profiles\/wetkit\/modules\/contrib\/custom_search\/custom_search.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"profiles\/wetkit\/themes\/wetkit_bootstrap\/css\/wetkit_bootstrap.styles.css":1,"sites\/all\/themes\/bootstrap_ndm\/css\/style.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_bean\/css\/wetkit_bean.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_core\/css\/wetkit_core.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_search\/css\/wetkit_search.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_wetboew\/css\/wetkit_wetboew.css":1,"profiles\/wetkit\/modules\/custom\/wetkit_images\/css\/wetkit_images.css":1}},"admin_menu":{"suppress":1},"CToolsModal":{"modalSize":{"type":"scale","width":".90","height":".80","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".60","background-color":"#000"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"single"},"custom_search":{"form_target":"_self","solr":1},"currentPath":"pub\/89-26-0004\/89260004-x2020001-fra.pdf","currentPathIsAdmin":false,"urlIsAjaxTrusted":{"\/n1\/fr\/metadonnee?p=1-references%2C10-All":true,"\/n1\/pub\/89-26-0004\/89260004-x2020001-fra.pdf":true},"bootstrap":{"anchorsFix":0,"anchorsSmoothScrolling":1,"formHasError":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":1,"placement":"auto top","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="bootstrap-ndm theme-gcweb html not-front not-logged-in no-sidebars page-pub page-pub-89-26-0004 page-pub-89-26-0004-89260004-x2020001-frapdf i18n-fr">
+  <ul id="wb-tphp">
+          <li class="wb-slc">
+        <a class="wb-sl" href="#block-system-main">Aller au contenu principal</a>
+      </li>
+              <li class="wb-slc visible-md visible-lg">
+        <a class="wb-sl" href="#wb-info">Aller au pied de page</a>
+      </li>
+      </ul>
+    <header id="navbar" class="">
+  <div id="wb-bnr" class="container">
+    <section id="wb-lng" class="visible-md visible-lg text-right">
+      <h2 class="wb-inv">Sélection de la langue</h2>
+      <ul class="list-inline margin-bottom-none"><li id="wet-fullhd-lang"><a href="/n1/en/pub/89-26-0004/89260004-x2020001-eng.pdf" class="link" hreflang="en" lang="en">English</a></li></ul>    </section>
+    <div class="row">
+      <div class="brand col-xs-8 col-sm-9 col-md-6">
+                  <a href="https://www.statcan.gc.ca/fra/debut">
+                          <img id="header-logo" src='/n1/sites/all/themes/bootstrap_ndm/assets/sig-blk-fr.svg' alt="Statistics Canada" />
+                      </a>
+              </div>
+      <section class="wb-mb-links col-xs-4 col-sm-3 visible-sm visible-xs" id="wb-glb-mn">
+        <h2>Recherche et menus</h2>
+        <ul class="list-inline text-right chvrn">
+          <li>
+            <a href="#mb-pnl" title="Recherche et menus" aria-controls="mb-pnl" class="overlay-lnk" role="button">
+              <span class="glyphicon glyphicon-search">
+                <span class="glyphicon glyphicon-th-list">
+                  <span class="wb-inv">Recherche et menus</span>
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div id="mb-pnl"></div>
+      </section>
+      <section id="wb-srch" class="col-xs-6 text-right visible-md visible-lg">
+        <h2 class="wb-inv">Rechercher</h2>
+                  <form class="search-form form-inline" role="search" action="https://www120.statcan.gc.ca/stcsr/fr/sr1/srs" method="get" id="search-form" accept-charset="UTF-8"><div><div class="form-item form-item-q form-type-textfield form-group"><label class="control-label" for="wb-srch-q" id="wb-srch-q-label"><span class="field-name">Recherchez le site Web</span></label>
+<input title="" class="custom-search-box form-control form-text" placeholder="Rechercher dans le site Web" type="search" id="wb-srch-q" name="q" value="" size="37" maxlength="1991" /></div><input type="hidden" name="fq" value="stclac:2" />
+
+
+
+<button data-icon="search" value="rechercher" type="submit" id="wb-srch-sub" name="op" class="btn btn-primary btn-small form-submit"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Rechercher</span></button>
+</div></form>              </section>
+    </div>
+  </div>
+      <nav id="wb-sm" class="wb-menu visible-md visible-lg" data-trgt="mb-pnl" data-ajax-replace="/wet-boew4b/ajax/sitemenu-ndm-fr.html" typeof="SiteNavigationElement">
+      <div class="pnl-strt container nvbar">
+        <h2 class="wb-inv">Topics menu</h2>
+        <div class="row">
+                  </div>
+      </div>
+    </nav>
+      <nav id="wb-bc" property="breadcrumb">
+    <div class="container">
+      <div class="row">
+        <div class="contextual-links-region"><ol class="breadcrumb"><li class="inline odd first"><a href="https://www.statcan.gc.ca/fra/debut">Accueil</a></li>  <li class="inline even last">89260004-x2020001-fra.pdf - format de document portable (PDF)</li></ol></div>      </div>
+    </div>
+  </nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+          <a id="main-content"></a>
+              <h1 class="page-header" id="wb-cont">Format de rechange - format de document portable (PDF)</h1>
+                                      <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <section><p>Le document suivant peut être visualisé ou téléchargé :</p><div class="item-list"><ul><li><a href="/n1/fr/pub/89-26-0004/89260004-x2020001-fra.pdf?st=v7syF_Q9" class="active">89260004-x2020001-fra.pdf (format de document portable (PDF), 1.05MB)</a></li>
+</ul></div></section><div class="row pagedetails"><div class="panel-display panel-1col clearfix" id="mini-panel-ndm_page_details">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-bean-ndm-contact-us-button mrgn-tp-sm"  >
+  
+      
+  
+  <div class="pane-content">
+    <section>
+  <div class="field field-name-field-bean-wetkit-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><div class="col-sm-6 col-lg-4">
+<a role="button" class="btn btn-default btn-block" href="https://www.canada.ca/fr/signaler-probleme.html">Signaler un problème ou une erreur sur cette page</a>
+</div></div></div></div></section>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-block pane-bean-ndm-share col-sm-3 text-right pull-right mrgn-tp-sm"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="clearfix"><div class="wb-share  text-right mrgn-bttm-sm" data-wb-share='{"filter":["email","facebook","twitter","linkedin","reddit","tumblr"],"pnlId":"pnl1","lnkClass":"btn btn-default btn-block"}'></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-ndm-date col-xs-12 datemod mrgn-bttm-md mrgn-tp-lg"  >
+  
+      
+  
+  <div class="pane-content">
+    <dl id="wb-dtmd"><dt>Date de modification :</dt><dd><time property="dateModified"> 2021-07-23</time></dd></dl>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</section>
+  </div>
+</main>
+  <footer id="wb-info">
+  <div class="landscape">
+      <nav role="navigation" class="container wb-navcurr">
+        <h2 class="wb-inv">About government</h2>
+        <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+              <section id="block-block-1" class="block block-block clearfix">
+
+      
+  <script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+var lz_data = {overwrite:false,language:'fr'};
+
+//--><!]]>
+</script><script type="text/javascript" id="0671342afd1f122f4891265fc94236c1" src="https://www.statcan.gc.ca/livechat/script.php?id=0671342afd1f122f4891265fc94236c1" defer="defer"></script>
+</section>
+<li class="first leaf menu-mlid-5126"><a href="https://www.statcan.gc.ca/fra/reference/centreref/index?MM=1">Contactez-nous</a></li>
+<li class="leaf menu-mlid-5127"><a href="http://www.canada.ca/fr/gouvernement/min.html">Ministères et organismes</a></li>
+<li class="leaf menu-mlid-5128"><a href="http://www.canada.ca/fr/gouvernement/fonctionpublique.html">Fonction publique et force militaire</a></li>
+<li class="leaf menu-mlid-5129"><a href="https://www.canada.ca/fr/nouvelles.html">Nouvelles</a></li>
+<li class="leaf menu-mlid-5130"><a href="http://www.canada.ca/fr/gouvernement/systeme/lois.html">Traités, lois et règlements</a></li>
+<li class="leaf menu-mlid-5131"><a href="http://www.canada.ca/fr/transparence/rapports.html">Rapports à l&#039;échelle du gouvernement</a></li>
+<li class="leaf menu-mlid-5132"><a href="http://pm.gc.ca/fra">Premier ministre</a></li>
+<li class="leaf menu-mlid-5133"><a href="http://www.canada.ca/fr/gouvernement/systeme.html">Comment le gouvernement fonctionne</a></li>
+<li class="last leaf menu-mlid-5134"><a href="http://ouvert.canada.ca/">Gouvernement ouvert</a></li>
+        </ul>
+      </nav>
+  </div>
+  <div class="brand">
+    <div class="container">
+      <div class="row ">
+        <nav class="col-md-10 ftr-urlt-lnk">
+          <h2 class="wb-inv">About this site</h2>
+          <ul class="links"><li class="menu-5121 first"><a href="http://www.canada.ca/fr/sociaux.html">Médias sociaux</a></li>
+<li class="menu-5122"><a href="http://www.canada.ca/fr/mobile.html">Applications mobiles</a></li>
+<li class="menu-5123"><a href="http://www1.canada.ca/fr/nouveausite.html">À propos de Canada.ca</a></li>
+<li class="menu-5124"><a href="https://www.statcan.gc.ca/fra/reference/avis?MM=1">Avis</a></li>
+<li class="menu-5125 last"><a href="https://www.statcan.gc.ca/fra/reference/privee?MM=1">Confidentialité</a></li>
+</ul>        </nav>
+        <div class="col-xs-6 visible-sm visible-xs tofpg">
+          <a href="#wb-cont">Haut de la page<span class="glyphicon glyphicon-chevron-up"></span></a>
+        </div>
+        <div class="col-xs-6 col-md-2 text-right">
+                      <img src='/n1/profiles/wetkit/libraries/theme-gcweb/assets/wmms-blk.svg' alt="Symbole du gouvernement du Canada" />
+                  </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+<!--[if gte IE 9]><!-->
+<script src="https://www150.statcan.gc.ca/n1/profiles/wetkit/libraries/wet-boew/js/wet-boew.min.js?v=4.0.41"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_fRat1n_owWOqzn8ZC0XGATicIEJYu1se_XYEMNYSxFU.js"></script>
+<![endif]-->
+<script src="https://www150.statcan.gc.ca/n1/profiles/wetkit/libraries/theme-gcweb/js/theme.min.js?v=9.1.0"></script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_7Ukqb3ierdBEL0eowfOKzTkNu-Le97OPm-UqTS5NENU.js"></script>
+<script>_satellite.pageBottom();</script>
+<script src="https://www150.statcan.gc.ca/n1/sites/default/files/js/js_MRdvkC2u4oGsp5wVxBG1pGV5NrCPW3mssHxIn6G9tGE.js"></script>
+</body>
+</html>
