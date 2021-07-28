@@ -51,6 +51,7 @@ import org.apache.jena.vocabulary.OWL;
 import org.apache.jena.vocabulary.OWL2;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.RDFS;
+import org.apache.jena.vocabulary.SKOS;
 
 import ca.uqam.vocabulary.model.CRDC_CCRD;
 import ca.uqam.vocabulary.model.CRDC_CCRD_CSV;
@@ -246,12 +247,15 @@ public class CrdcCcrd_VocabBuilder {
 				} else if (levelNo==2) {
 					Resource codeRes = ResourceFactory.createResource(ns+code);
 					outModel.add(instanceResource,RDF.type, codeRes);
+					outModel.add(codeRes,SKOS.member, instanceResource);
 				} else if (levelNo==3) {
 					Resource codeRes = ResourceFactory.createResource(ns+code);
 					outModel.add(instanceResource,RDF.type, codeRes);
+					outModel.add(codeRes,SKOS.member, instanceResource);
 				} else if (levelNo==4) {
 					Resource codeRes = ResourceFactory.createResource(ns+code);
 					outModel.add(instanceResource,RDF.type, codeRes);
+					outModel.add(codeRes,SKOS.member, instanceResource);
 				}
 			}
 		}
@@ -276,6 +280,8 @@ public class CrdcCcrd_VocabBuilder {
 	private void ontoMapForInstanceCode(Resource instanceResource, String code, Model describeFromCodeModel) {
 		outModel.add(instanceResource,CRDC_CCRD.hasID, instanceResource.getLocalName());
 		outModel.add(instanceResource,RDF.type, OWL2.NamedIndividual);
+		outModel.add(instanceResource,RDF.type, SKOS.Concept);
+
 		processClassTitle(instanceResource, describeFromCodeModel);
 		processElementDescription(instanceResource, describeFromCodeModel);
 		processElementTypeLabel(instanceResource, describeFromCodeModel);
@@ -286,6 +292,7 @@ public class CrdcCcrd_VocabBuilder {
 	private void classifyInstanceForDivision(Resource instanceResource, String code, Model describeFromCodeModel) {
 		Resource codeRes = ResourceFactory.createResource(ns+code);
 		outModel.add(instanceResource,RDF.type, codeRes);	
+		outModel.add(codeRes,SKOS.member, instanceResource);	
 	}
 
 	private void transformLevel(int levelNo) {
@@ -360,53 +367,66 @@ public class CrdcCcrd_VocabBuilder {
 		String csvFile = getfromCsvFileRS.next().getLiteral("fn").getLexicalForm();
 		if (csvFile.contains("seo-ose")){
 			outModel.add(codeRes, RDFS.subClassOf, CRDC_CCRD.SEO_OSE_Entity);	
+			outModel.add(CRDC_CCRD.SEO_OSE_Entity,SKOS.member, codeRes);
 		} else if (csvFile.contains("for-ddr")){
 			outModel.add(codeRes, RDFS.subClassOf, CRDC_CCRD.FOR_DDR_Entity);
+			outModel.add(CRDC_CCRD.FOR_DDR_Entity,SKOS.member, codeRes);
 		} else if (csvFile.contains("toa-tda")){
 			outModel.add(codeRes, RDFS.subClassOf, CRDC_CCRD.TOA_TDA_Entity);
+			outModel.add(CRDC_CCRD.TOA_TDA_Entity,SKOS.member, codeRes);
 		} 		
 		outModel.add(codeRes,RDF.type, CRDC_CCRD.CRDC_CCRD_Division);
+		outModel.add(CRDC_CCRD.CRDC_CCRD_Division,SKOS.member, codeRes);
 	}
 	private void classifyEntityForSubClass(String code, Model describeFromCodeModel) {
 		Resource codeRes = ResourceFactory.createResource(ns+code);
 		outModel.add(codeRes,RDF.type, CRDC_CCRD.CRDC_CCRD_SubClass);	
+		outModel.add(CRDC_CCRD.CRDC_CCRD_SubClass,SKOS.member, codeRes);
 		String upperCode = code.substring(0, code.length() - 2);
 		Resource upperCodeRes = ResourceFactory.createResource(ns+upperCode);
 		outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
+		outModel.add(codeRes,SKOS.broader, upperCodeRes);
 
 	}
 
 	private void classifyEntityForClass(String code, Model describeFromCodeModel) {
 		Resource codeRes = ResourceFactory.createResource(ns+code);
 		outModel.add(codeRes,RDF.type, CRDC_CCRD.CRDC_CCRD_Class);
-
+		outModel.add(CRDC_CCRD.CRDC_CCRD_Class,SKOS.member, codeRes);
 		String upperCode = code.substring(0, code.length() - 2);
 		Resource upperCodeRes = ResourceFactory.createResource(ns+upperCode);
 		outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
+		outModel.add(codeRes,SKOS.broader, upperCodeRes);
 
 	}
 
 	private void classifyEntityForGroup(String code, Model describeFromCodeModel) {
 		Resource codeRes = ResourceFactory.createResource(ns+code);
 		outModel.add(codeRes,RDF.type, CRDC_CCRD.CRDC_CCRD_Group);
+		outModel.add(CRDC_CCRD.CRDC_CCRD_Group,SKOS.member, codeRes);
+
 		if (code.contains("RDF20") || code.contains("RDF21")){
 			String upperCode = "RDF20-21";
 			Resource upperCodeRes = ResourceFactory.createResource(ns+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		} else if (code.contains("RDF")){
 			String upperCode = code.substring(0, code.length() - 1);
 			Resource upperCodeRes = ResourceFactory.createResource(ns+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		} else {
 			String upperCode = code.substring(0, code.length() - 2);
 			Resource upperCodeRes = ResourceFactory.createResource(ns+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		}
 	}
 
 	private void ontoMapForCode(Resource codeRes, String code, Model describeFromCodeModel) {
 		outModel.add(codeRes,CRDC_CCRD.hasID, code);
 		outModel.add(codeRes,RDF.type, OWL.Class);
+		outModel.add(codeRes,RDF.type, SKOS.Concept);
 		processClassTitle(codeRes, describeFromCodeModel);
 		processClasstDefenition(codeRes, describeFromCodeModel);
 		processElementTypeLabel(codeRes, describeFromCodeModel);
