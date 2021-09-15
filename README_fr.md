@@ -42,39 +42,56 @@ classification et taxonomie) du contenu de l'ensemble des fichiers CSV du site d
 
 ### 1-1-1 Graphes RDF et classes Java
 
-- [crdc-ccrd.ttl](crdc-ccrd.ttl) graphe-de-données représentant le vocabulaire du CRDC-CCRD de format RDF/RDFS/OWL dans la notation TURTLE. 
 - [src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl](src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl) Cadre des données contenu dans le graphe
-- [src/main/java/ca/uqam/vocabulary/crdc_ccrd/CrdcCcrd_VocabBuilder.java](src/main/java/ca/uqam/vocabulary/crdc_ccrd/CrdcCcrd_VocabBuilder.java) programme de conversion des fichiers CSV en graphe de données du CRDC-CCRD
+- [src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd.ttl](src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd.ttl) Données importés de la transformation par `CrdcCcrd_VocabBuilder.java` 
+- [src/main/java/ca/uqam/vocabulary/crdc_ccrd/CrdcCcrd_VocabBuilder.java](src/main/java/ca/uqam/vocabulary/crdc-ccrd/CrdcCcrd_VocabBuilder.java) programme de conversion des fichiers CSV en graphe de données du CRDC-CCRD
 
 ### 1-1-2 Structure de répertoires 
 
-- `/CCRD-CRDC/src/main/resources/csv` contiens les fichiers CSV extraits du site du CRDC-CCRD
-- `/CCRD-CRDC/src/main/resources/01-datasets` représentation RDF/RDFS des fichiers CSV générés par `CrdcCcrd_VocabBuilder.java`
+- `/CCRD-CRDC/src/main/resources/00-csv-data` contiens les fichiers CSV extraits du site du CRDC-CCRD
 - `/CCRD-CRDC/src/main/resources/00-crdc-ccdr-vocabulary` Répertoire contenant l'ontologie structurant le graphe de données du CRDC-CCRD
+- `/CCRD-CRDC/src/main/resources/01-datasets` représentation RDF/RDFS des fichiers CSV générés par `CrdcCcrd_VocabBuilder.java`
+- `/CCRD-CRDC/src/main/resources/02-graphs` graphe-de-données représentant le vocabulaire du CRDC-CCRD de format RDF/RDFS/OWL/SKOS dans la notation TURTLE. `CrdcCcrd_VocabBuilder.java`
 - `/CCRD-CRDC/src/main/resources/doc` Documentation provenant du site du CRDC-CCRD
-- `/CCRD-CRDC/src/main/java/ca/uqam/vocabulary/crdc_ccrd/` Répertoire contenant les classes Java nécessaires à la production des divers graphes
+- `/CCRD-CRDC/src/main/java/ca/uqam/vocabulary/crdc-ccrd/` Répertoire contenant les classes Java nécessaires à la production des divers graphes
 - `/CCRD-CRDC/src/main/java/ca/uqam/vocabulary/model/`Répertoire contenant les classes Java utiles à la gestion des IRI ontologiques
 
+### 1-1-3 Processus de traitement des données réalisé par `CrdcCcrd_VocabBuilder.java`
+
+The function `CrdcCcrd_VocabBuilder.java` is to produce an ontological structure for each CSV document provided by the CRDC
+
+```
+foreach csv_file in 00-csv-data
+    transform $csv_file to csv_onto_file in  01-datasets
+    transform csv_onto_file to onto_file in 02-graphs
+end
+```
 
 ## 1-2 IRI ontologique
 
 ### 1-2-1 IRI du graphe de données du CRDC-CCRD
-
-- Nom du fichier: `crdc-ccrd.ttl`
-- IRI de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual`
-- Préfixe: `crdc-ccrd-data`
+Pour chaque fichier
+- Nom du fichier: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-{element/structure}-{eng|fra}.ttl`
+- IRI de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-{element/structure}-{eng|fra}`
+- Préfixe: `:`
 
 ### 1-2-2 IRI de la sémantique du CRDC-CCRD
 
 - Nom du fichier: `crdc-ccrd-semantic.ttl`
-- II de Base: `http://purl.org/uqam.ca/vocabulary/crdc_ccrd`
+- II de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd`
 - Préfixe: `crdc-ccrd`
 
 ### 1-2-3 IRI des fichiers transitoires représentant les données du CRDC-CCRD
 
 - Nom du fichier: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-element-{fra|eng}.ttl`
-- IRI de Base: `http://ca.uqam/crdc-ccrd/csv`
+- IRI de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-{element/structure}-{eng|fra}`
 - Préfixe: `crdc-ccrd-csv`
+
+### 1-2-4 IRI des données du CRDC-CCRD
+
+- Nom du fichier: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-element-{fra|eng}.ttl`
+- IRI de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#`
+- Préfixe: `crdc-ccrd-data`
 
 # 2 Nomenclature taxonomique des données du CRDC-CCRD
 
@@ -102,30 +119,30 @@ on y retrouve la taxonomie suivante:
 
 ```
 :RDF20-21
-  rdf:type crdc_ccrd:CRDC_CCRD_Division ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Division ;
   rdf:type owl:Class ;
   rdfs:label "Génie et technologies"@fr-CA ;
-  crdc_ccrd:hasLevel "1"^^xsd:double ;
-  rdfs:subClassOf crdc_ccrd:FOR_DDR_Entity .
+  crdc-ccrd:hasLevel "1"^^xsd:double ;
+  rdfs:subClassOf crdc-ccrd:FOR_DDR_Entity .
 
 :RDF201
-  rdf:type crdc_ccrd:CRDC_CCRD_Group ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Group ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "2"^^xsd:double ;
+  crdc-ccrd:hasLevel "2"^^xsd:double ;
   rdfs:label "Génie civil, génie maritime, génie des transports, et génie minier"@fr-CA ;
   rdfs:subClassOf :RDF20-21 .
 
 :RDF20101
-  rdf:type crdc_ccrd:CRDC_CCRD_Class ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Class ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "3"^^xsd:double ;
+  crdc-ccrd:hasLevel "3"^^xsd:double ;
   rdfs:label "Génie civil"@fr-CA ;
   rdfs:subClassOf :RDF201 .
 
 :RDF2010101
-  rdf:type crdc_ccrd:CRDC_CCRD_SubClass ;
+  rdf:type crdc-ccrd:CRDC_CCRD_SubClass ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "4"^^xsd:double ;
+  crdc-ccrd:hasLevel "4"^^xsd:double ;
   rdfs:label "Géotechnique"@fr-CA ;
   rdfs:subClassOf :RDF20101 .
 
@@ -148,8 +165,8 @@ L'Élément `RDF1030507.183 (semiconducteurs composés)` est de type `RDF1030507
 
 :RDF1030507
   rdf:type owl:Class ;
-  rdf:type crdc_ccrd:CRDC_CDDR_SubClass ;
-  crdc_ccrd:hasLevel "4"^^xsd:double ;
+  rdf:type crdc-ccrd:CRDC_CDDR_SubClass ;
+  crdc-ccrd:hasLevel "4"^^xsd:double ;
   rdfs:label "Superconductivity"@en-CA ;
   rdfs:label "Supraconductivité"@fr-CA ;
   rdfs:subClassOf :RDF10305 .

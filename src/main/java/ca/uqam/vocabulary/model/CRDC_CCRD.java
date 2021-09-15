@@ -9,9 +9,9 @@ import org.apache.jena.rdf.model.*;
 public class CRDC_CCRD {
     /** <p>The RDF model that holds the vocabulary terms</p> */
     private static final Model M_MODEL = ModelFactory.createDefaultModel();
-    
+    public static final String CRDC_CCRD_VOCABULARY = "http://purl.org/uqam.ca/vocabulary/crdc-ccrd";
     /** <p>The namespace of the vocabulary as a string</p> */
-    public static final String NS = "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#";
+    public static final String NS = CRDC_CCRD_VOCABULARY+"#";
     
     /** <p>The namespace of the vocabulary as a string</p>
      * @return namespace as String
@@ -24,33 +24,33 @@ public class CRDC_CCRD {
     /** <p>The ontology's owl:versionInfo as a string</p> */
     public static final String VERSION_INFO = "Author: Michel Héon PhD : heon.michel@uqam.ca";
     
-    public static final Property classDefinition = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#classDefinition" );
+    public static final Property classDefinition = M_MODEL.createProperty( NS + "classDefinition" );
     
-    public static final Property classTitle = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#classTitle" );
+    public static final Property classTitle = M_MODEL.createProperty( NS + "classTitle" );
     
-    public static final Property elementDescription = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#elementDescription" );
+    public static final Property elementDescription = M_MODEL.createProperty( NS + "elementDescription" );
     
-    public static final Property elementLabel = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#elementLabel" );
+    public static final Property elementLabel = M_MODEL.createProperty( NS + "elementLabel" );
     
-    public static final Property elementTypeLabel = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#elementTypeLabel" );
+    public static final Property elementTypeLabel = M_MODEL.createProperty( NS + "elementTypeLabel" );
     
-    public static final Property hasHierarchicalStructure = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#hasHierarchicalStructure" );
+    public static final Property hasHierarchicalStructure = M_MODEL.createProperty( NS + "hasHierarchicalStructure" );
     
-    public static final Property hasID = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#hasID" );
+    public static final Property hasID = M_MODEL.createProperty( NS + "hasID" );
     
-    public static final Property hasLevel = M_MODEL.createProperty( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#hasLevel" );
+    public static final Property hasLevel = M_MODEL.createProperty( NS + "hasLevel" );
     
-    public static final Resource CRDC_CCRD_Class = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#CRDC_CCRD_Class" );
+    public static final Resource CRDC_CCRD_Class = M_MODEL.createResource( NS + "CRDC_CCRD_Class" );
     
-    public static final Resource CRDC_CCRD_Division = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#CRDC_CCRD_Division" );
+    public static final Resource CRDC_CCRD_Division = M_MODEL.createResource( NS + "CRDC_CCRD_Division" );
     
-    public static final Resource CRDC_CCRD_Group = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#CRDC_CCRD_Group" );
+    public static final Resource CRDC_CCRD_Group = M_MODEL.createResource( NS + "CRDC_CCRD_Group" );
     
-    public static final Resource CRDC_CCRD_SubClass = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#CRDC_CCRD_SubClass" );
+    public static final Resource CRDC_CCRD_SubClass = M_MODEL.createResource( NS + "CRDC_CCRD_SubClass" );
     
-    public static final Resource Category = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#Category" );
+    public static final Resource Category = M_MODEL.createResource( NS + "Category" );
     
-    public static final Resource Entity = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#Entity" );
+    public static final Resource Entity = M_MODEL.createResource( NS + "Entity" );
     
     /** <p>This piece of the CRDC allows R&amp;D activity to be categorized or classified 
      *  according to the field of research (FOR); it is the methodology used in the 
@@ -63,7 +63,7 @@ public class CRDC_CCRD {
      *  domaines ou domaines de recherche selon les sources de connaissances, les 
      *  objets et les méthodes et techniques utilisées.</p>
      */
-    public static final Resource FOR_DDR_Entity = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#FOR_DDR_Entity" );
+    public static final Resource FOR_DDR_Entity = M_MODEL.createResource( NS + "FOR_DDR_Entity" );
     
     /** <p>Cette classification permet la catégorisation de la R-D selon le but ou le 
      *  résultat de cette activité perçu par le fournisseur de données (chercheur). 
@@ -80,7 +80,7 @@ public class CRDC_CCRD {
      *  combination of industries, processes, products, health, education, culture, 
      *  ethics and other social and environmental aspects of particular interest.</p>
      */
-    public static final Resource SEO_OSE_Entity = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#SEO_OSE_Entity" );
+    public static final Resource SEO_OSE_Entity = M_MODEL.createResource( NS + "SEO_OSE_Entity" );
     
     /** <p>This classification allows R&amp;D activity to be categorized according to 
      *  the type of research effort, namely basic or fundamental research (which groups 
@@ -91,6 +91,6 @@ public class CRDC_CCRD {
      *  pure et la recherche fondamentale stratégique, par ailleurs divisées dans 
      *  le Manuel de Frascati 2015), la recherche appliquée et le développement expérimental.</p>
      */
-    public static final Resource TOA_TDA_Entity = M_MODEL.createResource( "http://purl.org/uqam.ca/vocabulary/crdc_ccrd#TOA_TDA_Entity" );
+    public static final Resource TOA_TDA_Entity = M_MODEL.createResource( NS + "TOA_TDA_Entity" );
     
 }

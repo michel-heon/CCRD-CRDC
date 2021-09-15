@@ -28,9 +28,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.test.skip>true</maven.test.skip>
         <jena-version>3.9.0</jena-version>
-        <csv-repo>${project.build.resources[0].directory}/csv</csv-repo>
+        <csv-repo>${project.build.resources[0].directory}/00-csv-data</csv-repo>
         <dataset-repo>${project.build.resources[0].directory}/01-datasets</dataset-repo>
-        <graph-result>${basedir}/crdc-ccrd.ttl</graph-result>
+        <graph-result-repo>${project.build.resources[0].directory}/02-graphs</graph-result-repo>
     </properties>
     <build>
         <plugins>
@@ -127,7 +127,7 @@
                                     <arguments>
                                         <argument>-i${csv-repo}</argument> <!-- CSV Input Directory -->
                                         <argument>-o${dataset-repo}</argument> <!-- Datasets Output Directory corresponding to CSV -->
-                                        <argument>-g${graph-result}</argument>
+                                        <argument>-g${graph-result-repo}</argument> <!-- Ontologies output directory -->
                                         Graph result ontology filename
                                         (stdout if it is not specified)
                                     </arguments>

@@ -1,0 +1,1181 @@
+@base          <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-seo-ose-structure-fra> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix :      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-seo-ose-structure-fra#> .
+@prefix crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> .
+@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix crdc-ccrd: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix crdc-ccrd-data: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#> .
+
+crdc-ccrd-data:RDS10501
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Exploitation minière et extraction des ressources énergétiques"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 32" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'exploitation minière et l'extraction des ressources énergétiques d'origine minérale ainsi que sur l'extraction de l'énergie géothermique."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploitation minière et extraction des ressources énergétiques"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10501" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS10806
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Élevage du bétail (y compris l'apiculture et la reproduction des animaux de compagnie)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 64" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'élevage du bétail. Il comprend l'apiculture et l'élevage d'animaux de compagnie."@fr-ca ;
+        crdc-ccrd:classTitle       "Élevage du bétail (y compris l'apiculture et la reproduction des animaux de compagnie)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10806" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11007
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Patrimoine (y compris la culture autochtone)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 79" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les questions ayant trait au patrimoine, notamment la conservation du patrimoine naturel, social et culturel. Il comprend également les activités de R&D axées sur la culture, la langue, les connaissances et les droits autochtones."@fr-ca ;
+        crdc-ccrd:classTitle       "Patrimoine (y compris la culture autochtone)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11007" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS11101
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Finance et économie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 85" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conception et la prestation de services financiers et d'investissement. Il comprend, sans s'y limiter, les banques, les sociétés de crédit immobilier, les coopératives de crédit et les opérations sur le marché monétaire; les services d'investissement et de pension de retraite; les services d'assurance. Ce groupe comprend également les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des questions économiques aux niveaux microéconomique et macroéconomique. Il comprend la prise en compte des incidences sur l'imposition, la consommation, les organisations industrielles, les politiques industrielles, les coûts et structures du secteur industriel, la politique budgétaire, la politique monétaire, les taux de change, la balance des paiements, la politique des revenus et la fiscalité."@fr-ca ;
+        crdc-ccrd:classTitle       "Finance et économie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11101" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10401
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Planification de travaux de construction"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 23" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des activités liées à l'élaboration de projets de construction jusqu'à l'étape de l'esquisse."@fr-ca ;
+        crdc-ccrd:classTitle       "Planification de travaux de construction"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10401" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS111
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Division , skos:Concept ;
+        rdfs:label                 "Systèmes, structures et processus politiques et sociaux"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 84" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) ayant pour objectifs d'améliorer la compréhension de la structure politique de la société et le soutien qui lui est destiné; des politiques économiques et des questions reliées à l'administration publique; des études régionales et de la gouvernance multiniveau; du changement social, des processus et des conflits sociaux; de la mise en place des systèmes de sécurité sociale et d'aide sociale; des aspects sociaux de l'organisation du travail. Cet objectif comprend également les activités de R&D ayant trait aux études sociales portant sur les sexospécificités, notamment sur la discrimination et les problèmes familiaux; à la mise au point de méthodes de lutte contre la pauvreté à l'échelle locale, nationale et internationale; à la protection de groupes donnés au sein de la population, sur le plan social (immigrés, délinquants, décrocheurs, etc.), sur le plan sociologique, à savoir en lien avec le mode de vie (jeunes, adultes, retraités, personnes handicapées, etc.), et sur le plan économique (consommateurs, agriculteurs, pêcheurs, mineurs, chômeurs, etc.); aux méthodes de prestation de l'aide sociale lorsque des changements soudains (à caractère naturel, technologique ou social) surviennent dans la société. Cet objectif exclut les activités de R&D relatives à l'hygiène industrielle, au contrôle de l'état de santé de collectivités d'un point de vue organisationnel et sociomédical, à la pollution en milieu de travail, à la prévention des accidents industriels et aux aspects médicaux des causes des accidents industriels (objectif 7 ou RDS107)."@fr-ca ;
+        crdc-ccrd:classTitle       "Systèmes, structures et processus politiques et sociaux"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS111" .
+
+crdc-ccrd-data:RDS11001
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Services d'information"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 73" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les services d'information. Il comprend, sans s'y limiter, les bibliothèques, les bases de données des bibliothèques et le traitement de l'information; la présentation de l'information, notamment les présentoirs dans les bibliothèques, les musées et les galeries d'art, les centres de formation et autres établissements similaires; les archives électroniques, les services en libre accès et les services de collecte de nouvelles."@fr-ca ;
+        crdc-ccrd:classTitle       "Services d'information"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11001" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10301
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Exploration scientifique de l'espace"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 16" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de l'exploration scientifique de l'espace, dont l'exploration robotique du système solaire, et sur la mise au point de techniques d'exploration avancée."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration scientifique de l'espace"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10301" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd-data:RDS10606
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Produits pharmaceutiques à usage vétérinaire"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 45" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la fabrication de produits pharmaceutiques utilisés dans la prévention, le diagnostic et le traitement des maladies animales (vétérinaires)."@fr-ca ;
+        crdc-ccrd:classTitle       "Produits pharmaceutiques à usage vétérinaire"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10606" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS109
+        a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
+        rdfs:label                 "Éducation"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 67" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait au soutien à l'éducation en général ou à l'éducation spécialisée, notamment à la formation, à la pédagogie, à la didactique et aux méthodes ciblées adaptées aux personnes douées ou à celles qui présentent des difficultés d'apprentissage. Cet objectif s'applique à tous les ordres d'enseignement, de l'enseignement préscolaire et primaire à l'enseignement supérieur, ainsi qu'aux services complémentaires."@fr-ca ;
+        crdc-ccrd:classTitle       "Éducation"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS109" .
+
+crdc-ccrd-data:RDS10201
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Activités humaines écologiquement durables"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 9" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur le caractère écologiquement viable de la production végétale et des produits végétaux primaires, de la production animale et des produits animaux primaires, de l'exploration, de l'exploitation, de l'extraction et de la transformation des ressources minérales, des matériaux fabriqués, des activités de construction, des activités de transport et des activités des services d'information et de communication, et ce, en réduisant au minimum la production d'émissions et de déchets et en réduisant ou en optimisant la consommation de l'eau et des autres ressources naturelles."@fr-ca ;
+        crdc-ccrd:classTitle       "Activités humaines écologiquement durables"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10201" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS10506
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Économie d'énergie et efficacité énergétique"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 37" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'économie (conservation) d'énergie et l'efficacité énergétique dans l'industrie, le transport, le commerce et les foyers. Cela comprend l'énergie utilisée sous forme de produits dérivés du pétrole, d'électricité, de gaz, de coke et de briquettes ainsi que sous forme d'énergie thermique."@fr-ca ;
+        crdc-ccrd:classTitle       "Économie d'énergie et efficacité énergétique"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10506" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS10101
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Exploration minière"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 2" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la découverte de ressources minérales non énergétiques. Il comprend les pierres précieuses et semi-précieuses et les sables minéraux."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration minière"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10101" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS10406
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Technologies, systèmes et services de communication"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 28" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les réseaux et services de communication fixes, mobiles et satellitaires. Il comprend les services de vidéoconférence."@fr-ca ;
+        crdc-ccrd:classTitle       "Technologies, systèmes et services de communication"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10406" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS11106
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Justice et droit"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 90" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la justice et le droit. Il comprend, sans s'y limiter, les aspects qui ont trait aux voies de droit; au système de justice civil et au système de justice pénal; à la prévention du crime, à l'application des lois et aux services correctionnels; à la réforme du droit."@fr-ca ;
+        crdc-ccrd:classTitle       "Justice et droit"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11106" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS103
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Division , owl:Class ;
+        rdfs:label                 "Exploration et exploitation de l'espace"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 15" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend l'ensemble des activités de recherche et développement expérimental (R&D) dans le domaine spatial civil dont les objectifs sont liés à l'exploration scientifique de l'espace, aux laboratoires spatiaux, aux voyages dans l'espace et aux systèmes de lancement. Si les activités de R&D spatiales civiles n'ont pas toujours trait à des objectifs précis, elles sont souvent menées dans un but déterminé, notamment l'avancement des connaissances (en astronomie, par exemple), ou sont liées à des applications particulières (satellites de télécommunications ou observation de la Terre, par exemple). Cet objectif exclut les activités de R&D correspondantes menées dans le domaine de la défense."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration et exploitation de l'espace"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS103" .
+
+crdc-ccrd-data:RDS11006
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Communication, littérature et langues"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 78" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des contextes sociaux et culturels dans lesquels s'inscrit la communication. Il comprend, sans s'y limiter, les langues, la littérature, le journalisme, la linguistique et la sémantique."@fr-ca ;
+        crdc-ccrd:classTitle       "Communication, littérature et langues"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11006" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10805
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Pêches (y compris l'aquaculture et les poissons capturés à l'état sauvage)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 63" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des caractéristiques et des prises de poissons aussi bien élevés en aquaculture que capturés à l'état sauvage et pêchés à des fins commerciales, récréatives ou autres."@fr-ca ;
+        crdc-ccrd:classTitle       "Pêches (y compris l'aquaculture et les poissons capturés à l'état sauvage)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10805" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS110
+        a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
+        rdfs:label                 "Culture, loisirs, religion et médias"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 72" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) ayant pour objectifs une meilleure compréhension des phénomènes sociaux reliés aux activités culturelles, à la religion et aux loisirs, de manière à en définir les incidences sur la vie en société, ainsi qu'une meilleure compréhension des phénomènes reliés à l'intégration culturelle et raciale et à l'évolution socioculturelle dans ces domaines. La notion de « culture » englobe la sociologie des sciences, la religion, les arts, les sports et les loisirs, auxquels s'ajoutent, entre autres, les activités de R&D portant sur les médias, la maîtrise de la langue et l'intégration sociale, les bibliothèques, les archives et la politique culturelle extérieure. Cet objectif comprend également les activités de R&D ayant trait aux services de loisirs et services sportifs, aux services culturels, aux services d'édition et services de radio et télédiffusion ou de diffusion en continu en ligne, aux services religieux ainsi qu'aux autres services communautaires."@fr-ca ;
+        crdc-ccrd:classTitle       "Culture, loisirs, religion et médias"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS110" .
+
+crdc-ccrd-data:RDS10605
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Produits chimiques agricoles et industriels"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 44" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la fabrication de produits chimiques utilisés dans l'industrie et produits connexes, notamment les produits dérivés du raffinage du pétrole et du gaz, ainsi que les produits chimiques destinés à la protection des cultures et du bétail. Il ne comprend pas les produits pharmaceutiques à usage vétérinaire."@fr-ca ;
+        crdc-ccrd:classTitle       "Produits chimiques agricoles et industriels"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10605" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS108
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Division , skos:Concept ;
+        rdfs:label                 "Agriculture (y compris les pêches et la foresterie)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 58" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend toutes les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait à la promotion de l'agriculture, de la foresterie, des pêches et de la production de denrées alimentaires et à l'enrichissement des connaissances sur les engrais chimiques, les biocides, la lutte biologique et la mécanisation agricole, ainsi que sur les incidences des activités agricoles et sylvicoles sur l'environnement. Cet objectif comprend également les activités de R&D visant à améliorer la productivité vivrière et les technologies de l'alimentation. Par contre, il exclut les activités de R&D liées à la lutte contre la pollution (objectif 2 ou RDS102); au développement des régions rurales, à la construction et à l'aménagement de bâtiments, à l'amélioration des aires de repos et de loisirs en milieu rural et à l'approvisionnement en eau aux fins de l'agriculture (objectif 4 ou RDS104), aux mesures visant l'efficacité énergétique (objectif 5 ou RDS105), et à l'industrie de la transformation alimentaire (objectif 6 ou RDS106)."@fr-ca ;
+        crdc-ccrd:classTitle       "Agriculture (y compris les pêches et la foresterie)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS108" .
+
+crdc-ccrd-data:RDS10505
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Stockage et distribution de l'énergie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 36" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de la distribution de l'énergie, notamment le transport et la distribution de l'électricité et du gaz."@fr-ca ;
+        crdc-ccrd:classTitle       "Stockage et distribution de l'énergie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10505" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS10405
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Systèmes de transport"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 27" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de l'efficacité, de la sécurité et de l'utilité du transport terrestre, maritime, ferroviaire et aérien. Il comprend également les activités de R&D axées sur l'efficacité, la sécurité et l'utilité du transport pour l'espace lointain."@fr-ca ;
+        crdc-ccrd:classTitle       "Systèmes de transport"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10405" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS11105
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Relations internationales"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 89" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des relations internationales. Il comprend les activités de R&D axées sur les caractéristiques sociales, culturelles et économiques actuelles d'autres pays."@fr-ca ;
+        crdc-ccrd:classTitle       "Relations internationales"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11105" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS102
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Division ;
+        rdfs:label                 "Protection de l'environnement"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 8" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et développement expérimental (R&D) ayant pour objectifs l'amélioration de la lutte contre la pollution, y compris la détermination et l'analyse des sources de pollution et de leurs causes, et les substances polluantes de tous ordres, notamment leur dispersion dans l'environnement et leurs effets sur l'être humain, les espèces vivantes (faune, flore, micro-organismes) et la biosphère. Cet objectif comprend l'établissement d'installations de surveillance continue pour la mesure de tous les types de pollution ainsi que des activités de R&D sur l'élimination et la prévention de toutes les formes de pollution dans tous les types de milieux."@fr-ca ;
+        crdc-ccrd:classTitle       "Protection de l'environnement"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS102" .
+
+<>      a                owl:Ontology ;
+        rdfs:comment     "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity orTOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-ca , "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)"@fr-ca ;
+        rdfs:seeAlso     <https://www.oecd.org/sti/inno/frascati-manual.htm> , <https://www.statcan.gc.ca/eng/subjects/standard/crdc/2020v1/index> , <https://www.statcan.gc.ca/fra/sujets/norme/ccrd/2020v1/indice> ;
+        owl:imports      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd> ;
+        owl:versionIRI   <http://purl.org/vivo.uqam.ca/crdc_ccrd/ontology#v.1.0.0-20210721> ;
+        owl:versionInfo  "Transformed in ontology by Université du Québec à Montréal (2021/07/21)" , "Author: Michel Héon PhD : heon.michel@uqam.ca" , "Based on CRDC/CCRD 2020 Version 1.0 (This standard was approved as a recommended standard on May 26, 2020. )" .
+
+crdc-ccrd:CRDC_CCRD_Group
+        skos:broader  crdc-ccrd-data:RDS10305 , crdc-ccrd-data:RDS11010 , crdc-ccrd-data:RDS10611 , crdc-ccrd-data:RDS10303 , crdc-ccrd-data:RDS10103 , crdc-ccrd-data:RDS10104 , crdc-ccrd-data:RDS10101 , crdc-ccrd-data:RDS10903 , crdc-ccrd-data:RDS10501 , crdc-ccrd-data:RDS10704 , crdc-ccrd-data:RDS10602 , crdc-ccrd-data:RDS10201 , crdc-ccrd-data:RDS10799 , crdc-ccrd-data:RDS10603 , crdc-ccrd-data:RDS11103 , crdc-ccrd-data:RDS11008 , crdc-ccrd-data:RDS11101 , crdc-ccrd-data:RDS11006 , crdc-ccrd-data:RDS10199 , crdc-ccrd-data:RDS10506 , crdc-ccrd-data:RDS10609 , crdc-ccrd-data:RDS10703 , crdc-ccrd-data:RDS10606 , crdc-ccrd-data:RDS10607 , crdc-ccrd-data:RDS10801 , crdc-ccrd-data:RDS10610 , crdc-ccrd-data:RDS11005 , crdc-ccrd-data:RDS10807 , crdc-ccrd-data:RDS10804 , crdc-ccrd-data:RDS11003 , crdc-ccrd-data:RDS10805 , crdc-ccrd-data:RDS10599 , crdc-ccrd-data:RDS10399 , crdc-ccrd-data:RDS10304 , crdc-ccrd-data:RDS10301 , crdc-ccrd-data:RDS10204 , crdc-ccrd-data:RDS10505 , crdc-ccrd-data:RDS10302 , crdc-ccrd-data:RDS11109 , crdc-ccrd-data:RDS10102 , crdc-ccrd-data:RDS10699 , crdc-ccrd-data:RDS11108 , crdc-ccrd-data:RDS10502 , crdc-ccrd-data:RDS10902 , crdc-ccrd-data:RDS11106 , crdc-ccrd-data:RDS10404 , crdc-ccrd-data:RDS10405 , crdc-ccrd-data:RDS10402 , crdc-ccrd-data:RDS10899 , crdc-ccrd-data:RDS10407 , crdc-ccrd-data:RDS11299 , crdc-ccrd-data:RDS10601 , crdc-ccrd-data:RDS10299 , crdc-ccrd-data:RDS10105 , crdc-ccrd-data:RDS11004 , crdc-ccrd-data:RDS11002 , crdc-ccrd-data:RDS10901 , crdc-ccrd-data:RDS10701 , crdc-ccrd-data:RDS10702 , crdc-ccrd-data:RDS10605 , crdc-ccrd-data:RDS10406 , crdc-ccrd-data:RDS10499 , crdc-ccrd-data:RDS11001 , crdc-ccrd-data:RDS10803 , crdc-ccrd-data:RDS10999 , crdc-ccrd-data:RDS10205 , crdc-ccrd-data:RDS10503 , crdc-ccrd-data:RDS10202 , crdc-ccrd-data:RDS10604 , crdc-ccrd-data:RDS10203 , crdc-ccrd-data:RDS11107 , crdc-ccrd-data:RDS10504 , crdc-ccrd-data:RDS11105 , crdc-ccrd-data:RDS11099 , crdc-ccrd-data:RDS11110 , crdc-ccrd-data:RDS10802 , crdc-ccrd-data:RDS10608 , crdc-ccrd-data:RDS11104 , crdc-ccrd-data:RDS11009 , crdc-ccrd-data:RDS10403 , crdc-ccrd-data:RDS11102 , crdc-ccrd-data:RDS11007 , crdc-ccrd-data:RDS10401 , crdc-ccrd-data:RDS10806 , crdc-ccrd-data:RDS11199 .
+
+crdc-ccrd-data:RDS10804
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Récolte et emballage des produits d'origine végétale"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 62" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des technologies, des procédés et des méthodes utilisés pour récolter, manipuler et emballer les produits d'origine végétale qui ne sont pas des produits forestiers."@fr-ca ;
+        crdc-ccrd:classTitle       "Récolte et emballage des produits d'origine végétale"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10804" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11005
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Sports, exercice et loisirs"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 77" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les activités sportives, l'activité physique et les autres activités récréatives. Il comprend les services destinés aux sports et les clubs sportifs; et les activités récréatives et de loisirs (y compris l'exploitation de pistes de course, de parcs et de jardins botaniques et zoologiques)."@fr-ca ;
+        crdc-ccrd:classTitle       "Sports, exercice et loisirs"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11005" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd:SEO_OSE_Entity
+        skos:broader  crdc-ccrd-data:RDS107 , crdc-ccrd-data:RDS102 , crdc-ccrd-data:RDS112 , crdc-ccrd-data:RDS109 , crdc-ccrd-data:RDS104 , crdc-ccrd-data:RDS106 , crdc-ccrd-data:RDS101 , crdc-ccrd-data:RDS111 , crdc-ccrd-data:RDS108 , crdc-ccrd-data:RDS103 , crdc-ccrd-data:RDS105 , crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10305
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Terraformation"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 20" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension de la terraformation et des systèmes capables d'assurer le maintien des formes de vie terrestres, y compris les effets de l'espace sur le vivant et la manière dont la vie s'adapte à l'environnement spatial."@fr-ca ;
+        crdc-ccrd:classTitle       "Terraformation"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10305" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd-data:RDS10999
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Éducation, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 71" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS109 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'éducation et la formation qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ce domaine."@fr-ca ;
+        crdc-ccrd:classTitle       "Éducation, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10999" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+
+crdc-ccrd-data:RDS10704
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Santé de populations précises"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 56" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la santé des collectivités et la santé publique de populations précises et de groupes distincts (les aînés et les personnes vivant en région rurale et éloignée, p. ex.), y compris les communautés autochtones. Il comprend l'étude des facteurs sociaux et culturels qui influent sur la santé de ces groupes et sur la prestation des services de santé qui leur sont destinés."@fr-ca ;
+        crdc-ccrd:classTitle       "Santé de populations précises"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10704" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+
+crdc-ccrd-data:RDS10205
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Régulation et protection de l'environnement"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 13" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'évaluation et la gestion de différents écosystèmes, ressources naturelles et environnementales ainsi que sur la détermination de moyens adéquats de traiter des environnements gravement dégradés et de les remettre dans leur état original, voire dans un meilleur état. Ce groupe comprend également les activités de R&D axées sur la compréhension des catastrophes naturelles (feux de brousse, cyclones, ouragans, tempêtes, séismes, glissements de terrain, tsunamis et éruptions volcaniques) et de leurs répercussions sur les vies humaines, les biens matériels et les milieux naturels, ainsi que sur la mise au point de systèmes d'alerte et de mesures de protection pour réduire au minimum les répercussions de telles catastrophes."@fr-ca ;
+        crdc-ccrd:classTitle       "Régulation et protection de l'environnement"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10205" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS10899
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Agriculture, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 66" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la production animale, les produits d'origine animale primaires, la production végétale et les produits d'origine végétale primaires non classés ailleurs. Il comprend la traçabilité et l'assurance de la qualité des produits d'origine végétale, ainsi que l'avancement des connaissances dans tous ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Agriculture, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10899" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS10604
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Bois, produits du bois et papier"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 43" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la transformation du bois et la fabrication de produits du bois, de papier et de produits en papier."@fr-ca ;
+        crdc-ccrd:classTitle       "Bois, produits du bois et papier"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10604" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10105
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Eau et hydrologie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 6" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'état physicochimique de l'eau dans différents milieux."@fr-ca ;
+        crdc-ccrd:classTitle       "Eau et hydrologie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10105" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS10799
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Santé, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 57" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la santé qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Santé, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10799" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+
+crdc-ccrd-data:RDS107
+        a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
+        rdfs:label                 "Santé"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 52" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait à la protection, à la promotion et au rétablissement de la santé humaine. Il va de la recherche clinique et biomédicale à la recherche axée sur les services de santé, la santé publique et la santé des populations, y compris tous les aspects des traitements médicaux et chirurgicaux, de la prestation des soins en milieu hospitalier et à domicile, ainsi que de la santé publique, de la santé mentale, de la prévention et du bien-être."@fr-ca ;
+        crdc-ccrd:classTitle       "Santé"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS107" .
+
+crdc-ccrd-data:RDS10504
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Énergies renouvelables"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 35" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conversion des ressources énergétiques renouvelables en chaleur, vapeur ou électricité et sur l'amélioration de la production d'énergies renouvelables et de l'approvisionnement en de telles énergies."@fr-ca ;
+        crdc-ccrd:classTitle       "Énergies renouvelables"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10504" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS10699
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Production et technologie industrielles, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 51" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la fabrication de produits du tabac, de meubles, de constructions préfabriquées et d'autres produits non classés ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Production et technologie industrielles, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10699" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10404
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Procédés de construction"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 26" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des procédés et activités liés au passage des plans et spécifications à des structures ou bâtiments achevés."@fr-ca ;
+        crdc-ccrd:classTitle       "Procédés de construction"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10404" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS10903
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Établissements d'enseignement, et systèmes et politiques d'éducation"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 70" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS109 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de l'école, des environnements d'apprentissage dans les établissements d'enseignement, ainsi que des systèmes d'éducation et de formation. Il comprend l'enseignement destiné aux Autochtones, aux personnes douées et aux personnes ayant des difficultés d'apprentissage ainsi que l'enseignement différencié selon le sexe ou le genre."@fr-ca ;
+        crdc-ccrd:classTitle       "Établissements d'enseignement, et systèmes et politiques d'éducation"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10903" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+
+crdc-ccrd-data:RDS11104
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Gouvernement et politique"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 88" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) ayant trait au gouvernement et à la politique. Il comprend les régimes politiques et les systèmes électoraux, la participation citoyenne et la citoyenneté ainsi que la gestion des services publics."@fr-ca ;
+        crdc-ccrd:classTitle       "Gouvernement et politique"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11104" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS101
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Division ;
+        rdfs:label                 "Exploration et exploitation du milieu terrestre"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 1" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et développement expérimental (R&D) ayant pour objectifs l'exploration de la croûte et du manteau terrestres, des mers, des océans et de l'atmosphère, ainsi que les activités afférentes à leur exploitation. Elle comprend également les recherches climatologiques et météorologiques, ainsi que l'exploration polaire et l'hydrologie. En revanche, cet objectif socioéconomique ne comprend pas les activités de R&D ayant trait à l'amélioration des sols (objectif 4 ou RDS104), à l'utilisation des sols et aux pêches (objectif 8 ou RDS108) ainsi qu'à la pollution (objectif 2 ou RDS102)."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration et exploitation du milieu terrestre"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS101" .
+
+crdc-ccrd-data:RDS10611
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Étalons de mesure et services d'étalonnage"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 50" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conception et la mise à disposition d'étalons de mesure et de services d'étalonnage aux fins de la défense, du secteur de la fabrication et des industries de services."@fr-ca ;
+        crdc-ccrd:classTitle       "Étalons de mesure et services d'étalonnage"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10611" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS11299
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Défense"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 97" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS112 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) ayant pour objectifs de servir à des fins militaires. Cet objectif peut également comprendre la recherche fondamentale sur le nucléaire et l'espace financée par le ministère de la Défense, y compris l'avancement des connaissances dans ces domaines. Par contre, il y a lieu de classer dans les objectifs socioéconomiques qui conviennent les activités de recherche et développement expérimental civiles financées par le ministère de la Défense, par exemple en météorologie, en télécommunications et en santé."@fr-ca ;
+        crdc-ccrd:classTitle       "Défense"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11299" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS112 .
+
+crdc-ccrd-data:RDS10599
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Énergie (sauf la prospection), n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 38" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les activités ayant trait à l'énergie qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ce domaine."@fr-ca ;
+        crdc-ccrd:classTitle       "Énergie (sauf la prospection), n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10599" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS11004
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Arts et culture"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 76" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les arts et les activités culturelles. Il comprend la musique; les arts de la création et les arts de la scène; le design et l'architecture; les galeries d'arts et musées et y compris les sciences humaines numériques."@fr-ca ;
+        crdc-ccrd:classTitle       "Arts et culture"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11004" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10803
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Cultures"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 61" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des caractéristiques, de la propagation et de la production culturale des cultures. Il comprend les cultures destinées à des applications industrielles comme la canne à sucre, le coton, les raisins de cuve, le tabac et les plantes dont on extrait des huiles essentielles."@fr-ca ;
+        crdc-ccrd:classTitle       "Cultures"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10803" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS10304
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Laboratoire et vols spatiaux"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 19" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des laboratoires et des vols spatiaux. Il comprend les laboratoires et le matériel classiques servant aux essais électroniques, l'intégration et l'essai des engins spatiaux, les salles de commande, les salles propres et les vols spatiaux habités."@fr-ca ;
+        crdc-ccrd:classTitle       "Laboratoire et vols spatiaux"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10304" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd-data:RDS11199
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Systèmes, structures et processus politiques et sociaux, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 95" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur le droit, la politique et les services communautaires qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Systèmes, structures et processus politiques et sociaux, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11199" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10499
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Transport, télécommunications et autres infrastructures (y compris les bâtiments), n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 30" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les activités liées au transport, au bâtiment, aux télécommunications et aux autres infrastructures qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Transport, télécommunications et autres infrastructures (y compris les bâtiments), n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10499" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS10609
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Produits informatiques, électroniques et optiques et équipement de communication"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 48" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur le matériel informatique, les appareils électroniques, les produits optiques et l'équipement de communication, y compris les appareils électroniques grand public."@fr-ca ;
+        crdc-ccrd:classTitle       "Produits informatiques, électroniques et optiques et équipement de communication"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10609" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10703
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Santé publique (sauf la santé de populations précises)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 55" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la santé des collectivités et le bien-être de la population en général, à l'exclusion de la santé de populations précises. Il comprend la recherche sur les interactions d'ordre biologique, social, culturel et environnemental complexes qui déterminent la santé des personnes et celle de la population en général. Bon nombre d'activités sont destinées à la population, notamment les campagnes et les politiques de santé. Les services de santé publique comprennent également la prestation de services aux personnes, entre autres, la vaccination, le counselling en comportement et les conseils en santé."@fr-ca ;
+        crdc-ccrd:classTitle       "Santé publique (sauf la santé de populations précises)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10703" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+
+crdc-ccrd-data:RDS10204
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Lutte contre les ravageurs, les maladies et les espèces exotiques"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 12" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la lutte contre les ravageurs, les maladies et les espèces exotiques dans différents milieux naturels et anthropiques. Il comprend les mesures de lutte et de quarantaine aux frontières nationales ainsi qu'à l'intérieur et à l'extérieur de ces frontières."@fr-ca ;
+        crdc-ccrd:classTitle       "Lutte contre les ravageurs, les maladies et les espèces exotiques"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10204" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS11099
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Culture, loisirs, et médias, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 83" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des phénomènes culturels qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Culture, loisirs, et médias, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11099" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10399
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Exploration et exploitation de l'espace, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 21" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur des questions ayant trait à l'exploration et à l'exploitation de l'espace qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration et exploitation de l'espace, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10399" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd-data:RDS10603
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Produits de cuir, transformation des fibres et produits textiles"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 42" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la confection de produits de cuir et produits textiles et la transformation des fibres."@fr-ca ;
+        crdc-ccrd:classTitle       "Produits de cuir, transformation des fibres et produits textiles"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10603" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10104
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Climat et changements climatiques"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 5" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur le climat et les changements climatiques. Aux fins de la classification, on entend par climat les conditions météorologiques moyennes à long terme d'une région donnée."@fr-ca ;
+        crdc-ccrd:classTitle       "Climat et changements climatiques"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10104" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS11109
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Famille et travail social"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 93" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la prestation de services de prévention, de soutien, d'accès ainsi que de services juridiques, communautaires et d'aide sociale à des particuliers, à des familles et à des personnes de groupes vulnérables bien définis, entre autres, aux jeunes et aux aînés."@fr-ca ;
+        crdc-ccrd:classTitle       "Famille et travail social"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11109" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10299
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Protection de l'environnement, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 14" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur des questions d'ordre environnemental qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ce domaine."@fr-ca ;
+        crdc-ccrd:classTitle       "Protection de l'environnement, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10299" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS106
+        a                          crdc-ccrd:CRDC_CCRD_Division , skos:Concept , owl:Class ;
+        rdfs:label                 "Production et technologie industrielles"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 39" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait à l'amélioration de la production et de la technologie industrielles ainsi que des services industriels, notamment les activités de R&D portant sur les produits industriels et leurs procédés de fabrication, à condition qu'elles ne fassent pas partie intégrante de la réalisation d'autres objectifs, par exemple la défense (objectif 12 ou RDS112), l'espace (objectif 3 ou RDS 103), l'énergie (objectif 5 ou RDS105) ou l'agriculture (objectif 8 ou RDS108). Cette division inclut également les systèmes et la sécurité informatiques, les systèmes d'information, les interactions personne-machine, les systèmes d'intelligence artificielle et l'apprentissage automatique."@fr-ca ;
+        crdc-ccrd:classTitle       "Production et technologie industrielles"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS106" .
+
+crdc-ccrd-data:RDS10503
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Transformation de l'énergie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 34" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la transformation des ressources énergétiques d'origine minérale en chaleur, vapeur ou électricité et sur la conversion du charbon, du gaz naturel, des schistes bitumineux et des sables bitumineux en combustibles liquides. Cela comprend les systèmes énergétiques et les piles à combustible fonctionnant à l'hydrogène."@fr-ca ;
+        crdc-ccrd:classTitle       "Transformation de l'énergie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10503" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS11009
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Religion"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 81" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension et l'analyse de la religion. Il comprend, sans s'y limiter, l'amélioration de la compréhension et de l'analyse des questions d'ordre religieux touchant au développement social, scientifique ou technologique."@fr-ca ;
+        crdc-ccrd:classTitle       "Religion"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11009" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10199
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Exploration et exploitation du milieu terrestre, n.c.a."@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 7" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur des questions ayant trait à l'exploration et à l'exploitation du milieu terrestre qui ne sont pas classées ailleurs, y compris l'avancement des connaissances dans ces domaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration et exploitation du milieu terrestre, n.c.a."@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10199" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS11103
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Gestion, marketing et productivité"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 87" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les questions ayant trait à la gestion, à la productivité et à l'innovation. Il comprend les activités de R&D axées sur le marketing, le cybercommerce, les relations industrielles et les services de soutien aux entreprises."@fr-ca ;
+        crdc-ccrd:classTitle       "Gestion, marketing et productivité"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11103" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10902
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Méthodes d'enseignement et curriculum"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 69" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS109 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de l'enseignement et sur l'amélioration des curricula."@fr-ca ;
+        crdc-ccrd:classTitle       "Méthodes d'enseignement et curriculum"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10902" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+
+crdc-ccrd-data:RDS10403
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Rendement des matériaux de construction"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 25" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les essais de rendement, de durabilité et de cycle de vie des éléments et matériaux de construction qui sont livrés aux chantiers ou qui y sont assemblés."@fr-ca ;
+        crdc-ccrd:classTitle       "Rendement des matériaux de construction"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10403" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS10610
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Systèmes, technologies et services d'information"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 49" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la collecte, le traitement, le stockage, la diffusion et l'utilisation de l'information ainsi que sur les technologies et services qui y sont associés."@fr-ca ;
+        crdc-ccrd:classTitle       "Systèmes, technologies et services d'information"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10610" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10802
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Sols"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 60" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des sols et l'amélioration de leur qualité dans différents milieux."@fr-ca ;
+        crdc-ccrd:classTitle       "Sols"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10802" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11003
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Tourisme"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 75" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conception et la prestation de services de tourisme."@fr-ca ;
+        crdc-ccrd:classTitle       "Tourisme"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11003" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10303
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Systèmes de lancement pour l'espace"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 18" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des systèmes de lancement pour l'espace. Il comprend les préparatifs et les opérations de lancement, les lanceurs et les rampes de lancement."@fr-ca ;
+        crdc-ccrd:classTitle       "Systèmes de lancement pour l'espace"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10303" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd-data:RDS10608
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Machines et matériel (y compris les machines et le matériel automatisés)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 47" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la fabrication de machines et de matériel. Il comprend, parmi tant d'autres, les appareils électroménagers, la céramique fine et les machines automatisées."@fr-ca ;
+        crdc-ccrd:classTitle       "Machines et matériel (y compris les machines et le matériel automatisés)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10608" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10702
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Prestation des soins"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 54" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la prestation et l'évaluation des soins."@fr-ca ;
+        crdc-ccrd:classTitle       "Prestation des soins"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10702" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+
+crdc-ccrd-data:RDS11110
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Justice sociale"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 94" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la prestation de services à des particuliers ou à des groupes précis de la collectivité, notamment aux femmes, aux personnes de diverses identités de genre, aux Autochtones, aux personnes handicapées et aux personnes de minorités visibles."@fr-ca ;
+        crdc-ccrd:classTitle       "Justice sociale"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11110" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10203
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Qualité de l'air"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 11" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension et l'amélioration de la qualité de l'air dans différents milieux."@fr-ca ;
+        crdc-ccrd:classTitle       "Qualité de l'air"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10203" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS10103
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Atmosphère et la météo"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 4" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension de la dynamique des systèmes atmosphériques et météorologiques."@fr-ca ;
+        crdc-ccrd:classTitle       "Atmosphère et la météo"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10103" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS10602
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Procédés industriels relatifs aux produits agricoles (sauf le bois, le papier, et la fibre)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 41" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la préparation d'aliments et boissons transformés. Il comprend, parmi tant d'autres, les produits dérivés de lait animal, les produits de viande provenant de carcasses, les nutraceutiques et les aliments fonctionnels."@fr-ca ;
+        crdc-ccrd:classTitle       "Procédés industriels relatifs aux produits agricoles (sauf le bois, le papier, et la fibre)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10602" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS11010
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Compréhension des sociétés, anciennes et contemporaines"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 82" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des sociétés anciennes et contemporaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Compréhension des sociétés, anciennes et contemporaines"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11010" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS11108
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Planification et aménagement du milieu rural, urbanisme et planification et développement de l'environnement"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 92" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'élaboration de politiques, de mesures législatives et de normes environnementales à caractère social et économique. Il comprend en outre les activités de R&D axées sur les questions d'ordre social, économique, environnemental, démographique et de développement ayant trait aux collectivités régionales, rurales, urbaines, des banlieues et des communautés du Nord canadien."@fr-ca ;
+        crdc-ccrd:classTitle       "Planification et aménagement du milieu rural, urbanisme et planification et développement de l'environnement"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11108" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS105
+        a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
+        rdfs:label                 "Énergie (sauf la prospection)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 31" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait à l'amélioration de la production, du stockage, du transport, de la distribution et de l'utilisation rationnelle de toutes les formes d'énergie. Cet objectif comprend également les activités de R&D ayant trait aux procédés destinés à accroître l'efficience de la production et de la distribution d'énergie, ainsi que celles qui ont trait à l'étude des économies d'énergie. Il exclut les activités de R&D ayant trait à la prospection (objectif 1 ou RDS101) et à la propulsion des véhicules et des moteurs (objectif 6 ou RDS106)."@fr-ca ;
+        crdc-ccrd:classTitle       "Énergie (sauf la prospection)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS105" .
+
+crdc-ccrd-data:RDS10502
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Préparation et production de sources d'énergie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 33" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS105 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la préparation des sources d'énergie et l'approvisionnement en énergie, y compris la production d'hydrogène à partir d'autres sources d'énergie et la production de biocombustibles."@fr-ca ;
+        crdc-ccrd:classTitle       "Préparation et production de sources d'énergie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10502" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+
+crdc-ccrd-data:RDS11008
+        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        rdfs:label                 "Éthique"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 80" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension et l'analyse de l'éthique. Il comprend, sans s'y limiter, l'application de la théorie morale et de l'éthique ainsi que l'élaboration de codes de conduite et de normes d'exercice pour le milieu des affaires, les professions et les métiers."@fr-ca ;
+        crdc-ccrd:classTitle       "Éthique"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11008" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10807
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Produits d'origine animale primaires"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 65" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de la préparation, de la manipulation et de l'entreposage des produits d'origine animale primaires comme les oeufs, le miel, la laine brute ainsi que le lait, le poisson et les autres fibres, peaux et cuirs animaux non transformés ou très peu transformés."@fr-ca ;
+        crdc-ccrd:classTitle       "Produits d'origine animale primaires"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10807" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11102
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Commerce international"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 86" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des questions relatives au commerce international, notamment les politiques commerciales, l'assistance et la protection et les accords internationaux sur le commerce."@fr-ca ;
+        crdc-ccrd:classTitle       "Commerce international"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11102" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10901
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Degrés d'enseignement"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 68" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS109 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des résultats de l'apprentissage chez les apprenants des différents ordres ou degrés d'enseignement."@fr-ca ;
+        crdc-ccrd:classTitle       "Degrés d'enseignement"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10901" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+
+crdc-ccrd-data:RDS10402
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Conception de travaux de construction"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 24" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration des activités liées au passage de l'esquisse à la conception et aux spécifications architecturales et techniques."@fr-ca ;
+        crdc-ccrd:classTitle       "Conception de travaux de construction"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10402" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS112
+        a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
+        rdfs:label                 "Défense"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 96" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) ayant pour objectifs de servir à des fins militaires. Cet objectif peut également comprendre la recherche fondamentale sur le nucléaire et l'espace financée par le ministère de la Défense, y compris l'avancement des connaissances dans ces domaines. Par contre, il y a lieu de classer dans les objectifs socioéconomiques qui conviennent les activités de recherche et développement expérimental civiles financées par le ministère de la Défense, par exemple en météorologie, en télécommunications et en santé."@fr-ca ;
+        crdc-ccrd:classTitle       "Défense"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS112" .
+
+crdc-ccrd-data:RDS11002
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Services médiatiques"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 74" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les services médiatiques. Il comprend, sans s'y limiter, les services de radio et télédiffusion ou de diffusion en continu en ligne, Internet et les médias sociaux, l'animation et les jeux vidéos, les services d'édition et d'impression ainsi que les services de films et de vidéos."@fr-ca ;
+        crdc-ccrd:classTitle       "Services médiatiques"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11002" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10801
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Foresterie"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 59" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'amélioration de l'exploitation, de l'entretien et de la protection des forêts naturelles et des plantations de résineux et de feuillus (y compris la lutte contre les feux de forêt et la maîtrise de ces feux). Il comprend la récolte et le transport du bois et des autres produits de la forêt et l'intégration de l'agriculture et de la foresterie."@fr-ca ;
+        crdc-ccrd:classTitle       "Foresterie"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10801" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS10302
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Objets et phénomènes célestes"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 17" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la compréhension des objets et phénomènes célestes, y compris l'astronomie spatiale et les télescopes spatiaux."@fr-ca ;
+        crdc-ccrd:classTitle       "Objets et phénomènes célestes"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10302" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+
+crdc-ccrd:CRDC_CCRD_Division
+        skos:broader  crdc-ccrd-data:RDS105 , crdc-ccrd-data:RDS104 , crdc-ccrd-data:RDS103 , crdc-ccrd-data:RDS102 , crdc-ccrd-data:RDS101 , crdc-ccrd-data:RDS109 , crdc-ccrd-data:RDS108 , crdc-ccrd-data:RDS112 , crdc-ccrd-data:RDS107 , crdc-ccrd-data:RDS111 , crdc-ccrd-data:RDS106 , crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10607
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Matériel de transport"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 46" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la fabrication et la réparation de matériel de transport, y compris les composantes connexes."@fr-ca ;
+        crdc-ccrd:classTitle       "Matériel de transport"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10607" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10701
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Interventions et traitements pharmaceutiques ayant trait à la santé humaine"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 53" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conception et la fabrication de produits et l'élaboration de méthodes servant à la prévention, au diagnostic et au traitement (à l'aide de médicaments) de maladies humaines."@fr-ca ;
+        crdc-ccrd:classTitle       "Interventions et traitements pharmaceutiques ayant trait à la santé humaine"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10701" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+
+crdc-ccrd-data:RDS10202
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Services d'approvisionnement en eau et services des déchets"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 10" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS102 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la conception et la prestation de services d'approvisionnement en eau et d'enlèvement des déchets ainsi que sur la prestation de services publics aux ménages, aux industries et aux commerces."@fr-ca ;
+        crdc-ccrd:classTitle       "Services d'approvisionnement en eau et services des déchets"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10202" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+
+crdc-ccrd-data:RDS10601
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
+        rdfs:label                 "Procédés industriels relatifs aux ressources minérales"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 40" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS106 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur l'extraction, l'exploitation et le traitement de minéraux qui ne sont pas des ressources énergétiques d'origine minérale. Il comprend les pierres précieuses et semi-précieuses et les sables minéraux. Il comprend également les activités de R&D axées sur la fabrication de céramique, de verre et de produits en verre ainsi que sur la production de matières minérales industrielles, dont des produits d'argile, de ciment et de béton. Il comprend aussi les activités de R&D axées sur la fabrication de plâtre et de produits minéraux non métalliques. Il comprend en outre les activités de R&D axées sur la transformation du bois et la fabrication de produits du bois, de papier et de produits en papier."@fr-ca ;
+        crdc-ccrd:classTitle       "Procédés industriels relatifs aux ressources minérales"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10601" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10102
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Exploration des ressources énergétiques"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 3" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur la découverte de ressources énergétiques d'origine minérale et géothermique. Il ne comprend pas l'exploitation et l'extraction des ressources énergétiques d'origine minérale."@fr-ca ;
+        crdc-ccrd:classTitle       "Exploration des ressources énergétiques"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10102" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+
+crdc-ccrd-data:RDS11107
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Questions ayant trait au travail et au marché du travail"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 91" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur différents aspects du travail. Il porte, sans s'y limiter, sur les tendances en matière de travail et d'emploi; le marché du travail; les professions; les salaires et avantages sociaux; et l'adaptation du milieu de travail et la sécurité au travail."@fr-ca ;
+        crdc-ccrd:classTitle       "Questions ayant trait au travail et au marché du travail"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS11107" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10407
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Gestion des terres et de l'eau"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 29" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "Ce groupe comprend les activités de recherche et de développement expérimental (R&D) axées sur les terres associées à la gestion de l'eau dans différents écosystèmes et milieux naturels. Il comprend les questions ayant trait à la gestion des terres et de l'eau en milieu urbain et en zone industrielle ainsi qu'à l'attribution de l'eau aux fins de la production agricole."@fr-ca ;
+        crdc-ccrd:classTitle       "Gestion des terres et de l'eau"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Groupe"@fr-ca ;
+        crdc-ccrd:hasID            "RDS10407" ;
+        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+
+crdc-ccrd-data:RDS104
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Division ;
+        rdfs:label                 "Transport, télécommunications et autres infrastructures (y compris les bâtiments)"@fr-ca ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-fra row: 22" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "Cette division est un objectif socioéconomique qui comprend les activités de recherche et de développement expérimental (R&D) dont les objectifs ont trait aux infrastructures, y compris aux cyberinfrastructures, à la mise en valeur du territoire et à la construction d'édifices. De manière plus générale, cet objectif comprend toutes les activités de R&D ayant trait à la planification générale de l'utilisation des terres, ce qui comprend, entre autres, la protection contre les effets néfastes de l'aménagement des zones urbaines et rurales, à l'exclusion des recherches portant sur d'autres types de pollution (objectif 2 ou RDS102). Cet objectif socioéconomique comprend également les activités de R&D ayant trait aux systèmes de transport, aux systèmes de télécommunications, aux systèmes et services de réseau, y compris à la sécurité des réseaux, aux technologies mobiles, à la planification générale de l'utilisation des terres, à la planification et à la construction d'édifices, au génie civil et à l'approvisionnement en eau."@fr-ca ;
+        crdc-ccrd:classTitle       "Transport, télécommunications et autres infrastructures (y compris les bâtiments)"@fr-ca ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Division"@fr-ca ;
+        crdc-ccrd:hasID            "RDS104" .

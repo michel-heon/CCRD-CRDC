@@ -40,8 +40,8 @@ The CRDC-CCRD ontology has the following characteristics:
 
 ### 1-1-1 RDF graphs and Java classes
 
-- [crdc-ccrd.ttl](crdc-ccrd.ttl) data-graph representing the CRDC-CCRD vocabulary with RDF/RDFS/OWL format in TURTLE notation 
 - [src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl](src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl) Data frame contained in the graph
+- [src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd.ttl](src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd.ttl) Imported data from the transformation by `CrdcCcrd_VocabBuilder.java` 
 - [src/main/java/ca/uqam/vocabulary/crdc_ccrd/CrdcCcrd_VocabBuilder.java](src/main/java/ca/uqam/vocabulary/crdc_ccrd/CrdcCcrd_VocabBuilder.java) Conversion program for CSV files to CRDC-CCRD data graphs
 
 ### 1-1-2 Directory structure 
@@ -53,19 +53,20 @@ The CRDC-CCRD ontology has the following characteristics:
 - `/CCRD-CRDC/src/main/java/ca/uqam/vocabulary/crdc_ccrd/` Directory containing the Java classes needed to produce the various graphs
 - `/CCRD-CRDC/src/main/java/ca/uqam/vocabulary/model/`Directory containing the Java classes useful for the ontological IRI management
 
+### 1-1-3 Data processing realized by `CrdcCcrd_VocabBuilder.java`.
 
 ## 1-2 Ontological IRI
 
 ### 1-2-1 CRDC-CCRD data graph IRI
 
-- File name: `crdc-ccrd.ttl`
-- Base IRI: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual`
-- Prefix: `crdc-ccrd-data`
+- File name: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-{element/structure}-{eng|fra}.ttl`
+- Base IRI: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-{element/structure}-{eng|fra}`
+- Prefix: `:`
 
 ### 1-2-2 IRI of the CRDC-CCRD semantics
 
 - File name: `crdc-ccrd-semantic.ttl`
-- Base IRI: `http://purl.org/uqam.ca/vocabulary/crdc_ccrd`
+- Base IRI: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd`
 - Prefix: `crdc-ccrd`
 
 ### 1-2-3 Transfer file IRI representing CRDC-CCRD data
@@ -73,6 +74,13 @@ The CRDC-CCRD ontology has the following characteristics:
 - File name: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-element-{fra|eng}.ttl`
 - Base IRI: `http://ca.uqam/crdc-ccrd/csv`
 - Prefix: `crdc-ccrd-csv`
+
+### 1-2-4 DATA IRI's of CRDC-CCRD
+
+- Nom du fichier: `crdc-ccrd-2020-{for-ddr|seo-ose|tao-tda}-element-{fra|eng}.ttl`
+- IRI de Base: `http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#`
+- Préfixe: `crdc-ccrd-data`
+
 
 # 2 CRDC-CCRD taxonomic nomenclature
 
@@ -100,30 +108,30 @@ we have the following taxonomy:
 
 ```
 :RDF20-21
-  rdf:type crdc_ccrd:CRDC_CCRD_Division ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Division ;
   rdf:type owl:Class ;
   rdfs:label "Engineering and technology"@en-CA ;
-  crdc_ccrd:hasLevel "1"^^xsd:double ;
-  rdfs:subClassOf crdc_ccrd:FOR_DDR_Entity .
+  crdc-ccrd:hasLevel "1"^^xsd:double ;
+  rdfs:subClassOf crdc-ccrd:FOR_DDR_Entity .
 
 :RDF201
-  rdf:type crdc_ccrd:CRDC_CCRD_Group ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Group ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "2"^^xsd:double ;
+  crdc-ccrd:hasLevel "2"^^xsd:double ;
   rdfs:label "Civil engineering, maritime engineering, transport engineering, and mining engineering"@en-CA ;
   rdfs:subClassOf :RDF20-21 .
 
 :RDF20101
-  rdf:type crdc_ccrd:CRDC_CCRD_Class ;
+  rdf:type crdc-ccrd:CRDC_CCRD_Class ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "3"^^xsd:double ;
+  crdc-ccrd:hasLevel "3"^^xsd:double ;
   rdfs:label "Civil engineering"@en-CA ;
   rdfs:subClassOf :RDF201 .
 
 :RDF2010101
-  rdf:type crdc_ccrd:CRDC_CCRD_SubClass ;
+  rdf:type crdc-ccrd:CRDC_CCRD_SubClass ;
   rdf:type owl:Class ;
-  crdc_ccrd:hasLevel "4"^^xsd:double ;
+  crdc-ccrd:hasLevel "4"^^xsd:double ;
   rdfs:label "Geotechnical engineering"@en-CA ;
   rdfs:subClassOf :RDF20101 .
 
@@ -146,8 +154,8 @@ Element `RDF1030507.183 (Compound semiconductors)` is type of `RDF1030507 (Super
 
 :RDF1030507
   rdf:type owl:Class ;
-  rdf:type crdc_ccrd:CRDC_CDDR_SubClass ;
-  crdc_ccrd:hasLevel "4"^^xsd:double ;
+  rdf:type crdc-ccrd:CRDC_CDDR_SubClass ;
+  crdc-ccrd:hasLevel "4"^^xsd:double ;
   rdfs:label "Superconductivity"@en-CA ;
   rdfs:label "Supraconductivité"@fr-CA ;
   rdfs:subClassOf :RDF10305 .

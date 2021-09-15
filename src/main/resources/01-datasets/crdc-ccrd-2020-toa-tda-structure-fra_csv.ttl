@@ -1,0 +1,50 @@
+@base          <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-toa-tda-structure-fra> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix :      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-toa-tda-structure-fra#> .
+@prefix crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> .
+@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+[ a                          owl:NamedIndividual ;
+  crdc-ccrd-csv:Code         "RDT2" ;
+  crdc-ccrd-csv:Definitions_de_la_classe
+          "La recherche appliquée consiste en des travaux de recherche originaux entrepris en vue d'acquérir de nouvelles connaissances et dirigés principalement vers un but ou un objectif pratique déterminé." ;
+  crdc-ccrd-csv:Structure_hierarchique
+          "Division" ;
+  crdc-ccrd-csv:Titres_de_classes
+          "Recherche appliquée" ;
+  crdc-ccrd-csv:fromCsvFile  "crdc-ccrd-2020-toa-tda-structure-fra" ;
+  crdc-ccrd-csv:﻿Niveau      "1"^^xsd:double ;
+  w3c-csv:row                2
+] .
+
+[ a                          owl:NamedIndividual ;
+  crdc-ccrd-csv:Code         "RDT3" ;
+  crdc-ccrd-csv:Definitions_de_la_classe
+          "Le développement expérimental consiste en des travaux systématiques fondés sur les connaissances tirées de la recherche et l'expérience pratique et produisant des nouvelles connaissances techniques visant à déboucher sur de nouveaux produits ou procédés ou à améliorer les produits ou procédés existants." ;
+  crdc-ccrd-csv:Structure_hierarchique
+          "Division" ;
+  crdc-ccrd-csv:Titres_de_classes
+          "Développement expérimental" ;
+  crdc-ccrd-csv:fromCsvFile  "crdc-ccrd-2020-toa-tda-structure-fra" ;
+  crdc-ccrd-csv:﻿Niveau      "1"^^xsd:double ;
+  w3c-csv:row                3
+] .
+
+[ a                          owl:NamedIndividual ;
+  crdc-ccrd-csv:Code         "RDT1" ;
+  crdc-ccrd-csv:Definitions_de_la_classe
+          "La recherche fondamentale consiste en des travaux de recherche expérimentaux et théoriques entrepris principalement en vue d'acquérir de nouvelles connaissances sur les fondements des phénomènes et des faits observables, sans envisager une application ou une utilisation particulière." ;
+  crdc-ccrd-csv:Structure_hierarchique
+          "Division" ;
+  crdc-ccrd-csv:Titres_de_classes
+          "Recherche fondamentale" ;
+  crdc-ccrd-csv:fromCsvFile  "crdc-ccrd-2020-toa-tda-structure-fra" ;
+  crdc-ccrd-csv:﻿Niveau      "1"^^xsd:double ;
+  w3c-csv:row                1
+] .
