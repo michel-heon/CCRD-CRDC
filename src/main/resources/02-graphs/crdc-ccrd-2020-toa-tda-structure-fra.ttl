@@ -13,20 +13,20 @@
 @prefix crdc-ccrd-data: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#> .
 
 crdc-ccrd-data:RDT1  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
-        rdfs:label                 "Recherche fondamentale"@fr-ca ;
+        rdfs:label                 "Recherche fondamentale"@fr-CA ;
         rdfs:seeAlso               " fileName: crdc-ccrd-2020-toa-tda-structure-fra row: 1" ;
         rdfs:subClassOf            crdc-ccrd:TOA_TDA_Entity ;
-        crdc-ccrd:classDefinition  "La recherche fondamentale consiste en des travaux de recherche expérimentaux et théoriques entrepris principalement en vue d'acquérir de nouvelles connaissances sur les fondements des phénomènes et des faits observables, sans envisager une application ou une utilisation particulière."@fr-ca ;
-        crdc-ccrd:classTitle       "Recherche fondamentale"@fr-ca ;
+        crdc-ccrd:classDefinition  "La recherche fondamentale consiste en des travaux de recherche expérimentaux et théoriques entrepris principalement en vue d'acquérir de nouvelles connaissances sur les fondements des phénomènes et des faits observables, sans envisager une application ou une utilisation particulière."@fr-CA ;
+        crdc-ccrd:classTitle       "Recherche fondamentale"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
-                "Division"@fr-ca ;
+                "Division"@fr-CA ;
         crdc-ccrd:hasID            "RDT1" .
 
 crdc-ccrd:TOA_TDA_Entity
         skos:broader  crdc-ccrd-data:RDT2 , crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 .
 
 <>      a                owl:Ontology ;
-        rdfs:comment     "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity orTOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-ca , "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)"@fr-ca ;
+        rdfs:comment     "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity orTOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-CA , "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)"@fr-CA ;
         rdfs:seeAlso     <https://www.statcan.gc.ca/fra/sujets/norme/ccrd/2020v1/indice> , <https://www.oecd.org/sti/inno/frascati-manual.htm> , <https://www.statcan.gc.ca/eng/subjects/standard/crdc/2020v1/index> ;
         owl:imports      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd> ;
         owl:versionIRI   <http://purl.org/vivo.uqam.ca/crdc_ccrd/ontology#v.1.0.0-20210721> ;
@@ -36,21 +36,21 @@ crdc-ccrd:CRDC_CCRD_Division
         skos:broader  crdc-ccrd-data:RDT2 , crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 .
 
 crdc-ccrd-data:RDT2  a             skos:Concept , crdc-ccrd:CRDC_CCRD_Division , owl:Class ;
-        rdfs:label                 "Recherche appliquée"@fr-ca ;
+        rdfs:label                 "Recherche appliquée"@fr-CA ;
         rdfs:seeAlso               " fileName: crdc-ccrd-2020-toa-tda-structure-fra row: 2" ;
         rdfs:subClassOf            crdc-ccrd:TOA_TDA_Entity ;
-        crdc-ccrd:classDefinition  "La recherche appliquée consiste en des travaux de recherche originaux entrepris en vue d'acquérir de nouvelles connaissances et dirigés principalement vers un but ou un objectif pratique déterminé."@fr-ca ;
-        crdc-ccrd:classTitle       "Recherche appliquée"@fr-ca ;
+        crdc-ccrd:classDefinition  "La recherche appliquée consiste en des travaux de recherche originaux entrepris en vue d'acquérir de nouvelles connaissances et dirigés principalement vers un but ou un objectif pratique déterminé."@fr-CA ;
+        crdc-ccrd:classTitle       "Recherche appliquée"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
-                "Division"@fr-ca ;
+                "Division"@fr-CA ;
         crdc-ccrd:hasID            "RDT2" .
 
 crdc-ccrd-data:RDT3  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
-        rdfs:label                 "Développement expérimental"@fr-ca ;
+        rdfs:label                 "Développement expérimental"@fr-CA ;
         rdfs:seeAlso               " fileName: crdc-ccrd-2020-toa-tda-structure-fra row: 3" ;
         rdfs:subClassOf            crdc-ccrd:TOA_TDA_Entity ;
-        crdc-ccrd:classDefinition  "Le développement expérimental consiste en des travaux systématiques fondés sur les connaissances tirées de la recherche et l'expérience pratique et produisant des nouvelles connaissances techniques visant à déboucher sur de nouveaux produits ou procédés ou à améliorer les produits ou procédés existants."@fr-ca ;
-        crdc-ccrd:classTitle       "Développement expérimental"@fr-ca ;
+        crdc-ccrd:classDefinition  "Le développement expérimental consiste en des travaux systématiques fondés sur les connaissances tirées de la recherche et l'expérience pratique et produisant des nouvelles connaissances techniques visant à déboucher sur de nouveaux produits ou procédés ou à améliorer les produits ou procédés existants."@fr-CA ;
+        crdc-ccrd:classTitle       "Développement expérimental"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
-                "Division"@fr-ca ;
+                "Division"@fr-CA ;
         crdc-ccrd:hasID            "RDT3" .

@@ -172,7 +172,7 @@ public class CrdcCcrd_VocabBuilder {
 						+ "le type d'activité ou TDA (avec 3 catégories), "
 						+ "le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou "
 						+ "OSE (avec 85 groupes principaux au niveau le plus bas)",
-						"fr-ca"));
+						"fr-CA"));
 		outModel.add(ontoRes, RDFS.comment, ResourceFactory.
 				createLangLiteral("The Canadian Research and Development Classification (CRDC) "
 						+ "was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), "
@@ -185,7 +185,7 @@ public class CrdcCcrd_VocabBuilder {
 						+ "is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity or"
 						+ "TOA (with 3 categories), the field of research or FOR (with 1663 fields at "
 						+ "the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level).",
-						"en-ca"));
+						"en-CA"));
 		outModel.add(ontoRes, RDFS.seeAlso, ResourceFactory.createResource("https://www.statcan.gc.ca/eng/subjects/standard/crdc/2020v1/index"));
 		outModel.add(ontoRes, RDFS.seeAlso, ResourceFactory.createResource("https://www.statcan.gc.ca/fra/sujets/norme/ccrd/2020v1/indice"));
 		outModel.add(ontoRes, RDFS.seeAlso, ResourceFactory.createResource("https://www.oecd.org/sti/inno/frascati-manual.htm"));
@@ -274,12 +274,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = instanceModel.listObjectsOfProperty(CRDC_CCRD_CSV.Element_Description_English).toList();
 		if(stmts_en!=null && !stmts_en.isEmpty()){
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "en-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(instanceResource, RDFS.label, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "fr-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(instanceResource, RDFS.label, literal);
 		}
 	}
@@ -351,12 +351,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Class_title).toList();
 		if (stmts_fr !=null && !stmts_fr.isEmpty()) {
 			String literal_fr = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal classTitle_fr = ResourceFactory.createLangLiteral(literal_fr, "fr-ca");
+			Literal classTitle_fr = ResourceFactory.createLangLiteral(literal_fr, "fr-CA");
 			outModel.add(codeRes, RDFS.label, classTitle_fr);		
 		}
 		if (stmts_en !=null && !stmts_en.isEmpty()) {
 			String literal_en = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal classTitle_en = ResourceFactory.createLangLiteral(literal_en, "en-ca");
+			Literal classTitle_en = ResourceFactory.createLangLiteral(literal_en, "en-CA");
 			outModel.add(codeRes, RDFS.label, classTitle_en);
 		}
 	}
@@ -487,12 +487,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Hierarchical_structure).toList();
 		if(stmts_en!=null && !stmts_en.isEmpty()){
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "en-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.hasHierarchicalStructure, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "fr-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.hasHierarchicalStructure, literal);
 		}
 	}
@@ -510,12 +510,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Element_Type_Label_English).toList();
 		if(stmts_en!=null && !stmts_en.isEmpty()){
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "en-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.elementTypeLabel, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "fr-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.elementTypeLabel, literal);
 		}
 	}
@@ -525,12 +525,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Element_Description_English).toList();
 		if(stmts_en!=null && !stmts_en.isEmpty()){
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "en-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.elementDescription, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "fr-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.elementDescription, literal);
 		}
 	}
@@ -540,12 +540,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Class_definition).toList();
 		if(stmts_en!=null && !stmts_en.isEmpty()){
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "en-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.classDefinition, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal literal = ResourceFactory.createLangLiteral(text, "fr-ca");
+			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.classDefinition, literal);
 		}
 	}
@@ -555,12 +555,12 @@ public class CrdcCcrd_VocabBuilder {
 		List<RDFNode> stmts_en = describeFromCodeModel.listObjectsOfProperty(CRDC_CCRD_CSV.Class_title).toList();
 		if (stmts_fr !=null && !stmts_fr.isEmpty()) {
 			String literal_fr = stmts_fr.get(0).asLiteral().getLexicalForm();
-			Literal classTitle_fr = ResourceFactory.createLangLiteral(literal_fr, "fr-ca");
+			Literal classTitle_fr = ResourceFactory.createLangLiteral(literal_fr, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.classTitle, classTitle_fr);
 		}
 		if (stmts_en !=null && !stmts_en.isEmpty()) {
 			String literal_en = stmts_en.get(0).asLiteral().getLexicalForm();
-			Literal classTitle_en = ResourceFactory.createLangLiteral(literal_en, "en-ca");
+			Literal classTitle_en = ResourceFactory.createLangLiteral(literal_en, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.classTitle, classTitle_en);
 		}
 	}
