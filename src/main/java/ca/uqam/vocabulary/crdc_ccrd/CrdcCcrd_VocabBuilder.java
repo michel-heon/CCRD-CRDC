@@ -33,6 +33,7 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
+import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.lang.csv.CSV2RDF;
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
@@ -69,7 +70,12 @@ public class CrdcCcrd_VocabBuilder {
 	private String semanticCRDCBaseUri;
 	private Property fromCsvFileProp = ResourceFactory.createProperty(CRDC_CCRD_CSV.NS+"fromCsvFile");
 	private Property csvRowProp = ResourceFactory.createProperty(W3C_CSV_VOCAB+"row");
-
+	private Property vivoOverviewProp = ResourceFactory.createProperty("http://vivoweb.org/ontology/core#overview");
+	private Property vivoTermLabelProp = ResourceFactory.createProperty("http://vivoweb.org/ontology/core#termLabel");
+	private Property vivoEntryTermProp = ResourceFactory.createProperty("http://vivoweb.org/ontology/core#entryTerm");
+	
+	
+	
 
 	String SPARQL_PREFIX = "" 
 			+ "PREFIX crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> \n"
@@ -78,7 +84,11 @@ public class CrdcCcrd_VocabBuilder {
 			+ "PREFIX owl:   <http://www.w3.org/2002/07/owl#> \n"
 			+ "PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#> \n"
 			+ "PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#> \n"
-			+ "PREFIX dc:    <http://purl.org/dc/elements/1.1/> \n";
+			+ "PREFIX dc:    <http://purl.org/dc/elements/1.1/> \n"
+			+ "PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> \n"
+			+ "PREFIX vivo:  <http://vivoweb.org/ontology/core#> \n"
+			+ "PREFIX obo:   <http://purl.obolibrary.org/obo/> \n";
+	;
 
 	private void setStandardPrefix(Model aModel) {
 		aModel.setNsPrefix("owl", "http://www.w3.org/2002/07/owl#");
@@ -89,6 +99,9 @@ public class CrdcCcrd_VocabBuilder {
 		aModel.setNsPrefix("skos", "http://www.w3.org/2004/02/skos/core#");
 		aModel.setNsPrefix("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#");
 		aModel.setNsPrefix("rdfs","http://www.w3.org/2000/01/rdf-schema#");
+		aModel.setNsPrefix("vitro","http://vitro.mannlib.cornell.edu/ns/vitro/0.7#");
+		aModel.setNsPrefix("vivo","http://vivoweb.org/ontology/core#");
+		aModel.setNsPrefix("obo","http://purl.obolibrary.org/obo/");
 		aModel.setNsPrefix("crdc-ccrd-csv", CRDC_CCRD_CSV.NS);
 		aModel.setNsPrefix("w3c-csv", W3C_CSV_VOCAB); 
 	}
@@ -156,7 +169,7 @@ public class CrdcCcrd_VocabBuilder {
 		//
 		Resource ontoRes = ResourceFactory.createResource(dataOntoBaseURI);
 		outModel.add(ontoRes, RDF.type, OWL.Ontology);
-		outModel.add(ontoRes, OWL.imports, ResourceFactory.createResource(CRDC_CCRD.NS.replace("#", "")));
+//		outModel.add(ontoRes, OWL.imports, ResourceFactory.createResource(CRDC_CCRD.NS.replace("#", "")));
 		outModel.add(ontoRes, RDFS.comment, ResourceFactory.
 				createLangLiteral("La Classification canadienne de la recherche et du développement (CCRD) "
 						+ "2020 a été élaborée conjointement par le Conseil de recherches en sciences "
@@ -285,7 +298,10 @@ public class CrdcCcrd_VocabBuilder {
 	}
 
 	private void ontoMapForInstanceCode(Resource instanceResource, String code, Model describeFromCodeModel) {
-		outModel.add(instanceResource,CRDC_CCRD.hasID, instanceResource.getLocalName());
+		String locName = instanceResource.getLocalName();
+		outModel.add(instanceResource,CRDC_CCRD.hasID, locName);
+		outModel.add(instanceResource,vivoTermLabelProp, locName);
+		outModel.add(instanceResource,vivoEntryTermProp, ResourceFactory.createTypedLiteral("https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q="+locName, XSDDatatype.XSDanyURI));
 		outModel.add(instanceResource,RDF.type, OWL2.NamedIndividual);
 		outModel.add(instanceResource,RDF.type, SKOS.Concept);
 
@@ -362,9 +378,15 @@ public class CrdcCcrd_VocabBuilder {
 	}
 
 	private Model getModelFromDescribpQuery(String queryString, Model modelToQuery) {
-		Query query = QueryFactory.create(queryString);
-		QueryExecution qexec = QueryExecutionFactory.create(query, modelToQuery);
-		Model queryModel = qexec.execDescribe();
+		Model queryModel;
+		try {
+			Query query = QueryFactory.create(queryString);
+			QueryExecution qexec = QueryExecutionFactory.create(query, modelToQuery);
+			queryModel = qexec.execDescribe();
+		} catch (Exception e) {
+			System.err.println(queryString);
+			throw e;
+		}
 		return queryModel;
 	}
 	private void classifyEntityForDivision(String code, Model describeFromCodeModel) {
@@ -396,7 +418,7 @@ public class CrdcCcrd_VocabBuilder {
 		String upperCode = code.substring(0, code.length() - 2);
 		Resource upperCodeRes = ResourceFactory.createResource(dataBaseUri_NS+upperCode);
 		outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
-		outModel.add(codeRes,SKOS.broaderTransitive, upperCodeRes);
+		outModel.add(codeRes,SKOS.broader, upperCodeRes);
 
 	}
 
@@ -407,7 +429,7 @@ public class CrdcCcrd_VocabBuilder {
 		String upperCode = code.substring(0, code.length() - 2);
 		Resource upperCodeRes = ResourceFactory.createResource(dataBaseUri_NS+upperCode);
 		outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
-		outModel.add(codeRes,SKOS.broaderTransitive, upperCodeRes);
+		outModel.add(codeRes,SKOS.broader, upperCodeRes);
 
 	}
 
@@ -420,22 +442,24 @@ public class CrdcCcrd_VocabBuilder {
 			String upperCode = "RDF20-21";
 			Resource upperCodeRes = ResourceFactory.createResource(dataBaseUri_NS+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
-			outModel.add(codeRes,SKOS.broaderTransitive, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		} else if (code.contains("RDF")){
 			String upperCode = code.substring(0, code.length() - 1);
 			Resource upperCodeRes = ResourceFactory.createResource(dataBaseUri_NS+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
-			outModel.add(codeRes,SKOS.broaderTransitive, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		} else {
 			String upperCode = code.substring(0, code.length() - 2);
 			Resource upperCodeRes = ResourceFactory.createResource(dataBaseUri_NS+upperCode);
 			outModel.add(codeRes,RDFS.subClassOf, upperCodeRes);
-			outModel.add(codeRes,SKOS.broaderTransitive, upperCodeRes);
+			outModel.add(codeRes,SKOS.broader, upperCodeRes);
 		}
 	}
 
 	private void ontoMapForCode(Resource codeRes, String code, Model describeFromCodeModel) {
 		outModel.add(codeRes,CRDC_CCRD.hasID, code);
+		outModel.add(codeRes,vivoTermLabelProp, code);
+		outModel.add(codeRes,vivoEntryTermProp, ResourceFactory.createTypedLiteral("https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q="+code, XSDDatatype.XSDanyURI));
 		outModel.add(codeRes,RDF.type, OWL.Class);
 		outModel.add(codeRes,RDF.type, SKOS.Concept);
 		processClassTitle(codeRes, describeFromCodeModel);
@@ -542,11 +566,13 @@ public class CrdcCcrd_VocabBuilder {
 			String text = stmts_en.get(0).asLiteral().getLexicalForm();
 			Literal literal = ResourceFactory.createLangLiteral(text, "en-CA");
 			outModel.add(codeRes, CRDC_CCRD.classDefinition, literal);
+			outModel.add(codeRes, vivoOverviewProp, literal);
 		}
 		if(stmts_fr!=null && !stmts_fr.isEmpty()){
 			String text = stmts_fr.get(0).asLiteral().getLexicalForm();
 			Literal literal = ResourceFactory.createLangLiteral(text, "fr-CA");
 			outModel.add(codeRes, CRDC_CCRD.classDefinition, literal);
+			outModel.add(codeRes, vivoOverviewProp, literal);
 		}
 	}
 

@@ -1,15 +1,18 @@
 @base          <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-seo-ose-structure-eng> .
-@prefix skos2: <http://www.w3.org/2008/05/skos#> .
 @prefix :      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-seo-ose-structure-eng#> .
 @prefix crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> .
-@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix terms: <http://purl.org/dc/terms/> .
-@prefix crdc-ccrd: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix crdc-ccrd: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
 @prefix crdc-ccrd-data: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#> .
 
 crdc-ccrd-data:RDS10501
@@ -23,7 +26,10 @@ crdc-ccrd-data:RDS10501
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10501" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10501"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards mining and extracting energy mineral resources, as well as the extraction of geothermal energy."@en-CA ;
+        vivo:termLabel             "RDS10501" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 crdc-ccrd-data:RDS10806
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -36,7 +42,10 @@ crdc-ccrd-data:RDS10806
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10806" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10806"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards farming or breeding livestock. It includes beekeeping and pet breeding."@en-CA ;
+        vivo:termLabel             "RDS10806" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd-data:RDS11007
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -49,7 +58,10 @@ crdc-ccrd-data:RDS11007
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11007" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11007"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards heritage issues, including the conservation of natural, social and cultural heritage. This group also covers R&D directed towards indigenous culture, knowledge, language, and rights."@en-CA ;
+        vivo:termLabel             "RDS11007" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS11101
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -62,7 +74,10 @@ crdc-ccrd-data:RDS11101
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11101" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11101"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development and provision of finance and investment services. It includes but is not limited to banks, building societies, credit unions and money market dealing; investment and superannuation services; and insurance services. This group also covers R&D directed towards the understanding of economic issues at the microeconomic and macroeconomic level. It includes effects on taxation, consumption, industrial organisations, industry policy, industry cost and structure, fiscal policy, monetary policy, exchange rates, balance of payments, income policy, and taxation."@en-CA ;
+        vivo:termLabel             "RDS11101" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10401
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -75,7 +90,10 @@ crdc-ccrd-data:RDS10401
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10401" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10401"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with the development of construction projects to the sketch plan stage."@en-CA ;
+        vivo:termLabel             "RDS10401" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS111
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Division , skos:Concept ;
@@ -87,7 +105,10 @@ crdc-ccrd-data:RDS111
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS111" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS111"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of and support the political structure of society; public administration issues and economic policy; regional studies and multi-level governance; social change, social processes and social conflicts; the development of social security and social assistance systems; and the social aspects of the organisation of work. This objective also includes de R&D activities related to gender-related social studies, including discrimination and familiar problems; the development of methods of combating poverty at local, national and international levels; the protection of specific population categories on the social level (immigrants, delinquents, \"drop outs\", etc.), on the sociological level, i.e. with regard to their way of life (young people, adults, retired people, disabled people, etc.) and on the economic level (consumers, farmers, fishermen, miners, the unemployed, etc.); and methods of providing social assistance when sudden changes (natural, technological or social) occur in society. This objective does not include R&D activities related to industrial health, the health control of communities from the organisational and socio-medical point of view, pollution at the place of work, the prevention of industrial accidents and the medical aspects of the causes of industrial accidents (objective 7 or RDS107)."@en-CA ;
+        vivo:termLabel             "RDS111" .
 
 crdc-ccrd-data:RDS11001
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -100,7 +121,10 @@ crdc-ccrd-data:RDS11001
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11001" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11001"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards information services. It includes but is not limited to libraries, library databases and information processing; presentation of information, including displays, in libraries, museums and art galleries, educational centres and similar facilities; and electronic archives, open access, and news collection services."@en-CA ;
+        vivo:termLabel             "RDS11001" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10301
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -113,7 +137,10 @@ crdc-ccrd-data:RDS10301
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10301" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10301"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the scientific exploration of space, including robotic exploration of the solar system, and advanced exploration development."@en-CA ;
+        vivo:termLabel             "RDS10301" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS10606
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -126,7 +153,10 @@ crdc-ccrd-data:RDS10606
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10606" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10606"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture of pharmaceutical products used in the prevention, diagnosis and treatment of veterinary diseases."@en-CA ;
+        vivo:termLabel             "RDS10606" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS109
         a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -138,7 +168,10 @@ crdc-ccrd-data:RDS109
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS109" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS109"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to supporting general or special education, including training, pedagogy, didactics, and targeted methods for specially gifted persons or those with learning disabilities. This objective applies to all levels of education, from pre- and primary school through to tertiary education, as well as to subsidiary services to education."@en-CA ;
+        vivo:termLabel             "RDS109" .
 
 crdc-ccrd-data:RDS10201
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -151,7 +184,10 @@ crdc-ccrd-data:RDS10201
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10201" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10201"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards environmentally sustainable production of plants and plant primary products; animals and animal primary products; exploration, mining, extraction, and processing of mineral resources; manufactured materials; construction and building activities; transport activities; and, information and communication service activities by minimising the generation of emissions and waste and by reducing or optimising the consumption of water and other natural resources."@en-CA ;
+        vivo:termLabel             "RDS10201" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS10506
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -164,7 +200,10 @@ crdc-ccrd-data:RDS10506
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10506" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10506"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the conservation and efficient use of energy in industry, transport, commerce and households. It includes energy used in forms such as petroleum products, electricity, gas, coke and briquettes and in the form of heat energy."@en-CA ;
+        vivo:termLabel             "RDS10506" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 <>      a                owl:Ontology ;
         rdfs:comment     "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity orTOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-CA , "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)"@fr-CA ;
@@ -183,20 +222,10 @@ crdc-ccrd-data:RDS10101
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10101" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
-
-crdc-ccrd-data:RDS10406
-        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
-        rdfs:label                 "Communication technologies, systems and services"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 28" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards fixed line, mobile and satellite communication networks and services. It includes videoconference services."@en-CA ;
-        crdc-ccrd:classTitle       "Communication technologies, systems and services"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10406" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10101"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards exploration for minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands."@en-CA ;
+        vivo:termLabel             "RDS10101" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS11106
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -209,7 +238,26 @@ crdc-ccrd-data:RDS11106
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11106" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11106"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards justice and the law. Not limited to but including legal processes; civil and criminal justice; crime prevention, law enforcement and correctional services; and, law reform."@en-CA ;
+        vivo:termLabel             "RDS11106" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
+
+crdc-ccrd-data:RDS10406
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Communication technologies, systems and services"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 28" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards fixed line, mobile and satellite communication networks and services. It includes videoconference services."@en-CA ;
+        crdc-ccrd:classTitle       "Communication technologies, systems and services"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS10406" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10406"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards fixed line, mobile and satellite communication networks and services. It includes videoconference services."@en-CA ;
+        vivo:termLabel             "RDS10406" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS103
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Division , owl:Class ;
@@ -221,7 +269,10 @@ crdc-ccrd-data:RDS103
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS103" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS103"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers all civil space research and experimental development (R&D) activities with objectives related to the R&D in exploration of space, space laboratories, space travel and launch systems. Although civil space R&D activities are not always concerned with particular objectives, they frequently have a specific goal, such as the advancement of knowledge (e.g. astronomy) or relate to particular applications (e.g. telecommunications satellites or earth observation). This objective does not include corresponding R&D activities for defence purposes."@en-CA ;
+        vivo:termLabel             "RDS103" .
 
 crdc-ccrd-data:RDS11006
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -234,7 +285,10 @@ crdc-ccrd-data:RDS11006
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11006" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11006"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving understanding of the social and cultural contexts of communication. It includes but is not limited to languages, literature, journalism, linguistics and semantics."@en-CA ;
+        vivo:termLabel             "RDS11006" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10805
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -247,7 +301,10 @@ crdc-ccrd-data:RDS10805
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10805" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10805"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the characteristics and harvesting of fisheries grown or farmed in aquaculture, or caught in the wild, either for commercial, recreational or other reasons."@en-CA ;
+        vivo:termLabel             "RDS10805" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd-data:RDS110
         a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -259,7 +316,10 @@ crdc-ccrd-data:RDS110
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS110" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS110"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of social phenomena related to cultural activities, religion and leisure activities so as to define their impact on life in society, as well as to racial and cultural integration and on socio-cultural changes in these areas. The concept of \"culture\" covers the sociology of science, religion, art, sport and leisure, and also comprises inter alia R&D activities on the media, the mastery of language and social integration, libraries, archives and external cultural policy. This objective also includes R&D activities related to: recreational and sporting services; cultural services; broadcasting or online streaming and publishing services; and religious and other community services."@en-CA ;
+        vivo:termLabel             "RDS110" .
 
 crdc-ccrd-data:RDS10605
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -272,7 +332,10 @@ crdc-ccrd-data:RDS10605
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10605" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10605"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture of industrial chemicals and related products, including those derived from oil and gas refining; and, chemical fertilisers and chemicals for the protection of crops and livestock. It excludes veterinary pharmaceutical products."@en-CA ;
+        vivo:termLabel             "RDS10605" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS108
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Division , skos:Concept ;
@@ -284,7 +347,10 @@ crdc-ccrd-data:RDS108
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS108" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS108"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers all research and experimental development (R&D) activities with objectives related to promote agriculture, forestry, fisheries and foodstuff production, or further knowledge on chemical fertilisers, biocides, biological pest control and the mechanisation of agriculture, as well as concerning the impact of agricultural and forestry activities on the environment. This objective also covers R&D activities aimed at improving food productivity and technology. It does not include R&D activities on the reduction of pollution (objective 2 or RDS102); on the development of rural areas; on the construction and planning of buildings; on the improvement of rural rest and recreation amenities and agricultural water supply (objective 4 or RDS104); on energy efficiency measures (objective 5 or RDS105); or on the food processing industry (objective 6 or RDS106)."@en-CA ;
+        vivo:termLabel             "RDS108" .
 
 crdc-ccrd-data:RDS10505
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -297,20 +363,25 @@ crdc-ccrd-data:RDS10505
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10505" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10505"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving energy distribution including electricity and gas transmission and distribution."@en-CA ;
+        vivo:termLabel             "RDS10505" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
-crdc-ccrd-data:RDS10405
-        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
-        rdfs:label                 "Transport systems"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 27" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the efficiency, safety and utility of ground, sea, rail and air transport. It also covers R&D directed towards improving the efficiency, safety and utility of deep space transport."@en-CA ;
-        crdc-ccrd:classTitle       "Transport systems"@en-CA ;
+crdc-ccrd-data:RDS102
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Division ;
+        rdfs:label                 "Environmental protection"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 8" ;
+        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
+        crdc-ccrd:classDefinition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improving the control of pollution, including the identification and analysis of the sources of pollution and their causes, and all pollutants, including their dispersal in the environment and the effects on humans, species (fauna, flora, micro-organisms) and the biosphere. The development of monitoring facilities for the measurement of all kinds of pollution is included, as are R&D activities for the elimination and prevention of all forms of pollution in all types of environment."@en-CA ;
+        crdc-ccrd:classTitle       "Environmental protection"@en-CA ;
         crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10405" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+                "Division"@en-CA ;
+        crdc-ccrd:hasID            "RDS102" ;
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS102"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improving the control of pollution, including the identification and analysis of the sources of pollution and their causes, and all pollutants, including their dispersal in the environment and the effects on humans, species (fauna, flora, micro-organisms) and the biosphere. The development of monitoring facilities for the measurement of all kinds of pollution is included, as are R&D activities for the elimination and prevention of all forms of pollution in all types of environment."@en-CA ;
+        vivo:termLabel             "RDS102" .
 
 crdc-ccrd-data:RDS11105
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -323,35 +394,29 @@ crdc-ccrd-data:RDS11105
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11105" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11105"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving international relations. It includes R&D relating to current social, cultural and economic aspects of other nations."@en-CA ;
+        vivo:termLabel             "RDS11105" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
-crdc-ccrd-data:RDS102
-        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Division ;
-        rdfs:label                 "Environmental protection"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 8" ;
-        rdfs:subClassOf            crdc-ccrd:SEO_OSE_Entity ;
-        crdc-ccrd:classDefinition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improving the control of pollution, including the identification and analysis of the sources of pollution and their causes, and all pollutants, including their dispersal in the environment and the effects on humans, species (fauna, flora, micro-organisms) and the biosphere. The development of monitoring facilities for the measurement of all kinds of pollution is included, as are R&D activities for the elimination and prevention of all forms of pollution in all types of environment."@en-CA ;
-        crdc-ccrd:classTitle       "Environmental protection"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Division"@en-CA ;
-        crdc-ccrd:hasID            "RDS102" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
-
-crdc-ccrd:CRDC_CCRD_Group
-        skos:broader  crdc-ccrd-data:RDS10305 , crdc-ccrd-data:RDS11010 , crdc-ccrd-data:RDS10611 , crdc-ccrd-data:RDS10303 , crdc-ccrd-data:RDS10103 , crdc-ccrd-data:RDS10104 , crdc-ccrd-data:RDS10101 , crdc-ccrd-data:RDS10903 , crdc-ccrd-data:RDS10501 , crdc-ccrd-data:RDS10704 , crdc-ccrd-data:RDS10201 , crdc-ccrd-data:RDS10602 , crdc-ccrd-data:RDS10603 , crdc-ccrd-data:RDS10799 , crdc-ccrd-data:RDS11103 , crdc-ccrd-data:RDS11008 , crdc-ccrd-data:RDS11101 , crdc-ccrd-data:RDS11006 , crdc-ccrd-data:RDS10199 , crdc-ccrd-data:RDS10506 , crdc-ccrd-data:RDS10609 , crdc-ccrd-data:RDS10703 , crdc-ccrd-data:RDS10606 , crdc-ccrd-data:RDS10801 , crdc-ccrd-data:RDS10607 , crdc-ccrd-data:RDS10610 , crdc-ccrd-data:RDS11005 , crdc-ccrd-data:RDS10807 , crdc-ccrd-data:RDS10804 , crdc-ccrd-data:RDS11003 , crdc-ccrd-data:RDS10805 , crdc-ccrd-data:RDS10599 , crdc-ccrd-data:RDS10399 , crdc-ccrd-data:RDS10304 , crdc-ccrd-data:RDS10301 , crdc-ccrd-data:RDS10204 , crdc-ccrd-data:RDS10505 , crdc-ccrd-data:RDS10302 , crdc-ccrd-data:RDS10102 , crdc-ccrd-data:RDS11109 , crdc-ccrd-data:RDS10699 , crdc-ccrd-data:RDS11108 , crdc-ccrd-data:RDS10502 , crdc-ccrd-data:RDS10902 , crdc-ccrd-data:RDS11106 , crdc-ccrd-data:RDS10404 , crdc-ccrd-data:RDS10405 , crdc-ccrd-data:RDS10402 , crdc-ccrd-data:RDS10407 , crdc-ccrd-data:RDS10899 , crdc-ccrd-data:RDS11299 , crdc-ccrd-data:RDS10601 , crdc-ccrd-data:RDS10299 , crdc-ccrd-data:RDS10105 , crdc-ccrd-data:RDS11004 , crdc-ccrd-data:RDS11002 , crdc-ccrd-data:RDS10901 , crdc-ccrd-data:RDS10701 , crdc-ccrd-data:RDS10605 , crdc-ccrd-data:RDS10702 , crdc-ccrd-data:RDS10406 , crdc-ccrd-data:RDS10499 , crdc-ccrd-data:RDS11001 , crdc-ccrd-data:RDS10803 , crdc-ccrd-data:RDS10999 , crdc-ccrd-data:RDS10205 , crdc-ccrd-data:RDS10202 , crdc-ccrd-data:RDS10503 , crdc-ccrd-data:RDS10203 , crdc-ccrd-data:RDS10604 , crdc-ccrd-data:RDS11107 , crdc-ccrd-data:RDS10504 , crdc-ccrd-data:RDS11099 , crdc-ccrd-data:RDS11105 , crdc-ccrd-data:RDS11110 , crdc-ccrd-data:RDS10608 , crdc-ccrd-data:RDS10802 , crdc-ccrd-data:RDS11104 , crdc-ccrd-data:RDS11009 , crdc-ccrd-data:RDS10403 , crdc-ccrd-data:RDS11102 , crdc-ccrd-data:RDS11007 , crdc-ccrd-data:RDS10401 , crdc-ccrd-data:RDS10806 , crdc-ccrd-data:RDS11199 .
-
-crdc-ccrd-data:RDS10804
-        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
-        rdfs:label                 "Harvesting and packing of plant products"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 62" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving technologies, processes and methods used for harvesting, handling and packing of plant products, other than forest products."@en-CA ;
-        crdc-ccrd:classTitle       "Harvesting and packing of plant products"@en-CA ;
+crdc-ccrd-data:RDS10405
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Transport systems"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 27" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS104 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the efficiency, safety and utility of ground, sea, rail and air transport. It also covers R&D directed towards improving the efficiency, safety and utility of deep space transport."@en-CA ;
+        crdc-ccrd:classTitle       "Transport systems"@en-CA ;
         crdc-ccrd:hasHierarchicalStructure
                 "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10804" ;
+        crdc-ccrd:hasID            "RDS10405" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10405"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the efficiency, safety and utility of ground, sea, rail and air transport. It also covers R&D directed towards improving the efficiency, safety and utility of deep space transport."@en-CA ;
+        vivo:termLabel             "RDS10405" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
+
+crdc-ccrd:CRDC_CCRD_Group
+        skos:broader  crdc-ccrd-data:RDS10305 , crdc-ccrd-data:RDS10611 , crdc-ccrd-data:RDS11010 , crdc-ccrd-data:RDS10303 , crdc-ccrd-data:RDS10103 , crdc-ccrd-data:RDS10104 , crdc-ccrd-data:RDS10101 , crdc-ccrd-data:RDS10903 , crdc-ccrd-data:RDS10501 , crdc-ccrd-data:RDS10704 , crdc-ccrd-data:RDS10602 , crdc-ccrd-data:RDS10201 , crdc-ccrd-data:RDS10603 , crdc-ccrd-data:RDS10799 , crdc-ccrd-data:RDS11103 , crdc-ccrd-data:RDS11008 , crdc-ccrd-data:RDS11101 , crdc-ccrd-data:RDS11006 , crdc-ccrd-data:RDS10607 , crdc-ccrd-data:RDS10606 , crdc-ccrd-data:RDS10609 , crdc-ccrd-data:RDS10199 , crdc-ccrd-data:RDS10703 , crdc-ccrd-data:RDS10801 , crdc-ccrd-data:RDS10506 , crdc-ccrd-data:RDS10610 , crdc-ccrd-data:RDS11005 , crdc-ccrd-data:RDS10807 , crdc-ccrd-data:RDS10804 , crdc-ccrd-data:RDS11003 , crdc-ccrd-data:RDS10805 , crdc-ccrd-data:RDS10599 , crdc-ccrd-data:RDS10399 , crdc-ccrd-data:RDS10304 , crdc-ccrd-data:RDS10301 , crdc-ccrd-data:RDS10204 , crdc-ccrd-data:RDS10505 , crdc-ccrd-data:RDS10302 , crdc-ccrd-data:RDS10102 , crdc-ccrd-data:RDS11109 , crdc-ccrd-data:RDS10699 , crdc-ccrd-data:RDS11108 , crdc-ccrd-data:RDS10502 , crdc-ccrd-data:RDS10902 , crdc-ccrd-data:RDS11106 , crdc-ccrd-data:RDS10404 , crdc-ccrd-data:RDS10405 , crdc-ccrd-data:RDS10402 , crdc-ccrd-data:RDS10899 , crdc-ccrd-data:RDS10407 , crdc-ccrd-data:RDS11299 , crdc-ccrd-data:RDS10601 , crdc-ccrd-data:RDS10299 , crdc-ccrd-data:RDS10105 , crdc-ccrd-data:RDS11004 , crdc-ccrd-data:RDS11002 , crdc-ccrd-data:RDS10901 , crdc-ccrd-data:RDS10701 , crdc-ccrd-data:RDS10605 , crdc-ccrd-data:RDS10702 , crdc-ccrd-data:RDS10406 , crdc-ccrd-data:RDS10499 , crdc-ccrd-data:RDS11001 , crdc-ccrd-data:RDS10803 , crdc-ccrd-data:RDS10999 , crdc-ccrd-data:RDS10205 , crdc-ccrd-data:RDS10604 , crdc-ccrd-data:RDS10202 , crdc-ccrd-data:RDS10503 , crdc-ccrd-data:RDS10203 , crdc-ccrd-data:RDS10504 , crdc-ccrd-data:RDS11107 , crdc-ccrd-data:RDS11099 , crdc-ccrd-data:RDS11105 , crdc-ccrd-data:RDS11110 , crdc-ccrd-data:RDS10802 , crdc-ccrd-data:RDS10608 , crdc-ccrd-data:RDS11104 , crdc-ccrd-data:RDS11009 , crdc-ccrd-data:RDS10403 , crdc-ccrd-data:RDS11102 , crdc-ccrd-data:RDS11007 , crdc-ccrd-data:RDS10401 , crdc-ccrd-data:RDS10806 , crdc-ccrd-data:RDS11199 .
 
 crdc-ccrd-data:RDS11005
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -364,7 +429,26 @@ crdc-ccrd-data:RDS11005
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11005" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11005"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the sports, exercise or physical endeavor and other recreational activities. It includes the provision of services to sport and sporting clubs and recreation and leisure (including the operation of race tracks, parks, and botanical and zoological gardens)."@en-CA ;
+        vivo:termLabel             "RDS11005" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10804
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Harvesting and packing of plant products"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 62" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving technologies, processes and methods used for harvesting, handling and packing of plant products, other than forest products."@en-CA ;
+        crdc-ccrd:classTitle       "Harvesting and packing of plant products"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS10804" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10804"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving technologies, processes and methods used for harvesting, handling and packing of plant products, other than forest products."@en-CA ;
+        vivo:termLabel             "RDS10804" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd:SEO_OSE_Entity
         skos:broader  crdc-ccrd-data:RDS107 , crdc-ccrd-data:RDS102 , crdc-ccrd-data:RDS112 , crdc-ccrd-data:RDS109 , crdc-ccrd-data:RDS104 , crdc-ccrd-data:RDS106 , crdc-ccrd-data:RDS101 , crdc-ccrd-data:RDS111 , crdc-ccrd-data:RDS108 , crdc-ccrd-data:RDS103 , crdc-ccrd-data:RDS105 , crdc-ccrd-data:RDS110 .
@@ -380,7 +464,10 @@ crdc-ccrd-data:RDS10305
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10305" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10305"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards an understanding of terraforming, and systems capable of supporting terrestrial life forms, including the effects of space on living things, and how life adapts to the space environment."@en-CA ;
+        vivo:termLabel             "RDS10305" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS10999
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -393,7 +480,10 @@ crdc-ccrd-data:RDS10999
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10999" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10999"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards education and training not elsewhere classified, including advancement of knowledge in this area."@en-CA ;
+        vivo:termLabel             "RDS10999" ;
+        skos:broader               crdc-ccrd-data:RDS109 .
 
 crdc-ccrd-data:RDS10704
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -406,7 +496,10 @@ crdc-ccrd-data:RDS10704
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10704" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10704"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards community and public health of specific population groups and discrete community groups (e.g., aged persons, persons living in rural and remote areas), including indigenous communities. It includes the study of social and cultural factors affecting the health of these groups and the delivery of health services to these groups."@en-CA ;
+        vivo:termLabel             "RDS10704" ;
+        skos:broader               crdc-ccrd-data:RDS107 .
 
 crdc-ccrd-data:RDS10205
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -419,7 +512,10 @@ crdc-ccrd-data:RDS10205
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10205" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10205"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards assessment and management of various ecosystems; environmental and natural resources; and, finding appropriate ways to nurture and rehabilitate seriously degraded environments back to original condition or to an improved state. This group also covers R&D directed towards an understanding of natural hazards (such as bushfire, cyclones and storms, earthquakes, landslides, tsunamis and volcanic eruptions), their impact on lives, property and environments and the development of warning systems and control measures to minimise impacts from these hazards."@en-CA ;
+        vivo:termLabel             "RDS10205" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS10899
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -432,7 +528,10 @@ crdc-ccrd-data:RDS10899
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10899" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10899"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards animal production, animal primary products, plant production and plant primary products not elsewhere classified. It includes the traceability and quality assurance of plant products, and advancement of knowledge in all these areas."@en-CA ;
+        vivo:termLabel             "RDS10899" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd-data:RDS10604
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -445,7 +544,10 @@ crdc-ccrd-data:RDS10604
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10604" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10604"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the processing of wood, and the manufacture of wood products, paper and paper products."@en-CA ;
+        vivo:termLabel             "RDS10604" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10105
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -458,7 +560,10 @@ crdc-ccrd-data:RDS10105
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10105" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10105"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the physical and chemical conditions of water in various environments."@en-CA ;
+        vivo:termLabel             "RDS10105" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS10799
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -471,7 +576,10 @@ crdc-ccrd-data:RDS10799
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10799" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10799"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards health not elsewhere classified, including advancement of knowledge in this area."@en-CA ;
+        vivo:termLabel             "RDS10799" ;
+        skos:broader               crdc-ccrd-data:RDS107 .
 
 crdc-ccrd-data:RDS107
         a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -483,7 +591,10 @@ crdc-ccrd-data:RDS107
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS107" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS107"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to protect, promote and restore human health. It ranges from biomedical and clinical research to research focused on health services and population and public health, including all aspects of medical and surgical treatment, the provision of hospital and home care, and public health, mental health, prevention and wellness."@en-CA ;
+        vivo:termLabel             "RDS107" .
 
 crdc-ccrd-data:RDS10504
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -496,7 +607,10 @@ crdc-ccrd-data:RDS10504
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10504" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10504"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the conversion of renewable energy resources into heat, steam or electricity, and improving the generation and supply of renewable energy."@en-CA ;
+        vivo:termLabel             "RDS10504" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 crdc-ccrd-data:RDS10699
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -509,7 +623,10 @@ crdc-ccrd-data:RDS10699
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10699" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10699"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture of tobacco products, furniture, prefabricated buildings and other products not classified elsewhere, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS10699" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10903
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -522,7 +639,10 @@ crdc-ccrd-data:RDS10903
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10903" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10903"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the improvement of school, educational institution learning environments, education and training systems. Teaching and instruction of Aboriginal and Indigenous Peoples, learners of specific sexes or genders, gifted learners and disabled learners are also included in this group."@en-CA ;
+        vivo:termLabel             "RDS10903" ;
+        skos:broader               crdc-ccrd-data:RDS109 .
 
 crdc-ccrd-data:RDS11104
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -535,7 +655,10 @@ crdc-ccrd-data:RDS11104
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11104" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11104"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards government and politics. It includes electoral and political systems; civics and citizenship; and public service management."@en-CA ;
+        vivo:termLabel             "RDS11104" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10404
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -548,7 +671,10 @@ crdc-ccrd-data:RDS10404
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10404" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10404"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the processes and activities associated with translating plans and specifications into finished buildings and structures."@en-CA ;
+        vivo:termLabel             "RDS10404" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS101
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Division ;
@@ -560,7 +686,10 @@ crdc-ccrd-data:RDS101
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS101" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS101"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to the exploration of the Earth's crust and mantle, seas, oceans and atmosphere, as well as for R&D activities on their exploitation. It also includes climatic and meteorological research, polar exploration and hydrology. It does not include R&D activities related to soil improvement (objective 4 or RDS104), land use or fishing (objective 8 or RDS108), or pollution (objective 2 or RDS102)."@en-CA ;
+        vivo:termLabel             "RDS101" .
 
 crdc-ccrd-data:RDS10611
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -573,7 +702,10 @@ crdc-ccrd-data:RDS10611
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10611" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10611"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development and provision of measurement standards and calibration services for defence, manufacturing and the service industries."@en-CA ;
+        vivo:termLabel             "RDS10611" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS11299
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -586,7 +718,10 @@ crdc-ccrd-data:RDS11299
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11299" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS112 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11299"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives."@en-CA ;
+        vivo:termLabel             "RDS11299" ;
+        skos:broader               crdc-ccrd-data:RDS112 .
 
 crdc-ccrd-data:RDS10599
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -599,20 +734,10 @@ crdc-ccrd-data:RDS10599
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10599" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
-
-crdc-ccrd-data:RDS11004
-        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
-        rdfs:label                 "Arts and culture"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 76" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards the arts and cultural activities. It includes music; creative and performing arts; design and architecture; art galleries and museums, and including digital humanities."@en-CA ;
-        crdc-ccrd:classTitle       "Arts and culture"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS11004" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10599"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards energy activities not elsewhere classified, including advancement of knowledge in this area."@en-CA ;
+        vivo:termLabel             "RDS10599" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 crdc-ccrd-data:RDS10803
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -625,7 +750,26 @@ crdc-ccrd-data:RDS10803
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10803" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10803"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the characteristics, propagation and growing of all crops. It includes crops grown for industrial applications such as sugar cane, cotton, wine grapes, tobacco, and plants from which essential oils are extracted."@en-CA ;
+        vivo:termLabel             "RDS10803" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11004
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
+        rdfs:label                 "Arts and culture"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 76" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards the arts and cultural activities. It includes music; creative and performing arts; design and architecture; art galleries and museums, and including digital humanities."@en-CA ;
+        crdc-ccrd:classTitle       "Arts and culture"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS11004" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11004"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the arts and cultural activities. It includes music; creative and performing arts; design and architecture; art galleries and museums, and including digital humanities."@en-CA ;
+        vivo:termLabel             "RDS11004" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10304
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -638,7 +782,10 @@ crdc-ccrd-data:RDS10304
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10304" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10304"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving space laboratories and space travel. It includes conventional electronic test laboratories and hardware, spacecraft integration and testing, control rooms, clean rooms, and human space flight."@en-CA ;
+        vivo:termLabel             "RDS10304" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS11199
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -651,7 +798,10 @@ crdc-ccrd-data:RDS11199
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11199" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11199"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards law, politics and community services not elsewhere classified, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS11199" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10499
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -664,7 +814,10 @@ crdc-ccrd-data:RDS10499
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10499" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10499"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards transport, construction, telecommunication and other infrastructures activities not elsewhere classified, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS10499" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS10609
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -677,10 +830,13 @@ crdc-ccrd-data:RDS10609
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10609" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10609"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities dealing with computer hardware, electronic equipment, optical products and communication equipment, including consumer electronic equipment."@en-CA ;
+        vivo:termLabel             "RDS10609" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10703
-        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
         rdfs:label                 "Public health (except specific population health)"@en-CA ;
         rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 55" ;
         rdfs:subClassOf            crdc-ccrd-data:RDS107 ;
@@ -690,7 +846,10 @@ crdc-ccrd-data:RDS10703
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10703" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10703"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards community health and well-being of general public, excluding specific population groups. It includes research into the complex biological, social, cultural and environmental interactions that determine the health of individuals and the general public. Many activities are targeted at populations such as health campaigns and health policies. Public health services also include the provision of personal services to individual persons, such as vaccinations, behavioural counselling, or health advice."@en-CA ;
+        vivo:termLabel             "RDS10703" ;
+        skos:broader               crdc-ccrd-data:RDS107 .
 
 crdc-ccrd-data:RDS10204
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -703,7 +862,10 @@ crdc-ccrd-data:RDS10204
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10204" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10204"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the control of pests, diseases and exotic species in various natural and man-made environments. It includes quarantine and control measures within, at or outside national borders."@en-CA ;
+        vivo:termLabel             "RDS10204" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS11099
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -716,10 +878,13 @@ crdc-ccrd-data:RDS11099
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11099" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11099"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards cultural understanding not elsewhere classified, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS11099" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10399
-        a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
+        a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
         rdfs:label                 "Exploration and exploitation of space, n.e.c."@en-CA ;
         rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 21" ;
         rdfs:subClassOf            crdc-ccrd-data:RDS103 ;
@@ -729,7 +894,10 @@ crdc-ccrd-data:RDS10399
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10399" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10399"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of space not elsewhere classified, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS10399" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS10603
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -742,7 +910,10 @@ crdc-ccrd-data:RDS10603
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10603" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10603"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the production of leather and textile products and fibre processing."@en-CA ;
+        vivo:termLabel             "RDS10603" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10104
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -755,7 +926,10 @@ crdc-ccrd-data:RDS10104
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10104" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10104"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards climate and climate change. For the purpose of the classification, climate refers to the long-term average condition of the weather in a given area."@en-CA ;
+        vivo:termLabel             "RDS10104" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS11109
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -768,7 +942,10 @@ crdc-ccrd-data:RDS11109
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11109" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11109"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards providing prevention, support, access, justice, community and welfare services to individuals, families, or to defined vulnerable populations, such youth and seniors."@en-CA ;
+        vivo:termLabel             "RDS11109" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10299
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -781,7 +958,10 @@ crdc-ccrd-data:RDS10299
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10299" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10299"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards environmental issues, not elsewhere classified, including advancement of knowledge in this area."@en-CA ;
+        vivo:termLabel             "RDS10299" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS106
         a                          crdc-ccrd:CRDC_CCRD_Division , skos:Concept , owl:Class ;
@@ -793,7 +973,10 @@ crdc-ccrd-data:RDS106
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS106" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS106"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the industrial production, technology and industrial services, including R&D activities on industrial products and their manufacturing processes, except where they form an integral part of the pursuit of other objectives, e.g., defence (Objective 12 or RDS112), space (Objective 3 or RDS103), energy (Objective 5 or RDS105) or agriculture (Objective 8 or RDS108). This division also includes computer systems and security, information systems, human-computer interactions, artificial intelligence systems, and machine learning."@en-CA ;
+        vivo:termLabel             "RDS106" .
 
 crdc-ccrd-data:RDS10503
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -806,7 +989,10 @@ crdc-ccrd-data:RDS10503
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10503" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10503"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the transformation of energy resource minerals into heat, steam or electricity; and the conversion of coal, natural gas, oil shale and tar sands to liquid fuels. It includes hydrogen-based energy systems and fuel cells."@en-CA ;
+        vivo:termLabel             "RDS10503" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 crdc-ccrd-data:RDS10199
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -819,7 +1005,10 @@ crdc-ccrd-data:RDS10199
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10199" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10199"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of the earth not elsewhere classified, including advancement of knowledge in these areas."@en-CA ;
+        vivo:termLabel             "RDS10199" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS11009
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -832,20 +1021,10 @@ crdc-ccrd-data:RDS11009
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11009" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
-
-crdc-ccrd-data:RDS11103
-        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
-        rdfs:label                 "Management, marketing and productivity"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 87" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards management, productivity, and innovation issues. It includes R&D directed towards marketing, e-commerce, industrial relations, and business support services."@en-CA ;
-        crdc-ccrd:classTitle       "Management, marketing and productivity"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS11103" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11009"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of religion. Including but not limited to improving understanding and analysis of religious issues of concern to social, scientific or technological development."@en-CA ;
+        vivo:termLabel             "RDS11009" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10902
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -858,7 +1037,26 @@ crdc-ccrd-data:RDS10902
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10902" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10902"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving teaching and instruction and directed towards the improvement of curricula used in education."@en-CA ;
+        vivo:termLabel             "RDS10902" ;
+        skos:broader               crdc-ccrd-data:RDS109 .
+
+crdc-ccrd-data:RDS11103
+        a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
+        rdfs:label                 "Management, marketing and productivity"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 87" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS111 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards management, productivity, and innovation issues. It includes R&D directed towards marketing, e-commerce, industrial relations, and business support services."@en-CA ;
+        crdc-ccrd:classTitle       "Management, marketing and productivity"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS11103" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11103"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards management, productivity, and innovation issues. It includes R&D directed towards marketing, e-commerce, industrial relations, and business support services."@en-CA ;
+        vivo:termLabel             "RDS11103" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10403
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -871,7 +1069,10 @@ crdc-ccrd-data:RDS10403
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10403" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10403"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards testing the performance, durability and life cycle of construction components and materials which are delivered to or assembled on construction sites."@en-CA ;
+        vivo:termLabel             "RDS10403" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS10610
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -884,20 +1085,10 @@ crdc-ccrd-data:RDS10610
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10610" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
-
-crdc-ccrd-data:RDS11003
-        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
-        rdfs:label                 "Tourism"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 75" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of tourism services."@en-CA ;
-        crdc-ccrd:classTitle       "Tourism"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS11003" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10610"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities involved in gathering, processing, storing, distributing, and use of information, and its associated technologies and services."@en-CA ;
+        vivo:termLabel             "RDS10610" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10802
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -910,7 +1101,26 @@ crdc-ccrd-data:RDS10802
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10802" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10802"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards an understanding of soils and improving soil quality in various environments."@en-CA ;
+        vivo:termLabel             "RDS10802" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
+
+crdc-ccrd-data:RDS11003
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Tourism"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 75" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS110 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of tourism services."@en-CA ;
+        crdc-ccrd:classTitle       "Tourism"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS11003" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11003"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development and provision of tourism services."@en-CA ;
+        vivo:termLabel             "RDS11003" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10303
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -923,7 +1133,10 @@ crdc-ccrd-data:RDS10303
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10303" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10303"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving launch systems for space. It includes launch preparations and operations, launchers, and launching complexes."@en-CA ;
+        vivo:termLabel             "RDS10303" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS10608
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -936,7 +1149,10 @@ crdc-ccrd-data:RDS10608
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10608" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10608"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture of machinery and equipment. It includes, among others, household electrical appliances, whitewares and automated machinery."@en-CA ;
+        vivo:termLabel             "RDS10608" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS11110
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -949,7 +1165,10 @@ crdc-ccrd-data:RDS11110
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11110" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11110"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards providing or delivering community services to individuals or to defined community groups such as women, gender-diverse persons, indigenous peoples, persons with disabilities, and members of visible minorities."@en-CA ;
+        vivo:termLabel             "RDS11110" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10702
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -962,7 +1181,10 @@ crdc-ccrd-data:RDS10702
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10702" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10702"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the provision and evaluation of care."@en-CA ;
+        vivo:termLabel             "RDS10702" ;
+        skos:broader               crdc-ccrd-data:RDS107 .
 
 crdc-ccrd-data:RDS10203
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -975,20 +1197,10 @@ crdc-ccrd-data:RDS10203
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10203" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
-
-crdc-ccrd-data:RDS10103
-        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
-        rdfs:label                 "Atmosphere and weather"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 4" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards understanding the dynamics of atmospheric and weather systems."@en-CA ;
-        crdc-ccrd:classTitle       "Atmosphere and weather"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10103" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10203"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the understanding and improvement of air quality in various environments."@en-CA ;
+        vivo:termLabel             "RDS10203" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS10602
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -1001,7 +1213,26 @@ crdc-ccrd-data:RDS10602
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10602" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10602"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture of processed food and beverage products. It includes, among others, products derived from animal milk, carcass meat, nutraceuticals and functional foods."@en-CA ;
+        vivo:termLabel             "RDS10602" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
+
+crdc-ccrd-data:RDS10103
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Atmosphere and weather"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 4" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS101 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards understanding the dynamics of atmospheric and weather systems."@en-CA ;
+        crdc-ccrd:classTitle       "Atmosphere and weather"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS10103" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10103"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards understanding the dynamics of atmospheric and weather systems."@en-CA ;
+        vivo:termLabel             "RDS10103" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS11010
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -1014,7 +1245,10 @@ crdc-ccrd-data:RDS11010
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11010" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11010"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the understanding of past and current societies."@en-CA ;
+        vivo:termLabel             "RDS11010" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS11108
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1027,7 +1261,10 @@ crdc-ccrd-data:RDS11108
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11108" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11108"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development of social and economic environmental policies, legislation and standards. In addition, this group covers R&D directed towards the social, economic, environmental, development, and population issues of regional, urban, suburban, rural, and northern communities."@en-CA ;
+        vivo:termLabel             "RDS11108" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS105
         a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -1039,7 +1276,10 @@ crdc-ccrd-data:RDS105
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS105" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS105"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the production, storage, transportation, distribution and rational use of all forms of energy. This objective also includes R&D activities on processes designed to increase the efficiency of energy production and distribution, and the study of energy conservation. It does not include R&D activities related to prospecting (objective 1 or RDS101) or R&D activities into vehicle and engine propulsion (objective 6 or RDS106)."@en-CA ;
+        vivo:termLabel             "RDS105" .
 
 crdc-ccrd-data:RDS10502
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -1052,20 +1292,10 @@ crdc-ccrd-data:RDS10502
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10502" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS105 .
-
-crdc-ccrd-data:RDS10807
-        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
-        rdfs:label                 "Primary animal products"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 65" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the preparation, handling or storage of primary animal products such as eggs, honey, raw wool, unprocessed or minimally processed fish or milk, and other animal fibres, hides and skins."@en-CA ;
-        crdc-ccrd:classTitle       "Primary animal products"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10807" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10502"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the preparation and supply of energy resources, including the production of hydrogen from other energy sources and biofuel production."@en-CA ;
+        vivo:termLabel             "RDS10502" ;
+        skos:broader               crdc-ccrd-data:RDS105 .
 
 crdc-ccrd-data:RDS11008
         a                          skos:Concept , crdc-ccrd:CRDC_CCRD_Group , owl:Class ;
@@ -1078,7 +1308,26 @@ crdc-ccrd-data:RDS11008
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11008" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11008"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of ethics. Including but not limited to applying ethical or moral theory to such issues; and developing codes of behaviour and standards of practice for businesses, professions and trades."@en-CA ;
+        vivo:termLabel             "RDS11008" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10807
+        a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Primary animal products"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 65" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the preparation, handling or storage of primary animal products such as eggs, honey, raw wool, unprocessed or minimally processed fish or milk, and other animal fibres, hides and skins."@en-CA ;
+        crdc-ccrd:classTitle       "Primary animal products"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS10807" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10807"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the preparation, handling or storage of primary animal products such as eggs, honey, raw wool, unprocessed or minimally processed fish or milk, and other animal fibres, hides and skins."@en-CA ;
+        vivo:termLabel             "RDS10807" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd-data:RDS11102
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1091,7 +1340,10 @@ crdc-ccrd-data:RDS11102
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11102" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11102"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards understanding issues relating to international trade, including trade policy, assistance and protection and international agreements on trade."@en-CA ;
+        vivo:termLabel             "RDS11102" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10901
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -1104,7 +1356,10 @@ crdc-ccrd-data:RDS10901
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10901" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS109 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10901"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the learning outcomes of individual learners at specific education levels."@en-CA ;
+        vivo:termLabel             "RDS10901" ;
+        skos:broader               crdc-ccrd-data:RDS109 .
 
 crdc-ccrd-data:RDS10402
         a                          owl:Class , skos:Concept , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1117,7 +1372,10 @@ crdc-ccrd-data:RDS10402
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10402" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10402"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with turning a project sketch plan into detailed architectural and engineering designs and specifications."@en-CA ;
+        vivo:termLabel             "RDS10402" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS112
         a                          crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -1129,20 +1387,10 @@ crdc-ccrd-data:RDS112
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS112" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
-
-crdc-ccrd-data:RDS10801
-        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
-        rdfs:label                 "Forestry"@en-CA ;
-        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 59" ;
-        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
-        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the operation, maintenance and protection (including forest fire fighting and control) of native forests, softwood and hardwood plantations. It includes harvesting and transportation of wood and other forest products from forests and plantations and the integration of farm and forestry."@en-CA ;
-        crdc-ccrd:classTitle       "Forestry"@en-CA ;
-        crdc-ccrd:hasHierarchicalStructure
-                "Group"@en-CA ;
-        crdc-ccrd:hasID            "RDS10801" ;
-        crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS108 .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS112"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives."@en-CA ;
+        vivo:termLabel             "RDS112" .
 
 crdc-ccrd-data:RDS11002
         a                          owl:Class , crdc-ccrd:CRDC_CCRD_Group , skos:Concept ;
@@ -1155,7 +1403,26 @@ crdc-ccrd-data:RDS11002
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11002" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11002"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards media services. It includes but is not limited to broadcasting or online streaming services; internet and social media; animation and video games; publishing and printing services; and film and video services."@en-CA ;
+        vivo:termLabel             "RDS11002" ;
+        skos:broader               crdc-ccrd-data:RDS110 .
+
+crdc-ccrd-data:RDS10801
+        a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
+        rdfs:label                 "Forestry"@en-CA ;
+        rdfs:seeAlso               " fileName: crdc-ccrd-2020-seo-ose-structure-eng row: 59" ;
+        rdfs:subClassOf            crdc-ccrd-data:RDS108 ;
+        crdc-ccrd:classDefinition  "This group covers research and experimental development (R&D) activities directed towards improving the operation, maintenance and protection (including forest fire fighting and control) of native forests, softwood and hardwood plantations. It includes harvesting and transportation of wood and other forest products from forests and plantations and the integration of farm and forestry."@en-CA ;
+        crdc-ccrd:classTitle       "Forestry"@en-CA ;
+        crdc-ccrd:hasHierarchicalStructure
+                "Group"@en-CA ;
+        crdc-ccrd:hasID            "RDS10801" ;
+        crdc-ccrd:hasLevel         "2"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10801"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards improving the operation, maintenance and protection (including forest fire fighting and control) of native forests, softwood and hardwood plantations. It includes harvesting and transportation of wood and other forest products from forests and plantations and the integration of farm and forestry."@en-CA ;
+        vivo:termLabel             "RDS10801" ;
+        skos:broader               crdc-ccrd-data:RDS108 .
 
 crdc-ccrd-data:RDS10302
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1168,10 +1435,10 @@ crdc-ccrd-data:RDS10302
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10302" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS103 .
-
-crdc-ccrd:CRDC_CCRD_Division
-        skos:broader  crdc-ccrd-data:RDS105 , crdc-ccrd-data:RDS104 , crdc-ccrd-data:RDS103 , crdc-ccrd-data:RDS102 , crdc-ccrd-data:RDS101 , crdc-ccrd-data:RDS109 , crdc-ccrd-data:RDS108 , crdc-ccrd-data:RDS112 , crdc-ccrd-data:RDS107 , crdc-ccrd-data:RDS111 , crdc-ccrd-data:RDS106 , crdc-ccrd-data:RDS110 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10302"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards an understanding of celestial objects and phenomena, including space telescopes and space astronomy."@en-CA ;
+        vivo:termLabel             "RDS10302" ;
+        skos:broader               crdc-ccrd-data:RDS103 .
 
 crdc-ccrd-data:RDS10607
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1184,7 +1451,13 @@ crdc-ccrd-data:RDS10607
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10607" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10607"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the manufacture and repair of transport equipment, including their components."@en-CA ;
+        vivo:termLabel             "RDS10607" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
+
+crdc-ccrd:CRDC_CCRD_Division
+        skos:broader  crdc-ccrd-data:RDS105 , crdc-ccrd-data:RDS104 , crdc-ccrd-data:RDS103 , crdc-ccrd-data:RDS102 , crdc-ccrd-data:RDS101 , crdc-ccrd-data:RDS109 , crdc-ccrd-data:RDS108 , crdc-ccrd-data:RDS112 , crdc-ccrd-data:RDS107 , crdc-ccrd-data:RDS111 , crdc-ccrd-data:RDS106 , crdc-ccrd-data:RDS110 .
 
 crdc-ccrd-data:RDS10701
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -1197,7 +1470,10 @@ crdc-ccrd-data:RDS10701
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10701" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS107 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10701"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development and manufacture of products and methods used in the prevention, diagnosis and treatment (using medications or drugs) of human diseases."@en-CA ;
+        vivo:termLabel             "RDS10701" ;
+        skos:broader               crdc-ccrd-data:RDS107 .
 
 crdc-ccrd-data:RDS10202
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Group ;
@@ -1210,7 +1486,10 @@ crdc-ccrd-data:RDS10202
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10202" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS102 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10202"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards the development and provision of water and waste services and utilities to households and industrial and commercial premises."@en-CA ;
+        vivo:termLabel             "RDS10202" ;
+        skos:broader               crdc-ccrd-data:RDS102 .
 
 crdc-ccrd-data:RDS10601
         a                          crdc-ccrd:CRDC_CCRD_Group , owl:Class , skos:Concept ;
@@ -1223,7 +1502,10 @@ crdc-ccrd-data:RDS10601
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10601" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS106 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10601"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards processing, mining and extracting minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands. This group also covers R&D directed towards the manufacture of ceramics, glass and glass products and industrial mineral products, including clay, cement and concrete products. It includes R&D directed towards the manufacture of plaster and non-metallic mineral products. This group also covers R&D directed towards the processing of wood, and the manufacture of wood products, paper and paper products."@en-CA ;
+        vivo:termLabel             "RDS10601" ;
+        skos:broader               crdc-ccrd-data:RDS106 .
 
 crdc-ccrd-data:RDS10102
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -1236,7 +1518,10 @@ crdc-ccrd-data:RDS10102
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10102" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS101 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10102"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards exploration for energy mineral and geothermal energy resources. It does not include the mining and extraction of energy mineral resource."@en-CA ;
+        vivo:termLabel             "RDS10102" ;
+        skos:broader               crdc-ccrd-data:RDS101 .
 
 crdc-ccrd-data:RDS11107
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -1249,7 +1534,10 @@ crdc-ccrd-data:RDS11107
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS11107" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS111 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS11107"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards aspects of work. Not limited to but including employment and work patterns; labour market; professions; salaries and benefits; and, workplace accommodations and safety."@en-CA ;
+        vivo:termLabel             "RDS11107" ;
+        skos:broader               crdc-ccrd-data:RDS111 .
 
 crdc-ccrd-data:RDS10407
         a                          crdc-ccrd:CRDC_CCRD_Group , skos:Concept , owl:Class ;
@@ -1262,7 +1550,10 @@ crdc-ccrd-data:RDS10407
                 "Group"@en-CA ;
         crdc-ccrd:hasID            "RDS10407" ;
         crdc-ccrd:hasLevel         "2"^^xsd:double ;
-        skos:broaderTransitive     crdc-ccrd-data:RDS104 .
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS10407"^^xsd:anyURI ;
+        vivo:overview              "This group covers research and experimental development (R&D) activities directed towards land associated with water management in various natural environments and ecosystems. It includes urban and industrial land and water management issues, and the allocation of water for agricultural production."@en-CA ;
+        vivo:termLabel             "RDS10407" ;
+        skos:broader               crdc-ccrd-data:RDS104 .
 
 crdc-ccrd-data:RDS104
         a                          skos:Concept , owl:Class , crdc-ccrd:CRDC_CCRD_Division ;
@@ -1274,4 +1565,7 @@ crdc-ccrd-data:RDS104
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@en-CA ;
         crdc-ccrd:hasID            "RDS104" ;
-        crdc-ccrd:hasLevel         "1"^^xsd:double .
+        crdc-ccrd:hasLevel         "1"^^xsd:double ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDS104"^^xsd:anyURI ;
+        vivo:overview              "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to infrastructure, including e-infrastructures, land development, and the construction of buildings. More generally, this objective covers all R&D activities relating to the general planning of land use. This objective includes R&D activities into protection against harmful effects in town and country planning but not the research into other types of pollution (objective 2 or RDS102). This objective also includes R&D activities related to transport systems; telecommunication systems; network systems and services, including network security; mobile technologies; general planning of land use; the construction and planning of buildings; civil engineering; and water supply."@en-CA ;
+        vivo:termLabel             "RDS104" .

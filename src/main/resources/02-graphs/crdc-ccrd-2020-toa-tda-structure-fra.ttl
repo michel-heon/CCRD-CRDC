@@ -1,15 +1,18 @@
 @base          <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-toa-tda-structure-fra> .
-@prefix skos2: <http://www.w3.org/2008/05/skos#> .
 @prefix :      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/crdc-ccrd-2020-toa-tda-structure-fra#> .
 @prefix crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> .
-@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix terms: <http://purl.org/dc/terms/> .
-@prefix crdc-ccrd: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix crdc-ccrd: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
 @prefix crdc-ccrd-data: <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/individual#> .
 
 crdc-ccrd-data:RDT1  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
@@ -20,10 +23,13 @@ crdc-ccrd-data:RDT1  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , sk
         crdc-ccrd:classTitle       "Recherche fondamentale"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@fr-CA ;
-        crdc-ccrd:hasID            "RDT1" .
+        crdc-ccrd:hasID            "RDT1" ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDT1"^^xsd:anyURI ;
+        vivo:overview              "La recherche fondamentale consiste en des travaux de recherche expérimentaux et théoriques entrepris principalement en vue d'acquérir de nouvelles connaissances sur les fondements des phénomènes et des faits observables, sans envisager une application ou une utilisation particulière."@fr-CA ;
+        vivo:termLabel             "RDT1" .
 
 crdc-ccrd:TOA_TDA_Entity
-        skos:broader  crdc-ccrd-data:RDT2 , crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 .
+        skos:broader  crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 , crdc-ccrd-data:RDT2 .
 
 <>      a                owl:Ontology ;
         rdfs:comment     "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity orTOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-CA , "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)"@fr-CA ;
@@ -32,7 +38,7 @@ crdc-ccrd:TOA_TDA_Entity
         owl:versionInfo  "Based on CRDC/CCRD 2020 Version 1.0 (This standard was approved as a recommended standard on May 26, 2020. )" , "Transformed in ontology by Université du Québec à Montréal (2021/07/21)" , "Author: Michel Héon PhD : heon.michel@uqam.ca" .
 
 crdc-ccrd:CRDC_CCRD_Division
-        skos:broader  crdc-ccrd-data:RDT2 , crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 .
+        skos:broader  crdc-ccrd-data:RDT3 , crdc-ccrd-data:RDT1 , crdc-ccrd-data:RDT2 .
 
 crdc-ccrd-data:RDT2  a             skos:Concept , crdc-ccrd:CRDC_CCRD_Division , owl:Class ;
         rdfs:label                 "Recherche appliquée"@fr-CA ;
@@ -42,7 +48,10 @@ crdc-ccrd-data:RDT2  a             skos:Concept , crdc-ccrd:CRDC_CCRD_Division ,
         crdc-ccrd:classTitle       "Recherche appliquée"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@fr-CA ;
-        crdc-ccrd:hasID            "RDT2" .
+        crdc-ccrd:hasID            "RDT2" ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDT2"^^xsd:anyURI ;
+        vivo:overview              "La recherche appliquée consiste en des travaux de recherche originaux entrepris en vue d'acquérir de nouvelles connaissances et dirigés principalement vers un but ou un objectif pratique déterminé."@fr-CA ;
+        vivo:termLabel             "RDT2" .
 
 crdc-ccrd-data:RDT3  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , skos:Concept ;
         rdfs:label                 "Développement expérimental"@fr-CA ;
@@ -52,4 +61,7 @@ crdc-ccrd-data:RDT3  a             crdc-ccrd:CRDC_CCRD_Division , owl:Class , sk
         crdc-ccrd:classTitle       "Développement expérimental"@fr-CA ;
         crdc-ccrd:hasHierarchicalStructure
                 "Division"@fr-CA ;
-        crdc-ccrd:hasID            "RDT3" .
+        crdc-ccrd:hasID            "RDT3" ;
+        vivo:entryTerm             "https://www120.statcan.gc.ca/stcsr/en/cm1/cls?fq=ds%3A106v10crdcfor2020&start=0&showSum=show&q=RDT3"^^xsd:anyURI ;
+        vivo:overview              "Le développement expérimental consiste en des travaux systématiques fondés sur les connaissances tirées de la recherche et l'expérience pratique et produisant des nouvelles connaissances techniques visant à déboucher sur de nouveaux produits ou procédés ou à améliorer les produits ou procédés existants."@fr-CA ;
+        vivo:termLabel             "RDT3" .

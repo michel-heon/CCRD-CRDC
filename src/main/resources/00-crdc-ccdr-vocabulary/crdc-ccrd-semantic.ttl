@@ -6,12 +6,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/uqam.ca/vocabulary/crdc-ccrd>
   rdf:type owl:Ontology ;
-  rdfs:comment "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)."@fr-CA ;
-  rdfs:comment "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity or TOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-CA ;
+  vivo:overview "La Classification canadienne de la recherche et du développement (CCRD) 2020 a été élaborée conjointement par le Conseil de recherches en sciences humaines du Canada (CRSH), le Conseil de recherches en sciences naturelles et en génie du Canada (CRSNG), la Fondation canadienne pour l'innovation (FCI), les Instituts de recherche en santé du Canada (IRSC) et Statistique Canada qui en est le gardien. Cette classification-type conjointe, inspirée du modèle de Frascati 2015 de l'Organisation de Coopération et de Développement Économiques (OCDE), sera utilisée par les organismes subventionnaires fédéraux et Statistique Canada pour recueillir et diffuser des données liées à la recherche et au développement au Canada. La première version officielle de la CCRD est la version 1.0 de 2020 qui est composée de 3 éléments principaux: le type d'activité ou TDA (avec 3 catégories), le domaine de recherche ou DDR (avec 1663 domaines au niveau le plus bas) et l'objectif socioéconomique ou OSE (avec 85 groupes principaux au niveau le plus bas)."@fr-CA ;
+  vivo:overview "The Canadian Research and Development Classification (CRDC) was developed conjointly by the Social Sciences and Humanities Research Council of Canada (SSHRC), the Natural Sciences and Engineering Research Council of Canada (NSERC), the Canada Foundation for Innovation (CFI), the Canadian Institutes of Health Research (CIHR), and Statistics Canada which is the custodian. This shared standard classification, inspired by the Frascati Model 2015 of the Organisation for Economic Co-operation and Development (OECD), will be used by the federal granting agencies and Statistics Canada to collect and disseminate data related to research and development in Canada. The CRDC first official version is the 2020 version 1.0 and it is composed of 3 main pieces: the type of activity or TOA (with 3 categories), the field of research or FOR (with 1663 fields at the lowest level) and socioeconomic objective or SEO (with 85 main groups at the lowest level)."@en-CA ;
   rdfs:seeAlso <https://www.oecd.org/sti/inno/frascati-manual.htm> ;
   rdfs:seeAlso <https://www.statcan.gc.ca/eng/subjects/standard/crdc/2020v1/index> ;
   rdfs:seeAlso <https://www.statcan.gc.ca/fra/sujets/norme/ccrd/2020v1/indice> ;
@@ -31,6 +32,8 @@ crdc-ccrd:CRDC_CCRD_Class
 crdc-ccrd:CRDC_CCRD_Division
   rdf:type owl:Class ;
   crdc-ccrd:hasLevel "1"^^xsd:int ;
+  vivo:overview "La division représente un vaste domaine ou une grande discipline de recherche et elle concorde étroitement avec les niveaux de « classification générale »"@fr-CA ;
+  vivo:overview "The Division represents a broad subject area or research discipline and is closely aligned with the 'broad classification'"@en-CA ;
   rdfs:label "Division" ;
   rdfs:label "Division"@en-CA ;
   rdfs:label "Division"@fr-CA ;
@@ -39,6 +42,8 @@ crdc-ccrd:CRDC_CCRD_Division
 crdc-ccrd:CRDC_CCRD_Group
   rdf:type owl:Class ;
   crdc-ccrd:hasLevel "2"^^xsd:int ;
+  vivo:overview  "Chaque division est fondée sur une discipline générale. Au sein de chacune, les groupes partagent la même méthodologie générale, le même domaine de connaissances ou la même perspective. Chaque groupe est un regroupement de classes. Les groupes, les classes et les sous-classes (domaines) de recherche sont catégorisés par rapport à la division utilisant la même méthodologie plutôt que par rapport à la division qu'ils appuient."@fr-CA ;
+  vivo:overview  "Each Division is based on a broad discipline. Groups within each Division are those which share the same broad methodology, knowledge domain and/or perspective as others in the Division. Each Group is a collection of classes. Groups, Classes and Subclasses (Fields) of research are categorized to the Divisions sharing the same methodology rather than the Division they support."@en-CA ;
   rdfs:label "Group" ;
   rdfs:label "Group"@en-CA ;
   rdfs:label "Groupe"@fr-CA ;
@@ -64,24 +69,24 @@ crdc-ccrd:Entity
 .
 crdc-ccrd:FOR_DDR_Entity
   rdf:type owl:Class ;
-  rdfs:comment """Cette partie de la CCRD permet de catégoriser ou de classer les activités de R-D selon le domaine de recherche; c'est la méthodologie utilisée dans la R-D qui est prise en considération.
+  vivo:overview  """Cette partie de la CCRD permet de catégoriser ou de classer les activités de R-D selon le domaine de recherche; c'est la méthodologie utilisée dans la R-D qui est prise en considération.
 Les catégories de cette classification comprennent les principaux domaines ou domaines de recherche selon les sources de connaissances, les objets et les méthodes et techniques utilisées."""@fr-CA ;
-  rdfs:comment """This piece of the CRDC allows R&D activity to be categorized or classified according to the field of research (FOR); it is the methodology used in the R&D that is being considered.
+  vivo:overview  """This piece of the CRDC allows R&D activity to be categorized or classified according to the field of research (FOR); it is the methodology used in the R&D that is being considered.
 The categories within this classification include major fields of research based on the knowledge sources, the objects of interest, and the methods and techniques being used."""@en-CA ;
   rdfs:label "FOR DDR Entity" ;
   rdfs:subClassOf crdc-ccrd:Entity ;
 .
 crdc-ccrd:SEO_OSE_Entity
   rdf:type owl:Class ;
-  rdfs:comment "Cette classification permet la catégorisation de la R-D selon le but ou le résultat de cette activité perçu par le fournisseur de données (chercheur). Il s'agit de domaines économiques, sociaux, technologiques ou scientifiques distincts permettant de définir les buts principaux de la R-D. Les attributs appliqués à la conception de la classification selon l'objectif socioéconomique comprennent une combinaison d'industries, de processus, de produits et d'éléments de santé, d'éducation, de culture, d'éthique et autres volets socioenvironnementaux d'intérêt particulier."@fr-CA ;
-  rdfs:comment "This classification allows the categorization of R&D according to the purpose or outcome of the R&D as perceived by the data provider (researcher). It consists of discrete economic, social, technological or scientific domains for identifying the principal purposes of the R&D. The attributes applied to the design of the SEO classification comprise a combination of industries, processes, products, health, education, culture, ethics and other social and environmental aspects of particular interest."@en-CA ;
+  vivo:overview  "Cette classification permet la catégorisation de la R-D selon le but ou le résultat de cette activité perçu par le fournisseur de données (chercheur). Il s'agit de domaines économiques, sociaux, technologiques ou scientifiques distincts permettant de définir les buts principaux de la R-D. Les attributs appliqués à la conception de la classification selon l'objectif socioéconomique comprennent une combinaison d'industries, de processus, de produits et d'éléments de santé, d'éducation, de culture, d'éthique et autres volets socioenvironnementaux d'intérêt particulier."@fr-CA ;
+  vivo:overview "This classification allows the categorization of R&D according to the purpose or outcome of the R&D as perceived by the data provider (researcher). It consists of discrete economic, social, technological or scientific domains for identifying the principal purposes of the R&D. The attributes applied to the design of the SEO classification comprise a combination of industries, processes, products, health, education, culture, ethics and other social and environmental aspects of particular interest."@en-CA ;
   rdfs:label "SEO OSE Entity" ;
   rdfs:subClassOf crdc-ccrd:Entity ;
 .
 crdc-ccrd:TOA_TDA_Entity
   rdf:type owl:Class ;
-  rdfs:comment "Cette classification permet de catégoriser les activités de R-D en fonction du type d'effort de recherche, à savoir la recherche fondamentale (qui regroupe la recherche fondamentale pure et la recherche fondamentale stratégique, par ailleurs divisées dans le Manuel de Frascati 2015), la recherche appliquée et le développement expérimental."@fr-CA ;
-  rdfs:comment "This classification allows R&D activity to be categorized according to the type of research effort, namely basic or fundamental research (which groups pure basic research and strategic basic research other split in the Frascati Manual 2015), applied research and experimental development."@en-CA ;
+  vivo:overview "Cette classification permet de catégoriser les activités de R-D en fonction du type d'effort de recherche, à savoir la recherche fondamentale (qui regroupe la recherche fondamentale pure et la recherche fondamentale stratégique, par ailleurs divisées dans le Manuel de Frascati 2015), la recherche appliquée et le développement expérimental."@fr-CA ;
+  vivo:overview "This classification allows R&D activity to be categorized according to the type of research effort, namely basic or fundamental research (which groups pure basic research and strategic basic research other split in the Frascati Manual 2015), applied research and experimental development."@en-CA ;
   rdfs:label "TOA TDA Entity" ;
   rdfs:seeAlso <https://www.oecd.org/fr/publications/manuel-de-frascati-2015-9789264257252-fr.htm> ;
   rdfs:subClassOf crdc-ccrd:Entity ;

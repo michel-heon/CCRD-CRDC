@@ -9,17 +9,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "Experimental development refers to systematic work, drawing on knowledge gained from research and practical experience and producing additional knowledge, which is directed to producing new products or processes or to improving existing products or processes." ;
-  crdc-ccrd-csv:Class_title       "Experimental development" ;
-  crdc-ccrd-csv:Code              "RDT3" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-toa-tda-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     3
-] .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
 
 [ a                               owl:NamedIndividual ;
   crdc-ccrd-csv:Class_definition  "Applied research refers to original investigation undertaken in order to acquire new knowledge. It is, however, directed primarily towards a specific, practical aim or objective." ;
@@ -30,6 +22,17 @@
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-toa-tda-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
   w3c-csv:row                     2
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "Experimental development refers to systematic work, drawing on knowledge gained from research and practical experience and producing additional knowledge, which is directed to producing new products or processes or to improving existing products or processes." ;
+  crdc-ccrd-csv:Class_title       "Experimental development" ;
+  crdc-ccrd-csv:Code              "RDT3" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-toa-tda-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     3
 ] .
 
 [ a                               owl:NamedIndividual ;
