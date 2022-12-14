@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>CCRD-CRDC</groupId>
     <artifactId>CCRD-CRDC</artifactId>
@@ -34,6 +33,47 @@
     </properties>
     <build>
         <plugins>
+            <plugin>
+                <artifactId>maven-help-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>print-all-profiles</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>all-profiles</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.1</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <echo>#######################################################################</echo>
+                                <echo># Displaying value of 'CRDC-CCRD' maven properties </echo>
+                                <echo>#######################################################################</echo>
+                                <echo># [java.version]           ${java.version}</echo>
+                                <echo># [maven-site-plugin.skip] ${maven-site-plugin.skip}</echo>
+                                <echo># [jena-version]           ${jena-version}</echo>
+                                <echo># [csv-repo]               ${csv-repo}</echo>
+                                <echo># [dataset-repo]           ${dataset-repo}</echo>
+                                <echo># [graph-result-repo]      ${graph-result-repo}</echo>
+                                <echo>#######################################################################</echo>
+                                <echo>#######################################################################</echo>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
@@ -110,7 +150,7 @@
         <profile>
             <!-- This profile performs the transformation of CSV files into 
                 a data graph structured according to the semantics of crdc-ccrd-semantic.ttl -->
-            <id>build-ccrd-crdc</id>
+            <id>build-ccrd-crdc-onto-from-csv</id>
             <build>
                 <plugins>
                     <plugin>
@@ -127,9 +167,9 @@
                                     <arguments>
                                         <argument>-i${csv-repo}</argument> <!-- CSV Input Directory -->
                                         <argument>-o${dataset-repo}</argument> <!-- Datasets Output Directory corresponding to CSV -->
-                                        <argument>-g${graph-result-repo}</argument> <!-- Ontologies output directory -->
+                                        <argument>-g${graph-result-repo}</argument> <!-- Ontologies output directory 
                                         Graph result ontology filename
-                                        (stdout if it is not specified)
+                                        (stdout if it is not specified)-->
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -190,13 +230,10 @@
                                     <mainClass>jena.schemagen</mainClass>
                                     <commandlineArgs>
                                         --inference \
-                                        -i \
-                                        src/main/resources/01-datasets/crdc-ccrd-csv-data.ttl  \
+                                        -i src/main/resources/01-datasets/crdc-ccrd-csv-data.ttl  \
                                         -e TTL \
-                                        --package \
-                                        ca.uqam.vocabulary.model \
-                                        -o \
-                                        src/main/java \
+                                        --package ca.uqam.vocabulary.model \
+                                        -o src/main/java \
                                         -n CRDC_CCRD_CSV
                                     </commandlineArgs>
                                 </configuration>

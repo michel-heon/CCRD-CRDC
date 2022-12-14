@@ -1,269 +1,27 @@
-@base          <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-seo-ose-structure-eng> .
-@prefix skos2: <http://www.w3.org/2008/05/skos#> .
-@prefix :      <http://purl.org/uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-seo-ose-structure-eng#> .
-@prefix crdc-ccrd-csv: <http://ca.uqam/crdc-ccrd/csv#> .
-@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix terms: <http://purl.org/dc/terms/> .
+@base          <http://vivo.uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-seo-ose-structure-eng> .
+@prefix :      <http://vivo.uqam.ca/vocabulary/crdc-ccrd/csv/crdc-ccrd-2020-seo-ose-structure-eng#> .
+@prefix crdc-ccrd-csv: <http://vivo.uqam.ca/vocabulary/crdc-ccrd/csv#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix w3c-csv: <http://w3c/future-csv-vocab/> .
 @prefix vivo:  <http://vivoweb.org/ontology/core#> .
 @prefix obo:   <http://purl.obolibrary.org/obo/> .
-@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the preparation, handling or storage of primary animal products such as eggs, honey, raw wool, unprocessed or minimally processed fish or milk, and other animal fibres, hides and skins." ;
-  crdc-ccrd-csv:Class_title       "Primary animal products" ;
-  crdc-ccrd-csv:Code              "RDS10807" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     65
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards justice and the law. Not limited to but including legal processes; civil and criminal justice; crime prevention, law enforcement and correctional services; and, law reform." ;
-  crdc-ccrd-csv:Class_title       "Justice and the law" ;
-  crdc-ccrd-csv:Code              "RDS11106" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     90
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards heritage issues, including the conservation of natural, social and cultural heritage. This group also covers R&D directed towards indigenous culture, knowledge, language, and rights." ;
-  crdc-ccrd-csv:Class_title       "Heritage (including Indigenous culture)" ;
-  crdc-ccrd-csv:Code              "RDS11007" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     79
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards exploration for energy mineral and geothermal energy resources. It does not include the mining and extraction of energy mineral resource." ;
-  crdc-ccrd-csv:Class_title       "Energy resources exploration" ;
-  crdc-ccrd-csv:Code              "RDS10102" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     3
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of and support the political structure of society; public administration issues and economic policy; regional studies and multi-level governance; social change, social processes and social conflicts; the development of social security and social assistance systems; and the social aspects of the organisation of work. This objective also includes de R&D activities related to gender-related social studies, including discrimination and familiar problems; the development of methods of combating poverty at local, national and international levels; the protection of specific population categories on the social level (immigrants, delinquents, \"drop outs\", etc.), on the sociological level, i.e. with regard to their way of life (young people, adults, retired people, disabled people, etc.) and on the economic level (consumers, farmers, fishermen, miners, the unemployed, etc.); and methods of providing social assistance when sudden changes (natural, technological or social) occur in society. This objective does not include R&D activities related to industrial health, the health control of communities from the organisational and socio-medical point of view, pollution at the place of work, the prevention of industrial accidents and the medical aspects of the causes of industrial accidents (objective 7 or RDS107)." ;
-  crdc-ccrd-csv:Class_title       "Political and social systems, structures and processes" ;
-  crdc-ccrd-csv:Code              "RDS111" ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of social phenomena related to cultural activities, religion and leisure activities so as to define their impact on life in society, as well as to racial and cultural integration and on socio-cultural changes in these areas. The concept of \"culture\" covers the sociology of science, religion, art, sport and leisure, and also comprises inter alia R&D activities on the media, the mastery of language and social integration, libraries, archives and external cultural policy. This objective also includes R&D activities related to: recreational and sporting services; cultural services; broadcasting or online streaming and publishing services; and religious and other community services." ;
+  crdc-ccrd-csv:Class_title       "Culture, recreation, religion and media" ;
+  crdc-ccrd-csv:Code              "RDS110" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Division" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     84
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards climate and climate change. For the purpose of the classification, climate refers to the long-term average condition of the weather in a given area." ;
-  crdc-ccrd-csv:Class_title       "Climate and climate change" ;
-  crdc-ccrd-csv:Code              "RDS10104" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     5
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards fixed line, mobile and satellite communication networks and services. It includes videoconference services." ;
-  crdc-ccrd-csv:Class_title       "Communication technologies, systems and services" ;
-  crdc-ccrd-csv:Code              "RDS10406" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     28
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of tourism services." ;
-  crdc-ccrd-csv:Class_title       "Tourism" ;
-  crdc-ccrd-csv:Code              "RDS11003" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     75
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of industrial chemicals and related products, including those derived from oil and gas refining; and, chemical fertilisers and chemicals for the protection of crops and livestock. It excludes veterinary pharmaceutical products." ;
-  crdc-ccrd-csv:Class_title       "Agricultural and industrial chemicals" ;
-  crdc-ccrd-csv:Code              "RDS10605" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     44
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving technologies, processes and methods used for harvesting, handling and packing of plant products, other than forest products." ;
-  crdc-ccrd-csv:Class_title       "Harvesting and packing of plant products" ;
-  crdc-ccrd-csv:Code              "RDS10804" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     62
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development of social and economic environmental policies, legislation and standards. In addition, this group covers R&D directed towards the social, economic, environmental, development, and population issues of regional, urban, suburban, rural, and northern communities." ;
-  crdc-ccrd-csv:Class_title       "Environment, urban, and rural planning and development" ;
-  crdc-ccrd-csv:Code              "RDS11108" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     92
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards management, productivity, and innovation issues. It includes R&D directed towards marketing, e-commerce, industrial relations, and business support services." ;
-  crdc-ccrd-csv:Class_title       "Management, marketing and productivity" ;
-  crdc-ccrd-csv:Code              "RDS11103" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     87
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards land associated with water management in various natural environments and ecosystems. It includes urban and industrial land and water management issues, and the allocation of water for agricultural production." ;
-  crdc-ccrd-csv:Class_title       "Land and water management" ;
-  crdc-ccrd-csv:Code              "RDS10407" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     29
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards understanding the dynamics of atmospheric and weather systems." ;
-  crdc-ccrd-csv:Class_title       "Atmosphere and weather" ;
-  crdc-ccrd-csv:Code              "RDS10103" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     4
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards assessment and management of various ecosystems; environmental and natural resources; and, finding appropriate ways to nurture and rehabilitate seriously degraded environments back to original condition or to an improved state. This group also covers R&D directed towards an understanding of natural hazards (such as bushfire, cyclones and storms, earthquakes, landslides, tsunamis and volcanic eruptions), their impact on lives, property and environments and the development of warning systems and control measures to minimise impacts from these hazards." ;
-  crdc-ccrd-csv:Class_title       "Control and care of the environment" ;
-  crdc-ccrd-csv:Code              "RDS10205" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     13
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the characteristics and harvesting of fisheries grown or farmed in aquaculture, or caught in the wild, either for commercial, recreational or other reasons." ;
-  crdc-ccrd-csv:Class_title       "Fisheries (including aquaculture and wild caught)" ;
-  crdc-ccrd-csv:Code              "RDS10805" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     63
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards government and politics. It includes electoral and political systems; civics and citizenship; and public service management." ;
-  crdc-ccrd-csv:Class_title       "Government and politics" ;
-  crdc-ccrd-csv:Code              "RDS11104" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     88
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the operation, maintenance and protection (including forest fire fighting and control) of native forests, softwood and hardwood plantations. It includes harvesting and transportation of wood and other forest products from forests and plantations and the integration of farm and forestry." ;
-  crdc-ccrd-csv:Class_title       "Forestry" ;
-  crdc-ccrd-csv:Code              "RDS10801" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     59
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of tobacco products, furniture, prefabricated buildings and other products not classified elsewhere, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Industrial production and technology, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10699" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     51
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of water and waste services and utilities to households and industrial and commercial premises." ;
-  crdc-ccrd-csv:Class_title       "Water provision and waste services" ;
-  crdc-ccrd-csv:Code              "RDS10202" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     10
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards animal production, animal primary products, plant production and plant primary products not elsewhere classified. It includes the traceability and quality assurance of plant products, and advancement of knowledge in all these areas." ;
-  crdc-ccrd-csv:Class_title       "Agriculture, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10899" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     66
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improving the control of pollution, including the identification and analysis of the sources of pollution and their causes, and all pollutants, including their dispersal in the environment and the effects on humans, species (fauna, flora, micro-organisms) and the biosphere. The development of monitoring facilities for the measurement of all kinds of pollution is included, as are R&D activities for the elimination and prevention of all forms of pollution in all types of environment." ;
-  crdc-ccrd-csv:Class_title       "Environmental protection" ;
-  crdc-ccrd-csv:Code              "RDS102" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     8
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the processing of wood, and the manufacture of wood products, paper and paper products." ;
-  crdc-ccrd-csv:Class_title       "Wood, wood products and paper" ;
-  crdc-ccrd-csv:Code              "RDS10604" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     43
+  w3c-csv:row                     72
 ] .
 
 [ a                               owl:NamedIndividual ;
@@ -278,14 +36,14 @@
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the production of leather and textile products and fibre processing." ;
-  crdc-ccrd-csv:Class_title       "Leather products, fibre processing and textiles" ;
-  crdc-ccrd-csv:Code              "RDS10603" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards providing prevention, support, access, justice, community and welfare services to individuals, families, or to defined vulnerable populations, such youth and seniors." ;
+  crdc-ccrd-csv:Class_title       "Family and social work" ;
+  crdc-ccrd-csv:Code              "RDS11109" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     42
+  w3c-csv:row                     93
 ] .
 
 [ a                               owl:NamedIndividual ;
@@ -300,355 +58,14 @@
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with turning a project sketch plan into detailed architectural and engineering designs and specifications." ;
-  crdc-ccrd-csv:Class_title       "Construction design" ;
-  crdc-ccrd-csv:Code              "RDS10402" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards media services. It includes but is not limited to broadcasting or online streaming services; internet and social media; animation and video games; publishing and printing services; and film and video services." ;
+  crdc-ccrd-csv:Class_title       "Media services" ;
+  crdc-ccrd-csv:Code              "RDS11002" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     24
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of space not elsewhere classified, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Exploration and exploitation of space, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10399" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     21
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and improvement of air quality in various environments." ;
-  crdc-ccrd-csv:Class_title       "Air quality" ;
-  crdc-ccrd-csv:Code              "RDS10203" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     11
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the control of pests, diseases and exotic species in various natural and man-made environments. It includes quarantine and control measures within, at or outside national borders." ;
-  crdc-ccrd-csv:Class_title       "Control of pests, diseases and exotic species" ;
-  crdc-ccrd-csv:Code              "RDS10204" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     12
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding of past and current societies." ;
-  crdc-ccrd-csv:Class_title       "Understanding of societies, past and current" ;
-  crdc-ccrd-csv:Code              "RDS11010" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     82
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving space laboratories and space travel. It includes conventional electronic test laboratories and hardware, spacecraft integration and testing, control rooms, clean rooms, and human space flight." ;
-  crdc-ccrd-csv:Class_title       "Space laboratories and space travel" ;
-  crdc-ccrd-csv:Code              "RDS10304" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     19
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards education and training not elsewhere classified, including advancement of knowledge in this area." ;
-  crdc-ccrd-csv:Class_title       "Education, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10999" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     71
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the conservation and efficient use of energy in industry, transport, commerce and households. It includes energy used in forms such as petroleum products, electricity, gas, coke and briquettes and in the form of heat energy." ;
-  crdc-ccrd-csv:Class_title       "Energy conservation and efficiency" ;
-  crdc-ccrd-csv:Code              "RDS10506" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     37
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of terraforming, and systems capable of supporting terrestrial life forms, including the effects of space on living things, and how life adapts to the space environment." ;
-  crdc-ccrd-csv:Class_title       "Terraforming" ;
-  crdc-ccrd-csv:Code              "RDS10305" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     20
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the efficiency, safety and utility of ground, sea, rail and air transport. It also covers R&D directed towards improving the efficiency, safety and utility of deep space transport." ;
-  crdc-ccrd-csv:Class_title       "Transport systems" ;
-  crdc-ccrd-csv:Code              "RDS10405" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     27
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards community and public health of specific population groups and discrete community groups (e.g., aged persons, persons living in rural and remote areas), including indigenous communities. It includes the study of social and cultural factors affecting the health of these groups and the delivery of health services to these groups." ;
-  crdc-ccrd-csv:Class_title       "Specific population health" ;
-  crdc-ccrd-csv:Code              "RDS10704" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     56
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to infrastructure, including e-infrastructures, land development, and the construction of buildings. More generally, this objective covers all R&D activities relating to the general planning of land use. This objective includes R&D activities into protection against harmful effects in town and country planning but not the research into other types of pollution (objective 2 or RDS102). This objective also includes R&D activities related to transport systems; telecommunication systems; network systems and services, including network security; mobile technologies; general planning of land use; the construction and planning of buildings; civil engineering; and water supply." ;
-  crdc-ccrd-csv:Class_title       "Transport, telecommunication and other infrastructures (including buildings)" ;
-  crdc-ccrd-csv:Code              "RDS104" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     22
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving international relations. It includes R&D relating to current social, cultural and economic aspects of other nations." ;
-  crdc-ccrd-csv:Class_title       "International relations" ;
-  crdc-ccrd-csv:Code              "RDS11105" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     89
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with the development of construction projects to the sketch plan stage." ;
-  crdc-ccrd-csv:Class_title       "Construction planning" ;
-  crdc-ccrd-csv:Code              "RDS10401" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     23
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving understanding of the social and cultural contexts of communication. It includes but is not limited to languages, literature, journalism, linguistics and semantics." ;
-  crdc-ccrd-csv:Class_title       "Communication, literature and language" ;
-  crdc-ccrd-csv:Code              "RDS11006" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     78
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards health not elsewhere classified, including advancement of knowledge in this area." ;
-  crdc-ccrd-csv:Class_title       "Health, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10799" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     57
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the characteristics, propagation and growing of all crops. It includes crops grown for industrial applications such as sugar cane, cotton, wine grapes, tobacco, and plants from which essential oils are extracted." ;
-  crdc-ccrd-csv:Class_title       "Crops" ;
-  crdc-ccrd-csv:Code              "RDS10803" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     61
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the sports, exercise or physical endeavor and other recreational activities. It includes the provision of services to sport and sporting clubs and recreation and leisure (including the operation of race tracks, parks, and botanical and zoological gardens)." ;
-  crdc-ccrd-csv:Class_title       "Sports, exercise and recreation" ;
-  crdc-ccrd-csv:Code              "RDS11005" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     77
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the learning outcomes of individual learners at specific education levels." ;
-  crdc-ccrd-csv:Class_title       "Stages of education" ;
-  crdc-ccrd-csv:Code              "RDS10901" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     68
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the scientific exploration of space, including robotic exploration of the solar system, and advanced exploration development." ;
-  crdc-ccrd-csv:Class_title       "Scientific exploration of space" ;
-  crdc-ccrd-csv:Code              "RDS10301" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     16
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving energy distribution including electricity and gas transmission and distribution." ;
-  crdc-ccrd-csv:Class_title       "Energy storage and distribution" ;
-  crdc-ccrd-csv:Code              "RDS10505" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     36
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards understanding issues relating to international trade, including trade policy, assistance and protection and international agreements on trade." ;
-  crdc-ccrd-csv:Class_title       "International trade" ;
-  crdc-ccrd-csv:Code              "RDS11102" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     86
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and manufacture of products and methods used in the prevention, diagnosis and treatment (using medications or drugs) of human diseases." ;
-  crdc-ccrd-csv:Class_title       "Human health procedures and pharmaceutical treatments" ;
-  crdc-ccrd-csv:Code              "RDS10701" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     53
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives." ;
-  crdc-ccrd-csv:Class_title       "Defence" ;
-  crdc-ccrd-csv:Code              "RDS112" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     96
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the physical and chemical conditions of water in various environments." ;
-  crdc-ccrd-csv:Class_title       "Water and hydrology" ;
-  crdc-ccrd-csv:Code              "RDS10105" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     6
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of machinery and equipment. It includes, among others, household electrical appliances, whitewares and automated machinery." ;
-  crdc-ccrd-csv:Class_title       "Machinery and equipment (including automated machinery and equipment)" ;
-  crdc-ccrd-csv:Code              "RDS10608" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     47
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers all research and experimental development (R&D) activities with objectives related to promote agriculture, forestry, fisheries and foodstuff production, or further knowledge on chemical fertilisers, biocides, biological pest control and the mechanisation of agriculture, as well as concerning the impact of agricultural and forestry activities on the environment. This objective also covers R&D activities aimed at improving food productivity and technology. It does not include R&D activities on the reduction of pollution (objective 2 or RDS102); on the development of rural areas; on the construction and planning of buildings; on the improvement of rural rest and recreation amenities and agricultural water supply (objective 4 or RDS104); on energy efficiency measures (objective 5 or RDS105); or on the food processing industry (objective 6 or RDS106)." ;
-  crdc-ccrd-csv:Class_title       "Agriculture (including fisheries and forestry)" ;
-  crdc-ccrd-csv:Code              "RDS108" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     58
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers all civil space research and experimental development (R&D) activities with objectives related to the R&D in exploration of space, space laboratories, space travel and launch systems. Although civil space R&D activities are not always concerned with particular objectives, they frequently have a specific goal, such as the advancement of knowledge (e.g. astronomy) or relate to particular applications (e.g. telecommunications satellites or earth observation). This objective does not include corresponding R&D activities for defence purposes." ;
-  crdc-ccrd-csv:Class_title       "Exploration and exploitation of space" ;
-  crdc-ccrd-csv:Code              "RDS103" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     15
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards mining and extracting energy mineral resources, as well as the extraction of geothermal energy." ;
-  crdc-ccrd-csv:Class_title       "Mining and extraction of energy resources" ;
-  crdc-ccrd-csv:Code              "RDS10501" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     32
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities dealing with computer hardware, electronic equipment, optical products and communication equipment, including consumer electronic equipment." ;
-  crdc-ccrd-csv:Class_title       "Computer, electronic, optical products and communication equipment" ;
-  crdc-ccrd-csv:Code              "RDS10609" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     48
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities involved in gathering, processing, storing, distributing, and use of information, and its associated technologies and services." ;
-  crdc-ccrd-csv:Class_title       "Information systems, technologies and services" ;
-  crdc-ccrd-csv:Code              "RDS10610" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     49
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of processed food and beverage products. It includes, among others, products derived from animal milk, carcass meat, nutraceuticals and functional foods." ;
-  crdc-ccrd-csv:Class_title       "Industrial processes related to agricultural products (except wood, paper and fiber)" ;
-  crdc-ccrd-csv:Code              "RDS10602" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     41
+  w3c-csv:row                     74
 ] .
 
 [ a                               owl:NamedIndividual ;
@@ -663,355 +80,36 @@
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards testing the performance, durability and life cycle of construction components and materials which are delivered to or assembled on construction sites." ;
-  crdc-ccrd-csv:Class_title       "Construction materials performance" ;
-  crdc-ccrd-csv:Code              "RDS10403" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     25
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards exploration for minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands." ;
-  crdc-ccrd-csv:Class_title       "Mineral exploration" ;
-  crdc-ccrd-csv:Code              "RDS10101" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     2
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of celestial objects and phenomena, including space telescopes and space astronomy." ;
-  crdc-ccrd-csv:Class_title       "Celestial objects and phenomena" ;
-  crdc-ccrd-csv:Code              "RDS10302" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     17
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards environmentally sustainable production of plants and plant primary products; animals and animal primary products; exploration, mining, extraction, and processing of mineral resources; manufactured materials; construction and building activities; transport activities; and, information and communication service activities by minimising the generation of emissions and waste and by reducing or optimising the consumption of water and other natural resources." ;
-  crdc-ccrd-csv:Class_title       "Environmentally sustainable human activities" ;
-  crdc-ccrd-csv:Code              "RDS10201" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     9
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the arts and cultural activities. It includes music; creative and performing arts; design and architecture; art galleries and museums, and including digital humanities." ;
-  crdc-ccrd-csv:Class_title       "Arts and culture" ;
-  crdc-ccrd-csv:Code              "RDS11004" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     76
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards environmental issues, not elsewhere classified, including advancement of knowledge in this area." ;
-  crdc-ccrd-csv:Class_title       "Environment protection, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10299" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     14
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives." ;
-  crdc-ccrd-csv:Class_title       "Defence" ;
-  crdc-ccrd-csv:Code              "RDS11299" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     97
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the improvement of school, educational institution learning environments, education and training systems. Teaching and instruction of Aboriginal and Indigenous Peoples, learners of specific sexes or genders, gifted learners and disabled learners are also included in this group." ;
-  crdc-ccrd-csv:Class_title       "Educational institutions, systems, and policies" ;
-  crdc-ccrd-csv:Code              "RDS10903" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     70
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards processing, mining and extracting minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands. This group also covers R&D directed towards the manufacture of ceramics, glass and glass products and industrial mineral products, including clay, cement and concrete products. It includes R&D directed towards the manufacture of plaster and non-metallic mineral products. This group also covers R&D directed towards the processing of wood, and the manufacture of wood products, paper and paper products." ;
-  crdc-ccrd-csv:Class_title       "Industrial processes related to mineral resource" ;
-  crdc-ccrd-csv:Code              "RDS10601" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     40
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of measurement standards and calibration services for defence, manufacturing and the service industries." ;
-  crdc-ccrd-csv:Class_title       "Measurement standards and calibration services" ;
-  crdc-ccrd-csv:Code              "RDS10611" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     50
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving teaching and instruction and directed towards the improvement of curricula used in education." ;
-  crdc-ccrd-csv:Class_title       "Teaching methods and curriculum" ;
-  crdc-ccrd-csv:Code              "RDS10902" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     69
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of pharmaceutical products used in the prevention, diagnosis and treatment of veterinary diseases." ;
-  crdc-ccrd-csv:Class_title       "Veterinary pharmaceutical products" ;
-  crdc-ccrd-csv:Code              "RDS10606" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     45
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards energy activities not elsewhere classified, including advancement of knowledge in this area." ;
-  crdc-ccrd-csv:Class_title       "Energy (except prospecting), n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10599" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     38
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards farming or breeding livestock. It includes beekeeping and pet breeding." ;
-  crdc-ccrd-csv:Class_title       "Livestock raising (including beekeeping and pet breeding)" ;
-  crdc-ccrd-csv:Code              "RDS10806" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     64
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards cultural understanding not elsewhere classified, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Culture, recreation, and media, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS11099" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     83
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of religion. Including but not limited to improving understanding and analysis of religious issues of concern to social, scientific or technological development." ;
-  crdc-ccrd-csv:Class_title       "Religion" ;
-  crdc-ccrd-csv:Code              "RDS11009" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     81
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to supporting general or special education, including training, pedagogy, didactics, and targeted methods for specially gifted persons or those with learning disabilities. This objective applies to all levels of education, from pre- and primary school through to tertiary education, as well as to subsidiary services to education." ;
-  crdc-ccrd-csv:Class_title       "Education" ;
-  crdc-ccrd-csv:Code              "RDS109" ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers all research and experimental development (R&D) activities with objectives related to promote agriculture, forestry, fisheries and foodstuff production, or further knowledge on chemical fertilisers, biocides, biological pest control and the mechanisation of agriculture, as well as concerning the impact of agricultural and forestry activities on the environment. This objective also covers R&D activities aimed at improving food productivity and technology. It does not include R&D activities on the reduction of pollution (objective 2 or RDS102); on the development of rural areas; on the construction and planning of buildings; on the improvement of rural rest and recreation amenities and agricultural water supply (objective 4 or RDS104); on energy efficiency measures (objective 5 or RDS105); or on the food processing industry (objective 6 or RDS106)." ;
+  crdc-ccrd-csv:Class_title       "Agriculture (including fisheries and forestry)" ;
+  crdc-ccrd-csv:Code              "RDS108" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Division" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     67
+  w3c-csv:row                     58
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the processes and activities associated with translating plans and specifications into finished buildings and structures." ;
-  crdc-ccrd-csv:Class_title       "Construction processes" ;
-  crdc-ccrd-csv:Code              "RDS10404" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities involved in gathering, processing, storing, distributing, and use of information, and its associated technologies and services." ;
+  crdc-ccrd-csv:Class_title       "Information systems, technologies and services" ;
+  crdc-ccrd-csv:Code              "RDS10610" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     26
+  w3c-csv:row                     49
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the production, storage, transportation, distribution and rational use of all forms of energy. This objective also includes R&D activities on processes designed to increase the efficiency of energy production and distribution, and the study of energy conservation. It does not include R&D activities related to prospecting (objective 1 or RDS101) or R&D activities into vehicle and engine propulsion (objective 6 or RDS106)." ;
-  crdc-ccrd-csv:Class_title       "Energy (except prospecting)" ;
-  crdc-ccrd-csv:Code              "RDS105" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     31
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of the earth not elsewhere classified, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Exploration and exploitation of the earth, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10199" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of water and waste services and utilities to households and industrial and commercial premises." ;
+  crdc-ccrd-csv:Class_title       "Water provision and waste services" ;
+  crdc-ccrd-csv:Code              "RDS10202" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     7
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to the exploration of the Earth's crust and mantle, seas, oceans and atmosphere, as well as for R&D activities on their exploitation. It also includes climatic and meteorological research, polar exploration and hydrology. It does not include R&D activities related to soil improvement (objective 4 or RDS104), land use or fishing (objective 8 or RDS108), or pollution (objective 2 or RDS102)." ;
-  crdc-ccrd-csv:Class_title       "Exploration and exploitation of the earth" ;
-  crdc-ccrd-csv:Code              "RDS101" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     1
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards information services. It includes but is not limited to libraries, library databases and information processing; presentation of information, including displays, in libraries, museums and art galleries, educational centres and similar facilities; and electronic archives, open access, and news collection services." ;
-  crdc-ccrd-csv:Class_title       "Information services" ;
-  crdc-ccrd-csv:Code              "RDS11001" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     73
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving launch systems for space. It includes launch preparations and operations, launchers, and launching complexes." ;
-  crdc-ccrd-csv:Class_title       "Space launch systems" ;
-  crdc-ccrd-csv:Code              "RDS10303" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     18
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards community health and well-being of general public, excluding specific population groups. It includes research into the complex biological, social, cultural and environmental interactions that determine the health of individuals and the general public. Many activities are targeted at populations such as health campaigns and health policies. Public health services also include the provision of personal services to individual persons, such as vaccinations, behavioural counselling, or health advice." ;
-  crdc-ccrd-csv:Class_title       "Public health (except specific population health)" ;
-  crdc-ccrd-csv:Code              "RDS10703" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     55
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards media services. It includes but is not limited to broadcasting or online streaming services; internet and social media; animation and video games; publishing and printing services; and film and video services." ;
-  crdc-ccrd-csv:Class_title       "Media services" ;
-  crdc-ccrd-csv:Code              "RDS11002" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     74
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards transport, construction, telecommunication and other infrastructures activities not elsewhere classified, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Transport, telecommunication and other infrastructures (including buildings), n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS10499" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     30
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards law, politics and community services not elsewhere classified, including advancement of knowledge in these areas." ;
-  crdc-ccrd-csv:Class_title       "Political and social systems, structure and processes, n.e.c." ;
-  crdc-ccrd-csv:Code              "RDS11199" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     95
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of ethics. Including but not limited to applying ethical or moral theory to such issues; and developing codes of behaviour and standards of practice for businesses, professions and trades." ;
-  crdc-ccrd-csv:Class_title       "Ethics" ;
-  crdc-ccrd-csv:Code              "RDS11008" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     80
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to protect, promote and restore human health. It ranges from biomedical and clinical research to research focused on health services and population and public health, including all aspects of medical and surgical treatment, the provision of hospital and home care, and public health, mental health, prevention and wellness." ;
-  crdc-ccrd-csv:Class_title       "Health" ;
-  crdc-ccrd-csv:Code              "RDS107" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     52
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the industrial production, technology and industrial services, including R&D activities on industrial products and their manufacturing processes, except where they form an integral part of the pursuit of other objectives, e.g., defence (Objective 12 or RDS112), space (Objective 3 or RDS103), energy (Objective 5 or RDS105) or agriculture (Objective 8 or RDS108). This division also includes computer systems and security, information systems, human-computer interactions, artificial intelligence systems, and machine learning." ;
-  crdc-ccrd-csv:Class_title       "Industrial production and technology" ;
-  crdc-ccrd-csv:Code              "RDS106" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     39
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of social phenomena related to cultural activities, religion and leisure activities so as to define their impact on life in society, as well as to racial and cultural integration and on socio-cultural changes in these areas. The concept of \"culture\" covers the sociology of science, religion, art, sport and leisure, and also comprises inter alia R&D activities on the media, the mastery of language and social integration, libraries, archives and external cultural policy. This objective also includes R&D activities related to: recreational and sporting services; cultural services; broadcasting or online streaming and publishing services; and religious and other community services." ;
-  crdc-ccrd-csv:Class_title       "Culture, recreation, religion and media" ;
-  crdc-ccrd-csv:Code              "RDS110" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Division" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
-  w3c-csv:row                     72
-] .
-
-[ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the transformation of energy resource minerals into heat, steam or electricity; and the conversion of coal, natural gas, oil shale and tar sands to liquid fuels. It includes hydrogen-based energy systems and fuel cells." ;
-  crdc-ccrd-csv:Class_title       "Energy transformation" ;
-  crdc-ccrd-csv:Code              "RDS10503" ;
-  crdc-ccrd-csv:Hierarchical_structure
-          "Group" ;
-  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
-  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     34
+  w3c-csv:row                     10
 ] .
 
 [ a                               owl:NamedIndividual ;
@@ -1026,36 +124,91 @@
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards providing prevention, support, access, justice, community and welfare services to individuals, families, or to defined vulnerable populations, such youth and seniors." ;
-  crdc-ccrd-csv:Class_title       "Family and social work" ;
-  crdc-ccrd-csv:Code              "RDS11109" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards climate and climate change. For the purpose of the classification, climate refers to the long-term average condition of the weather in a given area." ;
+  crdc-ccrd-csv:Class_title       "Climate and climate change" ;
+  crdc-ccrd-csv:Code              "RDS10104" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     93
+  w3c-csv:row                     5
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of finance and investment services. It includes but is not limited to banks, building societies, credit unions and money market dealing; investment and superannuation services; and insurance services. This group also covers R&D directed towards the understanding of economic issues at the microeconomic and macroeconomic level. It includes effects on taxation, consumption, industrial organisations, industry policy, industry cost and structure, fiscal policy, monetary policy, exchange rates, balance of payments, income policy, and taxation." ;
-  crdc-ccrd-csv:Class_title       "Finance and economics" ;
-  crdc-ccrd-csv:Code              "RDS11101" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards energy activities not elsewhere classified, including advancement of knowledge in this area." ;
+  crdc-ccrd-csv:Class_title       "Energy (except prospecting), n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10599" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     85
+  w3c-csv:row                     38
 ] .
 
 [ a                               owl:NamedIndividual ;
-  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of soils and improving soil quality in various environments." ;
-  crdc-ccrd-csv:Class_title       "Soils" ;
-  crdc-ccrd-csv:Code              "RDS10802" ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards justice and the law. Not limited to but including legal processes; civil and criminal justice; crime prevention, law enforcement and correctional services; and, law reform." ;
+  crdc-ccrd-csv:Class_title       "Justice and the law" ;
+  crdc-ccrd-csv:Code              "RDS11106" ;
   crdc-ccrd-csv:Hierarchical_structure
           "Group" ;
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
-  w3c-csv:row                     60
+  w3c-csv:row                     90
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards health not elsewhere classified, including advancement of knowledge in this area." ;
+  crdc-ccrd-csv:Class_title       "Health, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10799" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     57
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards mining and extracting energy mineral resources, as well as the extraction of geothermal energy." ;
+  crdc-ccrd-csv:Class_title       "Mining and extraction of energy resources" ;
+  crdc-ccrd-csv:Code              "RDS10501" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     32
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to the exploration of the Earth's crust and mantle, seas, oceans and atmosphere, as well as for R&D activities on their exploitation. It also includes climatic and meteorological research, polar exploration and hydrology. It does not include R&D activities related to soil improvement (objective 4 or RDS104), land use or fishing (objective 8 or RDS108), or pollution (objective 2 or RDS102)." ;
+  crdc-ccrd-csv:Class_title       "Exploration and exploitation of the earth" ;
+  crdc-ccrd-csv:Code              "RDS101" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     1
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the scientific exploration of space, including robotic exploration of the solar system, and advanced exploration development." ;
+  crdc-ccrd-csv:Class_title       "Scientific exploration of space" ;
+  crdc-ccrd-csv:Code              "RDS10301" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     16
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards community and public health of specific population groups and discrete community groups (e.g., aged persons, persons living in rural and remote areas), including indigenous communities. It includes the study of social and cultural factors affecting the health of these groups and the delivery of health services to these groups." ;
+  crdc-ccrd-csv:Class_title       "Specific population health" ;
+  crdc-ccrd-csv:Code              "RDS10704" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     56
 ] .
 
 [ a                               owl:NamedIndividual ;
@@ -1070,6 +223,721 @@
 ] .
 
 [ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards exploration for energy mineral and geothermal energy resources. It does not include the mining and extraction of energy mineral resource." ;
+  crdc-ccrd-csv:Class_title       "Energy resources exploration" ;
+  crdc-ccrd-csv:Code              "RDS10102" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     3
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to infrastructure, including e-infrastructures, land development, and the construction of buildings. More generally, this objective covers all R&D activities relating to the general planning of land use. This objective includes R&D activities into protection against harmful effects in town and country planning but not the research into other types of pollution (objective 2 or RDS102). This objective also includes R&D activities related to transport systems; telecommunication systems; network systems and services, including network security; mobile technologies; general planning of land use; the construction and planning of buildings; civil engineering; and water supply." ;
+  crdc-ccrd-csv:Class_title       "Transport, telecommunication and other infrastructures (including buildings)" ;
+  crdc-ccrd-csv:Code              "RDS104" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     22
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards environmental issues, not elsewhere classified, including advancement of knowledge in this area." ;
+  crdc-ccrd-csv:Class_title       "Environment protection, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10299" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     14
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of celestial objects and phenomena, including space telescopes and space astronomy." ;
+  crdc-ccrd-csv:Class_title       "Celestial objects and phenomena" ;
+  crdc-ccrd-csv:Code              "RDS10302" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     17
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the production of leather and textile products and fibre processing." ;
+  crdc-ccrd-csv:Class_title       "Leather products, fibre processing and textiles" ;
+  crdc-ccrd-csv:Code              "RDS10603" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     42
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards information services. It includes but is not limited to libraries, library databases and information processing; presentation of information, including displays, in libraries, museums and art galleries, educational centres and similar facilities; and electronic archives, open access, and news collection services." ;
+  crdc-ccrd-csv:Class_title       "Information services" ;
+  crdc-ccrd-csv:Code              "RDS11001" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     73
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the learning outcomes of individual learners at specific education levels." ;
+  crdc-ccrd-csv:Class_title       "Stages of education" ;
+  crdc-ccrd-csv:Code              "RDS10901" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     68
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of pharmaceutical products used in the prevention, diagnosis and treatment of veterinary diseases." ;
+  crdc-ccrd-csv:Class_title       "Veterinary pharmaceutical products" ;
+  crdc-ccrd-csv:Code              "RDS10606" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     45
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving space laboratories and space travel. It includes conventional electronic test laboratories and hardware, spacecraft integration and testing, control rooms, clean rooms, and human space flight." ;
+  crdc-ccrd-csv:Class_title       "Space laboratories and space travel" ;
+  crdc-ccrd-csv:Code              "RDS10304" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     19
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the characteristics, propagation and growing of all crops. It includes crops grown for industrial applications such as sugar cane, cotton, wine grapes, tobacco, and plants from which essential oils are extracted." ;
+  crdc-ccrd-csv:Class_title       "Crops" ;
+  crdc-ccrd-csv:Code              "RDS10803" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     61
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and manufacture of products and methods used in the prevention, diagnosis and treatment (using medications or drugs) of human diseases." ;
+  crdc-ccrd-csv:Class_title       "Human health procedures and pharmaceutical treatments" ;
+  crdc-ccrd-csv:Code              "RDS10701" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     53
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the conservation and efficient use of energy in industry, transport, commerce and households. It includes energy used in forms such as petroleum products, electricity, gas, coke and briquettes and in the form of heat energy." ;
+  crdc-ccrd-csv:Class_title       "Energy conservation and efficiency" ;
+  crdc-ccrd-csv:Code              "RDS10506" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     37
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the characteristics and harvesting of fisheries grown or farmed in aquaculture, or caught in the wild, either for commercial, recreational or other reasons." ;
+  crdc-ccrd-csv:Class_title       "Fisheries (including aquaculture and wild caught)" ;
+  crdc-ccrd-csv:Code              "RDS10805" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     63
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards exploration for minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands." ;
+  crdc-ccrd-csv:Class_title       "Mineral exploration" ;
+  crdc-ccrd-csv:Code              "RDS10101" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     2
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding of past and current societies." ;
+  crdc-ccrd-csv:Class_title       "Understanding of societies, past and current" ;
+  crdc-ccrd-csv:Code              "RDS11010" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     82
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of tourism services." ;
+  crdc-ccrd-csv:Class_title       "Tourism" ;
+  crdc-ccrd-csv:Code              "RDS11003" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     75
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the industrial production, technology and industrial services, including R&D activities on industrial products and their manufacturing processes, except where they form an integral part of the pursuit of other objectives, e.g., defence (Objective 12 or RDS112), space (Objective 3 or RDS103), energy (Objective 5 or RDS105) or agriculture (Objective 8 or RDS108). This division also includes computer systems and security, information systems, human-computer interactions, artificial intelligence systems, and machine learning." ;
+  crdc-ccrd-csv:Class_title       "Industrial production and technology" ;
+  crdc-ccrd-csv:Code              "RDS106" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     39
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with the development of construction projects to the sketch plan stage." ;
+  crdc-ccrd-csv:Class_title       "Construction planning" ;
+  crdc-ccrd-csv:Code              "RDS10401" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     23
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the processing of wood, and the manufacture of wood products, paper and paper products." ;
+  crdc-ccrd-csv:Class_title       "Wood, wood products and paper" ;
+  crdc-ccrd-csv:Code              "RDS10604" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     43
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers all civil space research and experimental development (R&D) activities with objectives related to the R&D in exploration of space, space laboratories, space travel and launch systems. Although civil space R&D activities are not always concerned with particular objectives, they frequently have a specific goal, such as the advancement of knowledge (e.g. astronomy) or relate to particular applications (e.g. telecommunications satellites or earth observation). This objective does not include corresponding R&D activities for defence purposes." ;
+  crdc-ccrd-csv:Class_title       "Exploration and exploitation of space" ;
+  crdc-ccrd-csv:Code              "RDS103" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     15
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving launch systems for space. It includes launch preparations and operations, launchers, and launching complexes." ;
+  crdc-ccrd-csv:Class_title       "Space launch systems" ;
+  crdc-ccrd-csv:Code              "RDS10303" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     18
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the improvement of school, educational institution learning environments, education and training systems. Teaching and instruction of Aboriginal and Indigenous Peoples, learners of specific sexes or genders, gifted learners and disabled learners are also included in this group." ;
+  crdc-ccrd-csv:Class_title       "Educational institutions, systems, and policies" ;
+  crdc-ccrd-csv:Code              "RDS10903" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     70
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to supporting general or special education, including training, pedagogy, didactics, and targeted methods for specially gifted persons or those with learning disabilities. This objective applies to all levels of education, from pre- and primary school through to tertiary education, as well as to subsidiary services to education." ;
+  crdc-ccrd-csv:Class_title       "Education" ;
+  crdc-ccrd-csv:Code              "RDS109" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     67
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving teaching and instruction and directed towards the improvement of curricula used in education." ;
+  crdc-ccrd-csv:Class_title       "Teaching methods and curriculum" ;
+  crdc-ccrd-csv:Code              "RDS10902" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     69
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards cultural understanding not elsewhere classified, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Culture, recreation, and media, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS11099" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     83
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards farming or breeding livestock. It includes beekeeping and pet breeding." ;
+  crdc-ccrd-csv:Class_title       "Livestock raising (including beekeeping and pet breeding)" ;
+  crdc-ccrd-csv:Code              "RDS10806" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     64
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards transport, construction, telecommunication and other infrastructures activities not elsewhere classified, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Transport, telecommunication and other infrastructures (including buildings), n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10499" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     30
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of machinery and equipment. It includes, among others, household electrical appliances, whitewares and automated machinery." ;
+  crdc-ccrd-csv:Class_title       "Machinery and equipment (including automated machinery and equipment)" ;
+  crdc-ccrd-csv:Code              "RDS10608" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     47
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving understanding of the social and cultural contexts of communication. It includes but is not limited to languages, literature, journalism, linguistics and semantics." ;
+  crdc-ccrd-csv:Class_title       "Communication, literature and language" ;
+  crdc-ccrd-csv:Code              "RDS11006" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     78
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards heritage issues, including the conservation of natural, social and cultural heritage. This group also covers R&D directed towards indigenous culture, knowledge, language, and rights." ;
+  crdc-ccrd-csv:Class_title       "Heritage (including Indigenous culture)" ;
+  crdc-ccrd-csv:Code              "RDS11007" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     79
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards community health and well-being of general public, excluding specific population groups. It includes research into the complex biological, social, cultural and environmental interactions that determine the health of individuals and the general public. Many activities are targeted at populations such as health campaigns and health policies. Public health services also include the provision of personal services to individual persons, such as vaccinations, behavioural counselling, or health advice." ;
+  crdc-ccrd-csv:Class_title       "Public health (except specific population health)" ;
+  crdc-ccrd-csv:Code              "RDS10703" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     55
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the processes and activities associated with translating plans and specifications into finished buildings and structures." ;
+  crdc-ccrd-csv:Class_title       "Construction processes" ;
+  crdc-ccrd-csv:Code              "RDS10404" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     26
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards land associated with water management in various natural environments and ecosystems. It includes urban and industrial land and water management issues, and the allocation of water for agricultural production." ;
+  crdc-ccrd-csv:Class_title       "Land and water management" ;
+  crdc-ccrd-csv:Code              "RDS10407" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     29
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the efficiency, safety and utility of ground, sea, rail and air transport. It also covers R&D directed towards improving the efficiency, safety and utility of deep space transport." ;
+  crdc-ccrd-csv:Class_title       "Transport systems" ;
+  crdc-ccrd-csv:Code              "RDS10405" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     27
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the arts and cultural activities. It includes music; creative and performing arts; design and architecture; art galleries and museums, and including digital humanities." ;
+  crdc-ccrd-csv:Class_title       "Arts and culture" ;
+  crdc-ccrd-csv:Code              "RDS11004" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     76
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the control of pests, diseases and exotic species in various natural and man-made environments. It includes quarantine and control measures within, at or outside national borders." ;
+  crdc-ccrd-csv:Class_title       "Control of pests, diseases and exotic species" ;
+  crdc-ccrd-csv:Code              "RDS10204" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     12
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards fixed line, mobile and satellite communication networks and services. It includes videoconference services." ;
+  crdc-ccrd-csv:Class_title       "Communication technologies, systems and services" ;
+  crdc-ccrd-csv:Code              "RDS10406" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     28
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving international relations. It includes R&D relating to current social, cultural and economic aspects of other nations." ;
+  crdc-ccrd-csv:Class_title       "International relations" ;
+  crdc-ccrd-csv:Code              "RDS11105" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     89
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of industrial chemicals and related products, including those derived from oil and gas refining; and, chemical fertilisers and chemicals for the protection of crops and livestock. It excludes veterinary pharmaceutical products." ;
+  crdc-ccrd-csv:Class_title       "Agricultural and industrial chemicals" ;
+  crdc-ccrd-csv:Code              "RDS10605" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     44
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards understanding issues relating to international trade, including trade policy, assistance and protection and international agreements on trade." ;
+  crdc-ccrd-csv:Class_title       "International trade" ;
+  crdc-ccrd-csv:Code              "RDS11102" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     86
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving energy distribution including electricity and gas transmission and distribution." ;
+  crdc-ccrd-csv:Class_title       "Energy storage and distribution" ;
+  crdc-ccrd-csv:Code              "RDS10505" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     36
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of ethics. Including but not limited to applying ethical or moral theory to such issues; and developing codes of behaviour and standards of practice for businesses, professions and trades." ;
+  crdc-ccrd-csv:Class_title       "Ethics" ;
+  crdc-ccrd-csv:Code              "RDS11008" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     80
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives." ;
+  crdc-ccrd-csv:Class_title       "Defence" ;
+  crdc-ccrd-csv:Code              "RDS11299" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     97
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of terraforming, and systems capable of supporting terrestrial life forms, including the effects of space on living things, and how life adapts to the space environment." ;
+  crdc-ccrd-csv:Class_title       "Terraforming" ;
+  crdc-ccrd-csv:Code              "RDS10305" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     20
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards animal production, animal primary products, plant production and plant primary products not elsewhere classified. It includes the traceability and quality assurance of plant products, and advancement of knowledge in all these areas." ;
+  crdc-ccrd-csv:Class_title       "Agriculture, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10899" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     66
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental (R&D) activities with objectives to serve military purposes. This objective may also include basic research in nuclear and space activities when financed by the ministry of defence, including advancement of knowledge in these areas. Civil research and experimental development financed by the ministry of defence, for example in the fields of meteorology, telecommunications and health, should be classified in the relevant objectives." ;
+  crdc-ccrd-csv:Class_title       "Defence" ;
+  crdc-ccrd-csv:Code              "RDS112" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     96
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and analysis of religion. Including but not limited to improving understanding and analysis of religious issues of concern to social, scientific or technological development." ;
+  crdc-ccrd-csv:Class_title       "Religion" ;
+  crdc-ccrd-csv:Code              "RDS11009" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     81
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the physical and chemical conditions of water in various environments." ;
+  crdc-ccrd-csv:Class_title       "Water and hydrology" ;
+  crdc-ccrd-csv:Code              "RDS10105" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     6
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards assessment and management of various ecosystems; environmental and natural resources; and, finding appropriate ways to nurture and rehabilitate seriously degraded environments back to original condition or to an improved state. This group also covers R&D directed towards an understanding of natural hazards (such as bushfire, cyclones and storms, earthquakes, landslides, tsunamis and volcanic eruptions), their impact on lives, property and environments and the development of warning systems and control measures to minimise impacts from these hazards." ;
+  crdc-ccrd-csv:Class_title       "Control and care of the environment" ;
+  crdc-ccrd-csv:Code              "RDS10205" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     13
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of processed food and beverage products. It includes, among others, products derived from animal milk, carcass meat, nutraceuticals and functional foods." ;
+  crdc-ccrd-csv:Class_title       "Industrial processes related to agricultural products (except wood, paper and fiber)" ;
+  crdc-ccrd-csv:Code              "RDS10602" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     41
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving technologies, processes and methods used for harvesting, handling and packing of plant products, other than forest products." ;
+  crdc-ccrd-csv:Class_title       "Harvesting and packing of plant products" ;
+  crdc-ccrd-csv:Code              "RDS10804" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     62
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards an understanding of soils and improving soil quality in various environments." ;
+  crdc-ccrd-csv:Class_title       "Soils" ;
+  crdc-ccrd-csv:Code              "RDS10802" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     60
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to protect, promote and restore human health. It ranges from biomedical and clinical research to research focused on health services and population and public health, including all aspects of medical and surgical treatment, the provision of hospital and home care, and public health, mental health, prevention and wellness." ;
+  crdc-ccrd-csv:Class_title       "Health" ;
+  crdc-ccrd-csv:Code              "RDS107" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     52
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improve the production, storage, transportation, distribution and rational use of all forms of energy. This objective also includes R&D activities on processes designed to increase the efficiency of energy production and distribution, and the study of energy conservation. It does not include R&D activities related to prospecting (objective 1 or RDS101) or R&D activities into vehicle and engine propulsion (objective 6 or RDS106)." ;
+  crdc-ccrd-csv:Class_title       "Energy (except prospecting)" ;
+  crdc-ccrd-csv:Code              "RDS105" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     31
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards processing, mining and extracting minerals, other than energy mineral resources. It includes precious and semi-precious stones and mineral sands. This group also covers R&D directed towards the manufacture of ceramics, glass and glass products and industrial mineral products, including clay, cement and concrete products. It includes R&D directed towards the manufacture of plaster and non-metallic mineral products. This group also covers R&D directed towards the processing of wood, and the manufacture of wood products, paper and paper products." ;
+  crdc-ccrd-csv:Class_title       "Industrial processes related to mineral resource" ;
+  crdc-ccrd-csv:Code              "RDS10601" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     40
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards environmentally sustainable production of plants and plant primary products; animals and animal primary products; exploration, mining, extraction, and processing of mineral resources; manufactured materials; construction and building activities; transport activities; and, information and communication service activities by minimising the generation of emissions and waste and by reducing or optimising the consumption of water and other natural resources." ;
+  crdc-ccrd-csv:Class_title       "Environmentally sustainable human activities" ;
+  crdc-ccrd-csv:Code              "RDS10201" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     9
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the understanding and improvement of air quality in various environments." ;
+  crdc-ccrd-csv:Class_title       "Air quality" ;
+  crdc-ccrd-csv:Code              "RDS10203" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     11
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development of social and economic environmental policies, legislation and standards. In addition, this group covers R&D directed towards the social, economic, environmental, development, and population issues of regional, urban, suburban, rural, and northern communities." ;
+  crdc-ccrd-csv:Class_title       "Environment, urban, and rural planning and development" ;
+  crdc-ccrd-csv:Code              "RDS11108" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     92
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of the earth not elsewhere classified, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Exploration and exploitation of the earth, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10199" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     7
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the preparation, handling or storage of primary animal products such as eggs, honey, raw wool, unprocessed or minimally processed fish or milk, and other animal fibres, hides and skins." ;
+  crdc-ccrd-csv:Class_title       "Primary animal products" ;
+  crdc-ccrd-csv:Code              "RDS10807" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     65
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives related to improving the control of pollution, including the identification and analysis of the sources of pollution and their causes, and all pollutants, including their dispersal in the environment and the effects on humans, species (fauna, flora, micro-organisms) and the biosphere. The development of monitoring facilities for the measurement of all kinds of pollution is included, as are R&D activities for the elimination and prevention of all forms of pollution in all types of environment." ;
+  crdc-ccrd-csv:Class_title       "Environmental protection" ;
+  crdc-ccrd-csv:Code              "RDS102" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     8
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards testing the performance, durability and life cycle of construction components and materials which are delivered to or assembled on construction sites." ;
+  crdc-ccrd-csv:Class_title       "Construction materials performance" ;
+  crdc-ccrd-csv:Code              "RDS10403" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     25
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards understanding the dynamics of atmospheric and weather systems." ;
+  crdc-ccrd-csv:Class_title       "Atmosphere and weather" ;
+  crdc-ccrd-csv:Code              "RDS10103" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     4
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards government and politics. It includes electoral and political systems; civics and citizenship; and public service management." ;
+  crdc-ccrd-csv:Class_title       "Government and politics" ;
+  crdc-ccrd-csv:Code              "RDS11104" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     88
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of finance and investment services. It includes but is not limited to banks, building societies, credit unions and money market dealing; investment and superannuation services; and insurance services. This group also covers R&D directed towards the understanding of economic issues at the microeconomic and macroeconomic level. It includes effects on taxation, consumption, industrial organisations, industry policy, industry cost and structure, fiscal policy, monetary policy, exchange rates, balance of payments, income policy, and taxation." ;
+  crdc-ccrd-csv:Class_title       "Finance and economics" ;
+  crdc-ccrd-csv:Code              "RDS11101" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     85
+] .
+
+[ a                               owl:NamedIndividual ;
   crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture and repair of transport equipment, including their components." ;
   crdc-ccrd-csv:Class_title       "Transport equipment" ;
   crdc-ccrd-csv:Code              "RDS10607" ;
@@ -1078,4 +946,136 @@
   crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
   crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
   w3c-csv:row                     46
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the sports, exercise or physical endeavor and other recreational activities. It includes the provision of services to sport and sporting clubs and recreation and leisure (including the operation of race tracks, parks, and botanical and zoological gardens)." ;
+  crdc-ccrd-csv:Class_title       "Sports, exercise and recreation" ;
+  crdc-ccrd-csv:Code              "RDS11005" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     77
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the transformation of energy resource minerals into heat, steam or electricity; and the conversion of coal, natural gas, oil shale and tar sands to liquid fuels. It includes hydrogen-based energy systems and fuel cells." ;
+  crdc-ccrd-csv:Class_title       "Energy transformation" ;
+  crdc-ccrd-csv:Code              "RDS10503" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     34
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards law, politics and community services not elsewhere classified, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Political and social systems, structure and processes, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS11199" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     95
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the development and provision of measurement standards and calibration services for defence, manufacturing and the service industries." ;
+  crdc-ccrd-csv:Class_title       "Measurement standards and calibration services" ;
+  crdc-ccrd-csv:Code              "RDS10611" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     50
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities dealing with computer hardware, electronic equipment, optical products and communication equipment, including consumer electronic equipment." ;
+  crdc-ccrd-csv:Class_title       "Computer, electronic, optical products and communication equipment" ;
+  crdc-ccrd-csv:Code              "RDS10609" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     48
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards management, productivity, and innovation issues. It includes R&D directed towards marketing, e-commerce, industrial relations, and business support services." ;
+  crdc-ccrd-csv:Class_title       "Management, marketing and productivity" ;
+  crdc-ccrd-csv:Code              "RDS11103" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     87
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This division is a socioeconomic objective which covers research and experimental development (R&D) activities with objectives to improve the understanding of and support the political structure of society; public administration issues and economic policy; regional studies and multi-level governance; social change, social processes and social conflicts; the development of social security and social assistance systems; and the social aspects of the organisation of work. This objective also includes de R&D activities related to gender-related social studies, including discrimination and familiar problems; the development of methods of combating poverty at local, national and international levels; the protection of specific population categories on the social level (immigrants, delinquents, \"drop outs\", etc.), on the sociological level, i.e. with regard to their way of life (young people, adults, retired people, disabled people, etc.) and on the economic level (consumers, farmers, fishermen, miners, the unemployed, etc.); and methods of providing social assistance when sudden changes (natural, technological or social) occur in society. This objective does not include R&D activities related to industrial health, the health control of communities from the organisational and socio-medical point of view, pollution at the place of work, the prevention of industrial accidents and the medical aspects of the causes of industrial accidents (objective 7 or RDS107)." ;
+  crdc-ccrd-csv:Class_title       "Political and social systems, structures and processes" ;
+  crdc-ccrd-csv:Code              "RDS111" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Division" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "1"^^xsd:double ;
+  w3c-csv:row                     84
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the operation, maintenance and protection (including forest fire fighting and control) of native forests, softwood and hardwood plantations. It includes harvesting and transportation of wood and other forest products from forests and plantations and the integration of farm and forestry." ;
+  crdc-ccrd-csv:Class_title       "Forestry" ;
+  crdc-ccrd-csv:Code              "RDS10801" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     59
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards education and training not elsewhere classified, including advancement of knowledge in this area." ;
+  crdc-ccrd-csv:Class_title       "Education, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10999" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     71
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards issues related to the exploration and exploitation of space not elsewhere classified, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Exploration and exploitation of space, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10399" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     21
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards improving the activities associated with turning a project sketch plan into detailed architectural and engineering designs and specifications." ;
+  crdc-ccrd-csv:Class_title       "Construction design" ;
+  crdc-ccrd-csv:Code              "RDS10402" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     24
+] .
+
+[ a                               owl:NamedIndividual ;
+  crdc-ccrd-csv:Class_definition  "This group covers research and experimental development (R&D) activities directed towards the manufacture of tobacco products, furniture, prefabricated buildings and other products not classified elsewhere, including advancement of knowledge in these areas." ;
+  crdc-ccrd-csv:Class_title       "Industrial production and technology, n.e.c." ;
+  crdc-ccrd-csv:Code              "RDS10699" ;
+  crdc-ccrd-csv:Hierarchical_structure
+          "Group" ;
+  crdc-ccrd-csv:fromCsvFile       "crdc-ccrd-2020-seo-ose-structure-eng" ;
+  crdc-ccrd-csv:﻿Level            "2"^^xsd:double ;
+  w3c-csv:row                     51
 ] .
