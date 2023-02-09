@@ -1,0 +1,23 @@
+# baseURI: http://uqam.ca/ontology/expertises
+# imports: file:///home/ubuntu/VIVO_UQAM_DEMO/00-GIT/CCRD-CRDC/src/main/resources/03-expertises-UQAM/expertises_uqam_en_ca.nt
+# imports: file:///home/ubuntu/VIVO_UQAM_DEMO/00-GIT/CCRD-CRDC/src/main/resources/03-expertises-UQAM/expertises_uqam_fr_ca.nt
+# imports: http://www.w3.org/2004/02/skos/core
+# imports: http://www.w3.org/2008/05/skos-xl
+# prefix: expertises
+
+@prefix expertises: <http://uqam.ca/ontology/expertises#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://uqam.ca/ontology/expertises>
+  a owl:Ontology ;
+  owl:imports <file:///home/ubuntu/VIVO_UQAM_DEMO/00-GIT/CCRD-CRDC/src/main/resources/03-expertises-UQAM/expertises_uqam_en_ca.nt> ;
+  owl:imports <file:///home/ubuntu/VIVO_UQAM_DEMO/00-GIT/CCRD-CRDC/src/main/resources/03-expertises-UQAM/expertises_uqam_fr_ca.nt> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:imports <http://www.w3.org/2008/05/skos-xl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.

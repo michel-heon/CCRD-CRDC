@@ -1,0 +1,4 @@
+PropertyPrefix=expr
+SchemaNamespace=http\://uqam.ca/
+SpecialCharacter=UseUnderscores
+eclipse.preferences.version=1
