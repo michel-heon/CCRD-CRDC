@@ -1,4 +1,4 @@
-# CCRD-CRDC - Ontologie du web sémantique /Semantic-Web Ontology
+#  Classification canadienne de la recherche et développement (CCRD) / Canadian Research and Development Classification Ontology (CRDC) - Ontologie du web sémantique /Semantic-Web Ontology
 
 ## Ontologie de Classification canadienne de la recherche et développement
 
