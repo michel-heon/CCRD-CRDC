@@ -1,247 +1,293 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>CCRD-CRDC</groupId>
-    <artifactId>CCRD-CRDC</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <developers>
-        <developer>
-            <name>Michel Héon PhD</name>
-            <email>heon.michel@uqam.ca</email>
-            <organization>Université du Québec à Montréal</organization>
-            <roles>
-                <role>Conseiller en architecture d'entreprise</role>
-            </roles>
-            <organizationUrl>https://uqam.ca</organizationUrl>
-        </developer>
-    </developers>
-    <organization>
-        <name>Université du Québec à Montréal (QC) Canada</name>
-        <url>https://uqam.ca</url>
-    </organization>
-    <properties>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <vitro-version>${project.version}</vitro-version>
-        <maven-site-plugin.skip>true</maven-site-plugin.skip>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.test.skip>true</maven.test.skip>
-        <jena-version>3.9.0</jena-version>
-        <csv-repo>${project.build.resources[0].directory}/00-csv-data</csv-repo>
-        <dataset-repo>${project.build.resources[0].directory}/01-datasets</dataset-repo>
-        <graph-result-repo>${project.build.resources[0].directory}/02-graphs</graph-result-repo>
-    </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-help-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>print-all-profiles</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>all-profiles</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <tasks>
-                                <echo>#######################################################################</echo>
-                                <echo># Displaying value of 'CRDC-CCRD' maven properties </echo>
-                                <echo>#######################################################################</echo>
-                                <echo># [java.version]           ${java.version}</echo>
-                                <echo># [maven-site-plugin.skip] ${maven-site-plugin.skip}</echo>
-                                <echo># [jena-version]           ${jena-version}</echo>
-                                <echo># [csv-repo]               ${csv-repo}</echo>
-                                <echo># [dataset-repo]           ${dataset-repo}</echo>
-                                <echo># [graph-result-repo]      ${graph-result-repo}</echo>
-                                <echo>#######################################################################</echo>
-                                <echo>#######################################################################</echo>
-                            </tasks>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <fork>true</fork>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-install-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-deploy-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>jena-arq</artifactId>
-            <version>${jena-version}</version>
-            <exclusions>
-                <!-- Exclude OSGi bundles from jsonld-java -->
-                <exclusion>
-                    <groupId>org.apache.httpcomponents</groupId>
-                    <artifactId>httpclient-osgi</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.httpcomponents</groupId>
-                    <artifactId>httpcore-osgi</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>jena-core</artifactId>
-            <version>${jena-version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>jena-arq</artifactId>
-            <version>${jena-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>apache-jena-libs</artifactId>
-            <type>pom</type>
-            <version>${jena-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.jena</groupId>
-            <artifactId>jena-csv</artifactId>
-            <version>3.9.0</version>
-        </dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>CCRD-CRDC</groupId>
+	<artifactId>CCRD-CRDC</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<developers>
+		<developer>
+			<name>Michel Héon PhD</name>
+			<email>heon.michel@uqam.ca</email>
+			<organization>Université du Québec à Montréal</organization>
+			<roles>
+				<role>Conseiller en architecture d'entreprise</role>
+			</roles>
+			<organizationUrl>https://uqam.ca</organizationUrl>
+		</developer>
+	</developers>
+	<organization>
+		<name>Université du Québec à Montréal (QC) Canada</name>
+		<url>https://uqam.ca</url>
+	</organization>
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<vitro-version>${project.version}</vitro-version>
+		<maven-site-plugin.skip>true</maven-site-plugin.skip>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.test.skip>true</maven.test.skip>
+		<jena-version>3.9.0</jena-version>
+		<csv-repo>${project.build.resources[0].directory}/00-csv-data</csv-repo>
+		<dataset-repo>${project.build.resources[0].directory}/01-datasets</dataset-repo>
+		<graph-result-repo>${project.build.resources[0].directory}/02-graphs</graph-result-repo>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-help-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>print-all-profiles</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>all-profiles</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<echo>#######################################################################</echo>
+								<echo># Displaying value of 'CRDC-CCRD' maven properties </echo>
+								<echo>#######################################################################</echo>
+								<echo># [java.version] ${java.version}</echo>
+								<echo># [maven-site-plugin.skip] ${maven-site-plugin.skip}</echo>
+								<echo># [jena-version] ${jena-version}</echo>
+								<echo># [csv-repo] ${csv-repo}</echo>
+								<echo># [dataset-repo] ${dataset-repo}</echo>
+								<echo># [graph-result-repo] ${graph-result-repo}</echo>
+								<echo>#######################################################################</echo>
+								<echo>#######################################################################</echo>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-help-plugin</artifactId>
+										<versionRange>[3.0.0,)</versionRange>
+										<goals>
+											<goal>all-profiles</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-antrun-plugin</artifactId>
+										<versionRange>[1.1,)</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>${jena-version}</version>
+			<exclusions>
+				<!-- Exclude OSGi bundles from jsonld-java -->
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpclient-osgi</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.httpcomponents</groupId>
+					<artifactId>httpcore-osgi</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-core</artifactId>
+			<version>${jena-version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>${jena-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>${jena-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-csv</artifactId>
+			<version>3.9.0</version>
+		</dependency>
 
-    </dependencies>
-    <profiles>
-        <profile>
-            <!-- This profile performs the transformation of CSV files into 
-                a data graph structured according to the semantics of crdc-ccrd-semantic.ttl -->
-            <id>build-ccrd-crdc-onto-from-csv</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>ca.uqam.vocabulary.crdc_ccrd.CrdcCcrd_VocabBuilder</mainClass>
-                                    <arguments>
-                                        <argument>-i${csv-repo}</argument> <!-- CSV Input Directory -->
-                                        <argument>-o${dataset-repo}</argument> <!-- Datasets Output Directory corresponding to CSV -->
-                                        <argument>-g${graph-result-repo}</argument> <!-- Ontologies output directory 
-                                        Graph result ontology filename
-                                        (stdout if it is not specified)-->
-                                    </arguments>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <!-- This profile allows the generation of the Java code used 
-                as a schema for the crdc-ccrd-semantic.ttl -->
-            <id>build-semantic-schema</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>jena.schemagen</mainClass>
-                                    <commandlineArgs>
-                                        --inference \
-                                        -i ${basedir}/src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl \
-                                        -e TTL \
-                                        --package ca.uqam.vocabulary.model \
-                                        -o  ${basedir}/src/main/java \
-                                        -n  CRDC_CCRD
-                                    </commandlineArgs>
+	</dependencies>
+	<profiles>
+		<profile>
+			<!-- This profile performs the transformation of CSV files into a data 
+				graph structured according to the semantics of crdc-ccrd-semantic.ttl -->
+			<id>build-ccrd-crdc-onto-from-csv</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>test</phase>
+								<goals>
+									<goal>java</goal>
+								</goals>
+								<configuration>
+									<mainClass>ca.uqam.vocabulary.crdc_ccrd.CrdcCcrd_VocabBuilder</mainClass>
+									<arguments>
+										<argument>-i${csv-repo}</argument> <!-- CSV Input Directory -->
+										<argument>-o${dataset-repo}</argument> <!-- Datasets Output Directory corresponding to CSV -->
+										<argument>-g${graph-result-repo}</argument> <!-- Ontologies output directory Graph result ontology filename (stdout if 
+											it is not specified) -->
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<!-- This profile allows the generation of the Java code used as a schema 
+				for the crdc-ccrd-semantic.ttl -->
+			<id>build-semantic-schema</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>java</goal>
+								</goals>
+								<configuration>
+									<mainClass>jena.schemagen</mainClass>
+									<commandlineArgs>
+										--inference \
+										-i
+										${basedir}/src/main/resources/00-crdc-ccdr-vocabulary/crdc-ccrd-semantic.ttl
+										\
+										-e TTL \
+										--package ca.uqam.vocabulary.model \
+										-o ${basedir}/src/main/java \
+										-n CRDC_CCRD
+									</commandlineArgs>
 
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <!-- This profile allows the generation of the Java code used 
-                as a schema for the CSV's file structure -->
-            <id>build-csv-onto</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>exec-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>java</goal>
-                                </goals>
-                                <configuration>
-                                    <mainClass>jena.schemagen</mainClass>
-                                    <commandlineArgs>
-                                        --inference \
-                                        -i src/main/resources/01-datasets/crdc-ccrd-csv-data.ttl  \
-                                        -e TTL \
-                                        --package ca.uqam.vocabulary.model \
-                                        -o src/main/java \
-                                        -n CRDC_CCRD_CSV
-                                    </commandlineArgs>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<!-- This profile allows the generation of the Java code used as a schema 
+				for the CSV's file structure -->
+			<id>build-csv-onto</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>java</goal>
+								</goals>
+								<configuration>
+									<mainClass>jena.schemagen</mainClass>
+									<commandlineArgs>
+										--inference \
+										-i src/main/resources/01-datasets/crdc-ccrd-csv-data.ttl \
+										-e TTL \
+										--package ca.uqam.vocabulary.model \
+										-o src/main/java \
+										-n CRDC_CCRD_CSV
+									</commandlineArgs>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
